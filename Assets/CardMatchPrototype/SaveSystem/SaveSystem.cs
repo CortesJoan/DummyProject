@@ -5,7 +5,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 
 public static class SaveSystem 
-{
+{ 
      public static void Save(List<ISavable> objectsToSave)
     {
         GameData gameData = new GameData();
@@ -91,14 +91,19 @@ public class GameData
     }
 
     public T GetData<T>(string key)
-    {
-        if (dataDictionary.ContainsKey(key) && dataDictionary[key] is T)
+    { 
+        if (dataDictionary == null)
+        {
+            dataDictionary = new Dictionary<string, object>();
+        }
+
+        if(dataDictionary.ContainsKey(key) && dataDictionary[key] is T)
         {
             return (T)dataDictionary[key];
         }
         else
         {
-            Debug.LogWarning("GameData: Data for key '" + key + "' not found or of incorrect type.");
+            Debug.Log("GameData: Data for key '" + key + "' not found or of incorrect type. If is the first time launching the game don't worry about this");
             return default(T);
         }
     }
