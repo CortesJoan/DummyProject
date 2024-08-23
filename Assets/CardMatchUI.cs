@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using static UnityEngine.UIElements.UxmlAttributeDescription;
@@ -25,12 +26,54 @@ public class CardMatchUI : MonoBehaviour
     private int score = 0;
     const int minimumNumbersOfCardsToMakeAMatch = 2;
     float matchDelay = 0.5f;
+    [SerializeReference] CanvasScaler canvasScaler;
+    [SerializeField] Vector2 defaultMobileResolution = new Vector2(1080, 1920);
+    [SerializeField] Vector2 defaultPCResolution = new Vector2(1920, 1080);
+    [Header("UI Related")]
+    [SerializeField] private TMP_Text scoreText;
+    [SerializeField] private TMP_Text matchesText;
+    [SerializeField] private TMP_Text turnsText;
+    int matches,turns=0;
     private void Start()
     {
+
+        UpdateReferenceResolution();
         CreateGrid();
+        AdjustGridCellSize();
         StartCoroutine(RevealCardsThenHide(timeUntilHide));
+
+
+
+        UpdateScoreText();
+        UpdateMatchesText();
+        UpdateTurnsText();
     }
 
+    //TODO move this to another class
+    public void UpdateReferenceResolution(){
+        if (Application.isMobilePlatform)
+        {
+            canvasScaler.referenceResolution = defaultMobileResolution;
+        
+        }
+        else
+        {
+            canvasScaler.referenceResolution = defaultPCResolution;
+        }
+    }
+    
+
+  
+    
+    private void AdjustGridCellSize()
+    {
+        gridLayout.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
+        gridLayout.constraintCount = gridColumns;
+
+        float availableHeight = gridLayout.GetComponent<RectTransform>().rect.height;
+        float cellHeight = availableHeight / gridRows - gridLayout.spacing.y;
+        gridLayout.cellSize = new Vector2(cellHeight, cellHeight); // Assume square cells 
+    }
     private void CreateGrid()
     {
         if ((gridRows * gridColumns) % minimumNumbersOfCardsToMakeAMatch != 0)
@@ -116,6 +159,9 @@ public class CardMatchUI : MonoBehaviour
         {
             Debug.Log("Match!");
             score++;
+            matches++;
+            UpdateScoreText();
+            UpdateMatchesText();
             //TODO play match sound effect.
             foreach (var card in flippedCards)
             {
@@ -137,13 +183,16 @@ public class CardMatchUI : MonoBehaviour
             {
                 FlipCard(card);
                 cardStates[card] = CardState.FaceDown;
-            } 
+            }
             flippedCards.Clear();
         }
+        turns++;
+        UpdateTurnsText();
     }
 
     private void FlipCard(Card card)
     {
+        //TODO play card flipping sound
         if (cardStates[card] == CardState.FaceDown)
         {
             ShowCardFace(card);
@@ -162,6 +211,7 @@ public class CardMatchUI : MonoBehaviour
     private void HideCardFace(Card card)
     {
         card.CurrentSprite = hiddenSprite;
+        card.DownPriority();
     }
 
 
@@ -178,7 +228,7 @@ public class CardMatchUI : MonoBehaviour
     }
 
     private IEnumerator RevealCardsThenHide(float delay)
-    {   
+    {
         foreach (Card card in cardStates.Keys)
         {
             ShowCardFace(card);
@@ -192,5 +242,18 @@ public class CardMatchUI : MonoBehaviour
             HideCardFace(card);
         }
     }
+    private void UpdateScoreText()
+    {
+        scoreText.text = $"Score: {score}";
+    }
 
+    private void UpdateMatchesText()
+    {
+        matchesText.text = $"Matches: {matches}";
+    }
+
+    private void UpdateTurnsText()
+    {
+        turnsText.text = $"Turns: {turns}";
+    }
 }
