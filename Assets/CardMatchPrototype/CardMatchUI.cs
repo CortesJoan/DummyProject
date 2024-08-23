@@ -17,6 +17,7 @@ public class CardMatchUI : MonoBehaviour, ISavable
 {
     [SerializeField] Card cardPrefab;
     [SerializeField] GridLayoutGroup gridLayout;
+    [SerializeField] RectTransform gridRect;
     [SerializeField] Image gridBackground;
     [SerializeField] int gridRows = 2;
     [SerializeField] int gridColumns = 2;
@@ -25,7 +26,7 @@ public class CardMatchUI : MonoBehaviour, ISavable
     [SerializeField] private float timeUntilHide = 2f;
     private List<Card> flippedCards = new List<Card>();
     private Dictionary<Card, CardState> cardStates = new Dictionary<Card, CardState>();
-   
+
     const int minimumNumbersOfCardsToMakeAMatch = 2;
     float matchDelay = 0.1f;
     List<Card> cards = new List<Card>();
@@ -68,7 +69,7 @@ public class CardMatchUI : MonoBehaviour, ISavable
         gridLayout.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
         gridLayout.constraintCount = gridColumns;
 
-        float availableHeight = gridLayout.GetComponent<RectTransform>().rect.height;
+        float availableHeight = gridRect.rect.height;
         float cellHeight = availableHeight / gridRows - gridLayout.spacing.y;
         gridLayout.cellSize = new Vector2(cellHeight, cellHeight);
     }
@@ -142,10 +143,14 @@ public class CardMatchUI : MonoBehaviour, ISavable
         for (int i = 0; i < cards.Count; i++)
         {
             var currentCard = cards[i];
-            currentCard.OriginalSprite = spritesToAssign[i];
-            currentCard.RestoreOriginalSprite();
-            currentCard.ToggleRenderer(true);
-            cardStates[currentCard] =CardState.FaceDown ;
+            if (cardFaceSprites.Count > 0)
+            {
+                currentCard.OriginalSprite = spritesToAssign[0];
+                currentCard.RestoreOriginalSprite();
+                spritesToAssign.RemoveAt(0);
+                currentCard.ToggleRenderer(true);
+                cardStates[currentCard] = CardState.FaceDown;
+            }
         }
         return cards.Count;
 
@@ -154,7 +159,7 @@ public class CardMatchUI : MonoBehaviour, ISavable
 
     private void OnCardClicked(Card card)
     {
-        if (cardStates[card] == CardState.Matched || flippedCards.Count >= 2 || cardStates[card] == CardState.FaceUp|| isRevealingCards)
+        if (cardStates[card] == CardState.Matched || flippedCards.Count >= 2 || cardStates[card] == CardState.FaceUp || isRevealingCards)
         {
             return;
         }
@@ -182,12 +187,12 @@ public class CardMatchUI : MonoBehaviour, ISavable
         if (allCardsMatch)
         {
             Debug.Log("Match!");
-             
+
             matches++;
             onMatchMade?.Invoke();
-         
+
             UpdateMatchesText();
-          
+
             foreach (var card in flippedCards)
             {
                 cardStates[card] = CardState.Matched;
@@ -218,7 +223,7 @@ public class CardMatchUI : MonoBehaviour, ISavable
 
     private void FlipCard(Card card)
     {
-   
+
         if (cardStates[card] == CardState.FaceDown)
         {
             ShowCardFace(card);
@@ -269,7 +274,7 @@ public class CardMatchUI : MonoBehaviour, ISavable
         {
             HideCardFace(card);
         }
-        isRevealingCards=false;
+        isRevealingCards = false;
 
         revealCardsText.gameObject.SetActive(false);
     }
@@ -295,5 +300,5 @@ public class CardMatchUI : MonoBehaviour, ISavable
     {
         matches = data.GetData<int>(MatchesKey);
         turns = data.GetData<int>(TurnsKey);
-     }
+    }
 }
