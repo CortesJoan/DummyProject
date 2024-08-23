@@ -16,3 +16,5 @@ MonoBehaviour:
   gridSize: {x: 6, y: 5}
   backgroundColor: {r: 0.91764706, g: 0.18431373, b: 0.023529412, a: 1}
   timeToSeeCards: 6
+  baseScore: 4
+  scoreComboMultiplier: 4

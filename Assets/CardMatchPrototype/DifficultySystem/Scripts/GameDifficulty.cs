@@ -7,5 +7,8 @@ public class GameDifficulty : ScriptableObject
     public Vector2Int gridSize; 
     public Color backgroundColor;
     public int timeToSeeCards;
+    [Header("Score:")]
+    public int baseScore;
+    public int scoreComboMultiplier;
 }
  

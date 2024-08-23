@@ -25,12 +25,13 @@ public class CardMatchUI : MonoBehaviour, ISavable
     [SerializeField] private float timeUntilHide = 2f;
     private List<Card> flippedCards = new List<Card>();
     private Dictionary<Card, CardState> cardStates = new Dictionary<Card, CardState>();
-    private int score = 0;
+   
     const int minimumNumbersOfCardsToMakeAMatch = 2;
     float matchDelay = 0.1f;
     List<Card> cards = new List<Card>();
     [Header("UI Related")]
-    [SerializeField] private TMP_Text scoreText;
+
+
     [SerializeField] private TMP_Text matchesText;
     [SerializeField] private TMP_Text turnsText;
     int matches, turns = 0;
@@ -55,7 +56,6 @@ public class CardMatchUI : MonoBehaviour, ISavable
         this.timeUntilHide = timeUntilHide;
         StartCoroutine(RevealCardsThenHide(timeUntilHide));
 
-        UpdateScoreText();
         UpdateMatchesText();
         UpdateTurnsText();
 
@@ -180,10 +180,10 @@ public class CardMatchUI : MonoBehaviour, ISavable
         if (allCardsMatch)
         {
             Debug.Log("Match!");
-            score++;
+             
             matches++;
             onMatchMade?.Invoke();
-            UpdateScoreText();
+         
             UpdateMatchesText();
           
             foreach (var card in flippedCards)
@@ -266,10 +266,7 @@ public class CardMatchUI : MonoBehaviour, ISavable
             HideCardFace(card);
         }
     }
-    private void UpdateScoreText()
-    {
-        scoreText.text = $"Score: {score}";
-    }
+
 
     private void UpdateMatchesText()
     {
@@ -283,7 +280,7 @@ public class CardMatchUI : MonoBehaviour, ISavable
 
     public void SaveData(GameData data)
     {
-        data.score = score;
+  
         data.totalMatches = matches;
         data.turns = turns;
     }
@@ -291,7 +288,7 @@ public class CardMatchUI : MonoBehaviour, ISavable
     public void LoadData(GameData data)
     {
 
-        score = data.score;
+      
         matches = data.totalMatches;
         turns = data.turns;
     }
