@@ -1,9 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
-using static UnityEngine.UIElements.UxmlAttributeDescription;
 
 public enum CardState
 {
@@ -16,6 +17,7 @@ public class CardMatchUI : MonoBehaviour, ISavable
 {
     [SerializeField] Card cardPrefab;
     [SerializeField] GridLayoutGroup gridLayout;
+    [SerializeField] Image gridBackground;
     [SerializeField] int gridRows = 2;
     [SerializeField] int gridColumns = 2;
     [SerializeField] List<Sprite> cardFaceSprites;
@@ -25,46 +27,40 @@ public class CardMatchUI : MonoBehaviour, ISavable
     private Dictionary<Card, CardState> cardStates = new Dictionary<Card, CardState>();
     private int score = 0;
     const int minimumNumbersOfCardsToMakeAMatch = 2;
-    float matchDelay = 0.5f;
-    [SerializeReference] CanvasScaler canvasScaler;
-    [SerializeField] Vector2 defaultMobileResolution = new Vector2(1080, 1920);
-    [SerializeField] Vector2 defaultPCResolution = new Vector2(1920, 1080);
+    float matchDelay = 0.1f;
+    List<Card> cards = new List<Card>();
     [Header("UI Related")]
     [SerializeField] private TMP_Text scoreText;
     [SerializeField] private TMP_Text matchesText;
     [SerializeField] private TMP_Text turnsText;
-    int matches,turns=0;
-    private void Start()
+    int matches, turns = 0;
+
+    public UnityEvent onTryingMatch;
+    public UnityEvent onMatchMade;
+    public UnityEvent onMatchFailed;
+    public UnityEvent onWinEvent;
+
+
+
+
+
+    public void SetupGame(int rows, int columns, Color backgroundColor, int timeUntilHide)
     {
+        gridRows = rows;
+        gridColumns = columns;
+        gridBackground.color = backgroundColor;
 
-        UpdateReferenceResolution();
         CreateGrid();
-        AdjustGridCellSize();
+        //  AdjustGridCellSize();
+        this.timeUntilHide = timeUntilHide;
         StartCoroutine(RevealCardsThenHide(timeUntilHide));
-
-
 
         UpdateScoreText();
         UpdateMatchesText();
         UpdateTurnsText();
+
     }
 
-    //TODO move this to another class
-    public void UpdateReferenceResolution(){
-        if (Application.isMobilePlatform)
-        {
-            canvasScaler.referenceResolution = defaultMobileResolution;
-        
-        }
-        else
-        {
-            canvasScaler.referenceResolution = defaultPCResolution;
-        }
-    }
-    
-
-  
-    
     private void AdjustGridCellSize()
     {
         gridLayout.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
@@ -72,7 +68,7 @@ public class CardMatchUI : MonoBehaviour, ISavable
 
         float availableHeight = gridLayout.GetComponent<RectTransform>().rect.height;
         float cellHeight = availableHeight / gridRows - gridLayout.spacing.y;
-        gridLayout.cellSize = new Vector2(cellHeight, cellHeight); // Assume square cells 
+        gridLayout.cellSize = new Vector2(cellHeight, cellHeight);
     }
     private void CreateGrid()
     {
@@ -81,7 +77,10 @@ public class CardMatchUI : MonoBehaviour, ISavable
             Debug.LogError("The total number of cards (rows * columns) must be even for a matching game.");
             return;
         }
+
         int uniqueCardCount = (gridRows * gridColumns) / minimumNumbersOfCardsToMakeAMatch;
+
+
         List<Sprite> spritesToAssign = new List<Sprite>();
         for (int i = 0; i < uniqueCardCount; i++)
         {
@@ -100,16 +99,20 @@ public class CardMatchUI : MonoBehaviour, ISavable
         for (int i = 0; i < spritesToAssign.Count; i++)
         {
             Sprite temp = spritesToAssign[i];
-            int randomIndex = Random.Range(i, spritesToAssign.Count);
+            int randomIndex = UnityEngine.Random.Range(i, spritesToAssign.Count);
             spritesToAssign[i] = spritesToAssign[randomIndex];
             spritesToAssign[randomIndex] = temp;
         }
+        int startPoint = 0;
+        startPoint = TryToUsePreviousCards(startPoint, spritesToAssign);
 
-        for (int i = 0; i < gridRows * gridColumns; i++)
+
+
+        for (int i = startPoint; i < gridRows * gridColumns; i++)
         {
             Card newCard = Instantiate<Card>(cardPrefab, gridLayout.transform);
             newCard.name = $"Card_{i}";
-
+            cards.Add(newCard);
 
             if (cardFaceSprites.Count > 0)
             {
@@ -128,6 +131,24 @@ public class CardMatchUI : MonoBehaviour, ISavable
             cardStates.Add(newCard, CardState.FaceDown);
         }
     }
+    public int TryToUsePreviousCards(int startPoint, List<Sprite> spritesToAssign)
+    {
+        if (cards.Count == 0) return startPoint;
+
+
+        cardStates.Clear();
+        for (int i = 0; i < cards.Count; i++)
+        {
+            var currentCard = cards[i];
+            currentCard.OriginalSprite = spritesToAssign[i];
+            currentCard.RestoreOriginalSprite();
+            currentCard.ToggleRenderer(true);
+            cardStates[currentCard] =CardState.FaceDown ;
+        }
+        return cards.Count;
+
+
+    }
 
     private void OnCardClicked(Card card)
     {
@@ -137,6 +158,7 @@ public class CardMatchUI : MonoBehaviour, ISavable
         }
 
         FlipCard(card);
+        onTryingMatch?.Invoke();
         flippedCards.Add(card);
         cardStates[card] = CardState.FaceUp;
 
@@ -160,9 +182,10 @@ public class CardMatchUI : MonoBehaviour, ISavable
             Debug.Log("Match!");
             score++;
             matches++;
+            onMatchMade?.Invoke();
             UpdateScoreText();
             UpdateMatchesText();
-            //TODO play match sound effect.
+          
             foreach (var card in flippedCards)
             {
                 cardStates[card] = CardState.Matched;
@@ -172,13 +195,14 @@ public class CardMatchUI : MonoBehaviour, ISavable
 
             if (CheckGameOver())
             {
+                onWinEvent?.Invoke();
                 Debug.Log("Game Over! You Win!");
             }
         }
         else
         {
             Debug.Log("No Match!");
-            //TODO play no match sound effect.
+            onMatchFailed?.Invoke();
             foreach (var card in flippedCards)
             {
                 FlipCard(card);
@@ -192,7 +216,7 @@ public class CardMatchUI : MonoBehaviour, ISavable
 
     private void FlipCard(Card card)
     {
-        //TODO play card flipping sound
+   
         if (cardStates[card] == CardState.FaceDown)
         {
             ShowCardFace(card);
