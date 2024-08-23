@@ -10,6 +10,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip triesToMatchSound;
     [SerializeField] private AudioClip matchSound;
     [SerializeField] private AudioClip mismatchSound;
+    [SerializeField] private AudioClip winSound;
 
 
     [SerializeField] private CardMatchUI cardMatchUI;
@@ -19,6 +20,7 @@ public class AudioManager : MonoBehaviour
         cardMatchUI.onMatchMade.AddListener(PlayMatchSound);
         cardMatchUI.onMatchFailed.AddListener(PlayMismatchSound);
         cardMatchUI.onTryingMatch.AddListener(PlayTriesToMatchSound);
+        cardMatchUI.onWinEvent.AddListener(PlayTriesToMatchSound);
     }
 
 
@@ -35,5 +37,9 @@ public class AudioManager : MonoBehaviour
     private void PlayTriesToMatchSound()
     {
         audioSource.PlayOneShot(triesToMatchSound);
+    }
+    private void WinSound()
+    {
+        audioSource.PlayOneShot(winSound);
     }
 }
