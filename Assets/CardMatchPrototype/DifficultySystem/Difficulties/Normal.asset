@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b63172e0a4a1a364f894823694bc933e, type: 3}
-  m_Name: Easy
+  m_Script: {fileID: 11500000, guid: d01d43ddc374dd44483e8fd650599c1f, type: 3}
+  m_Name: Normal
   m_EditorClassIdentifier: 
-  difficultyName: Easy
-  gridSize: {x: 2, y: 2}
-  backgroundColor: {r: 1, g: 0.9271755, b: 0.4009434, a: 0}
-  timeToSeeCards: 5
+  difficultyName: Normal
+  gridSize: {x: 4, y: 5}
+  backgroundColor: {r: 0.91764706, g: 0.6039216, b: 0.023529412, a: 0}
+  timeToSeeCards: 7
