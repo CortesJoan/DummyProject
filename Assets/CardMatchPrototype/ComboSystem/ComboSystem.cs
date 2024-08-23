@@ -21,6 +21,10 @@ public class ComboSystem : MonoBehaviour, ISavable
     private const string ScoreKey = "CardMatchUIScore";
     private const string MaxComboKey = "CardMatchUIMaxCombo";
     private int score;
+
+    public int MaxCombo { get => maxCombo;   }
+    public int Score { get => score; }
+
     private void Start()
     {
         cardMatchUI.onMatchMade.AddListener(OnMatchMade);
@@ -66,17 +70,20 @@ public class ComboSystem : MonoBehaviour, ISavable
     {
         if (currentCombo > maxCombo)
         {
-            currentCombo = maxCombo;
+            maxCombo = currentCombo;
         }
         currentCombo = 0;
         isInCombo = false;
         onComboDropped?.Invoke(currentCombo);
 
         UpdateComboText();
-    }
-
+    } 
     public void SaveData(GameData data)
     {
+        if (currentCombo > maxCombo)
+        {
+            maxCombo = currentCombo;
+        }
         data.SetData<int>(ScoreKey, score);
         data.SetData<int>(MaxComboKey, maxCombo);
     }
