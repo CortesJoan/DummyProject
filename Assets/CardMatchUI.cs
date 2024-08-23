@@ -13,33 +13,36 @@ public enum CardState
 
 public class CardMatchUI : MonoBehaviour
 {
-    public GameObject cardPrefab;
-    public GridLayoutGroup gridLayout;
-    public int gridRows = 2;
-    public int gridColumns = 2;
-    public List<Sprite> cardFaceSprites;
-
-    private List<GameObject> flippedCards = new List<GameObject>();
-    private Dictionary<GameObject, CardState> cardStates = new Dictionary<GameObject, CardState>();
+    [SerializeField] Card cardPrefab;
+    [SerializeField] GridLayoutGroup gridLayout;
+    [SerializeField] int gridRows = 2;
+    [SerializeField] int gridColumns = 2;
+    [SerializeField] List<Sprite> cardFaceSprites;
+    [SerializeField] private Sprite hiddenSprite;
+    [SerializeField] private float timeUntilHide = 2f;
+    private List<Card> flippedCards = new List<Card>();
+    private Dictionary<Card, CardState> cardStates = new Dictionary<Card, CardState>();
     private int score = 0;
-
+    const int minimumNumbersOfCardsToMakeAMatch = 2;
+    float matchDelay = 0.5f;
     private void Start()
     {
         CreateGrid();
+        StartCoroutine(RevealCardsThenHide(timeUntilHide));
     }
 
     private void CreateGrid()
     {
-        if ((gridRows * gridColumns) % 2 != 0)
+        if ((gridRows * gridColumns) % minimumNumbersOfCardsToMakeAMatch != 0)
         {
             Debug.LogError("The total number of cards (rows * columns) must be even for a matching game.");
-            return;  
+            return;
         }
-        int uniqueCardCount = (gridRows * gridColumns) / 2;
+        int uniqueCardCount = (gridRows * gridColumns) / minimumNumbersOfCardsToMakeAMatch;
         List<Sprite> spritesToAssign = new List<Sprite>();
         for (int i = 0; i < uniqueCardCount; i++)
         {
-           
+
             if (i < cardFaceSprites.Count)
             {
                 spritesToAssign.Add(cardFaceSprites[i]);
@@ -61,14 +64,15 @@ public class CardMatchUI : MonoBehaviour
 
         for (int i = 0; i < gridRows * gridColumns; i++)
         {
-            GameObject newCard = Instantiate(cardPrefab, gridLayout.transform);
+            Card newCard = Instantiate<Card>(cardPrefab, gridLayout.transform);
             newCard.name = $"Card_{i}";
 
-            Image cardImage = newCard.GetComponentInChildren<Image>();
+
             if (cardFaceSprites.Count > 0)
             {
-                cardImage.sprite = spritesToAssign[0];  
-                spritesToAssign.RemoveAt(0);  
+                newCard.OriginalSprite = spritesToAssign[0];
+                newCard.RestoreOriginalSprite();
+                spritesToAssign.RemoveAt(0);
             }
             else
             {
@@ -82,7 +86,7 @@ public class CardMatchUI : MonoBehaviour
         }
     }
 
-    private void OnCardClicked(GameObject card)
+    private void OnCardClicked(Card card)
     {
         if (cardStates[card] == CardState.Matched || flippedCards.Count >= 2 || cardStates[card] == CardState.FaceUp)
         {
@@ -93,7 +97,7 @@ public class CardMatchUI : MonoBehaviour
         flippedCards.Add(card);
         cardStates[card] = CardState.FaceUp;
 
-        if (flippedCards.Count == 2)
+        if (flippedCards.Count == minimumNumbersOfCardsToMakeAMatch)
         {
             StartCoroutine(CheckForMatch());
         }
@@ -101,48 +105,65 @@ public class CardMatchUI : MonoBehaviour
 
     private IEnumerator CheckForMatch()
     {
-        yield return new WaitForSeconds(0.5f);
-
-        GameObject card1 = flippedCards[0];
-        GameObject card2 = flippedCards[1];
-
-        Sprite sprite1 = card1.GetComponentInChildren<Image>().sprite;
-        Sprite sprite2 = card2.GetComponentInChildren<Image>().sprite;
-
-        if (sprite1 == sprite2)
+        yield return new WaitForSeconds(matchDelay);
+        bool allCardsMatch = true;
+        Sprite firstCardSprite = flippedCards[0].CurrentSprite;
+        foreach (var card in flippedCards)
+        {
+            allCardsMatch &= firstCardSprite == card.CurrentSprite;
+        }
+        if (allCardsMatch)
         {
             Debug.Log("Match!");
             score++;
             //TODO play match sound effect.
-            cardStates[card1] = CardState.Matched;
-            cardStates[card2] = CardState.Matched;
-            card1.transform.Find("Visuals").gameObject.SetActive(false);
-            card2.transform.Find("Visuals").gameObject.SetActive(false);
+            foreach (var card in flippedCards)
+            {
+                cardStates[card] = CardState.Matched;
+                card.ToggleRenderer(false);
+            }
             flippedCards.Clear();
 
             if (CheckGameOver())
             {
                 Debug.Log("Game Over! You Win!");
-                 
             }
         }
         else
         {
             Debug.Log("No Match!");
             //TODO play no match sound effect.
-
-            FlipCard(card1);
-            FlipCard(card2);
-            cardStates[card1] = CardState.FaceDown;
-            cardStates[card2] = CardState.FaceDown;
+            foreach (var card in flippedCards)
+            {
+                FlipCard(card);
+                cardStates[card] = CardState.FaceDown;
+            } 
             flippedCards.Clear();
         }
     }
 
-    private void FlipCard(GameObject card)
+    private void FlipCard(Card card)
     {
-     //TODO change the sprite for other sprite
+        if (cardStates[card] == CardState.FaceDown)
+        {
+            ShowCardFace(card);
+            cardStates[card] = CardState.FaceUp;
+        }
+        else if (cardStates[card] == CardState.FaceUp)
+        {
+            HideCardFace(card);
+            cardStates[card] = CardState.FaceDown;
+        }
     }
+    private void ShowCardFace(Card card)
+    {
+        card.RestoreOriginalSprite();
+    }
+    private void HideCardFace(Card card)
+    {
+        card.CurrentSprite = hiddenSprite;
+    }
+
 
     private bool CheckGameOver()
     {
@@ -155,4 +176,21 @@ public class CardMatchUI : MonoBehaviour
         }
         return true;
     }
-} 
+
+    private IEnumerator RevealCardsThenHide(float delay)
+    {   
+        foreach (Card card in cardStates.Keys)
+        {
+            ShowCardFace(card);
+        }
+
+        yield return new WaitForSeconds(delay);
+
+
+        foreach (Card card in cardStates.Keys)
+        {
+            HideCardFace(card);
+        }
+    }
+
+}
