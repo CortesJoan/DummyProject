@@ -12,7 +12,7 @@ public enum CardState
     Matched
 }
 
-public class CardMatchUI : MonoBehaviour
+public class CardMatchUI : MonoBehaviour, ISavable
 {
     [SerializeField] Card cardPrefab;
     [SerializeField] GridLayoutGroup gridLayout;
@@ -255,5 +255,20 @@ public class CardMatchUI : MonoBehaviour
     private void UpdateTurnsText()
     {
         turnsText.text = $"Turns: {turns}";
+    }
+
+    public void SaveData(GameData data)
+    {
+        data.score = score;
+        data.totalMatches = matches;
+        data.turns = turns;
+    }
+
+    public void LoadData(GameData data)
+    {
+
+        score = data.score;
+        matches = data.totalMatches;
+        turns = data.turns;
     }
 }
