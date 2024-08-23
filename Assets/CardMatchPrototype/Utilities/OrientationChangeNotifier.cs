@@ -8,6 +8,7 @@ public class OrientationChangeNotifier : MonoBehaviour
     public float verticalMatch = 1f;
     public float horizontalMatch = 0f;
     [SerializeReference] CanvasScaler canvasScaler;
+    public UnityEvent<ScreenOrientation> onOrientationChanged;
     
     void OnRectTransformDimensionsChange()
     {
@@ -16,5 +17,6 @@ public class OrientationChangeNotifier : MonoBehaviour
 
         canvasScaler.matchWidthOrHeight = (orientation == ScreenOrientation.Portrait ||
                                             orientation == ScreenOrientation.PortraitUpsideDown) ? verticalMatch : horizontalMatch;
+        onOrientationChanged?.Invoke(orientation);
     }
 }
