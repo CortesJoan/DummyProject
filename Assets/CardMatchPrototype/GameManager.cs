@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour, ISavable
             return;
         }
         //Improvement move this list initiation to a dependency injection in the future
-        savableObjects= new List<ISavable>() { cardMatchUI,comboSystem,this};
+        savableObjects = new List<ISavable>() { cardMatchUI, comboSystem, this };
         LoadData();
         InitializeGame();
     }
@@ -81,10 +81,12 @@ public class GameManager : MonoBehaviour, ISavable
     }
     private void OpenStatsMenu()
     {
+        UpdateStatsText();
         mainMenuUI.SetActive(false);
         gameUI.SetActive(false);
         winUI.SetActive(false);
         statsMenuUI.SetActive(true);
+        UpdateStatsText();
     }
 
     private void StartGame(int difficultyLevelIndex)
@@ -99,7 +101,8 @@ public class GameManager : MonoBehaviour, ISavable
 
     private void OnWinGame()
     {
-        winUI.SetActive(true); 
+        winUI.SetActive(true);
+        actualWins++;
         easyButton.onClick.RemoveListener(() => StartGame(0));
         mediumButton.onClick.RemoveListener(() => StartGame(1));
         hardButton.onClick.RemoveListener(() => StartGame(2));
