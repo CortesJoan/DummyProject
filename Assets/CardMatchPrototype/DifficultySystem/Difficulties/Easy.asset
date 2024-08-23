@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   difficultyName: Easy
   gridSize: {x: 2, y: 3}
-  backgroundColor: {r: 0.9150943, g: 0.8613017, b: 0.02158241, a: 0}
+  backgroundColor: {r: 0.9150943, g: 0.8613017, b: 0.02158241, a: 1}
   timeToSeeCards: 5
