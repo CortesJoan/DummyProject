@@ -20,7 +20,7 @@ public class AudioManager : MonoBehaviour
         cardMatchUI.onMatchMade.AddListener(PlayMatchSound);
         cardMatchUI.onMatchFailed.AddListener(PlayMismatchSound);
         cardMatchUI.onTryingMatch.AddListener(PlayTriesToMatchSound);
-        cardMatchUI.onWinEvent.AddListener(PlayTriesToMatchSound);
+        cardMatchUI.onWinEvent.AddListener(WinSound);
     }
 
 
