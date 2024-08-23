@@ -1,42 +1,54 @@
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 
 public static class SaveSystem 
 {
-    // ... (Your binary serialization logic from before, in SaveGame and LoadGame) ...
-
-    // Generic method to save/load any ISavable object 
-    public static void Save<T>(T objectToSave) where T : ISavable
-    { 
-        GameData data = new GameData();
-        objectToSave.SaveData(data); // Let the object save its specific data
-        SaveGame(data); 
-    }
-
-    public static void Load<T>(T objectToLoad) where T : ISavable 
+     public static void Save(List<ISavable> objectsToSave)
     {
-        GameData data = LoadGame();
-        if (data != null)
+        GameData gameData = new GameData();
+        foreach (var obj in objectsToSave)
         {
-            objectToLoad.LoadData(data); // Let the object load its specific data 
+            obj.SaveData(gameData);
         }
-        // ... (Error handling for no save file)
+
+        SaveGame(gameData);
     }
-    public static void SaveGame(GameData data)
+
+    public static void Load(List<ISavable> objectsToLoad)
+    {
+        GameData gameData = LoadGame();
+        if (gameData != null)
+        {
+            foreach (var obj in objectsToLoad)
+            {
+                obj.LoadData(gameData);
+            }
+        }
+
+    }
+    private static void SaveGame(GameData data)
     {
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/game.dat";
 
-        // Use a "using" block to ensure the FileStream is disposed properly 
-        using (FileStream stream = new FileStream(path, FileMode.Create))
+        try
         {
-            formatter.Serialize(stream, data);
+            using (FileStream stream = new FileStream(path, FileMode.Create))
+            {
+                formatter.Serialize(stream, data);
+            }
+        }
+        catch (Exception e)
+        {
+            Debug.LogError("Error saving game data: " + e.Message);
+       
         }
     }
 
-    public static GameData LoadGame()
+    private static GameData LoadGame()
     {
         string path = Application.persistentDataPath + "/game.dat";
 
@@ -52,21 +64,42 @@ public static class SaveSystem
         }
         else
         {
-            Debug.LogWarning("Save file not found in " + path);
-            return null; // or new GameData(); depending on your error handling
+            Debug.LogWarning("Save file not found at: " + path);
+            return null;
         }
     }
-}
+}  
 public interface ISavable
 {
     void SaveData(GameData data);
     void LoadData(GameData data);
 }
-
 [Serializable]
 public class GameData
 {
-    public int score;
-    public int totalMatches;
-    public int turns;
+    private Dictionary<string, object> dataDictionary = new Dictionary<string, object>();
+    public void SetData<T>(string key, T value)
+    {
+        if (dataDictionary.ContainsKey(key))
+        {
+            dataDictionary[key] = value;
+        }
+        else
+        {
+            dataDictionary.Add(key, value);
+        }
+    }
+
+    public T GetData<T>(string key)
+    {
+        if (dataDictionary.ContainsKey(key) && dataDictionary[key] is T)
+        {
+            return (T)dataDictionary[key];
+        }
+        else
+        {
+            Debug.LogWarning("GameData: Data for key '" + key + "' not found or of incorrect type.");
+            return default(T);
+        }
+    }
 }

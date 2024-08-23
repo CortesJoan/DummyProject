@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ComboSystem : MonoBehaviour, ISavable
 {
@@ -12,7 +13,13 @@ public class ComboSystem : MonoBehaviour, ISavable
     [SerializeField] int maxCombo;
     [SerializeField] private TMP_Text scoreText;
     [SerializeField] private TMP_Text comboText;
+
+    public UnityEvent<int> onComboPerformed;
+    public UnityEvent<int> onComboDropped;
     bool isInCombo = false;
+
+    private const string ScoreKey = "CardMatchUIScore";
+    private const string MaxComboKey = "CardMatchUIMaxCombo";
     private int score;
     private void Start()
     {
@@ -41,6 +48,7 @@ public class ComboSystem : MonoBehaviour, ISavable
     void UpdateCombo()
     {
         isInCombo = true;
+        onComboPerformed?.Invoke(currentCombo);
         currentCombo++;
 
         UpdateComboText();
@@ -62,19 +70,21 @@ public class ComboSystem : MonoBehaviour, ISavable
         }
         currentCombo = 0;
         isInCombo = false;
-        UpdateComboText() ;
+        onComboDropped?.Invoke(currentCombo);
+
+        UpdateComboText();
     }
 
     public void SaveData(GameData data)
     {
-        data.maxCombo = maxCombo;
-        data.score = score;
+        data.SetData<int>(ScoreKey, score);
+        data.SetData<int>(MaxComboKey, maxCombo);
     }
 
     public void LoadData(GameData data)
     {
-        score = data.score;
-        maxCombo = data.maxCombo;
+        score = data.GetData<int>(ScoreKey);
+        maxCombo = data.GetData<int>(MaxComboKey);
     }
 
     private void UpdateScoreText()

@@ -32,6 +32,7 @@ public class CardMatchUI : MonoBehaviour, ISavable
     [Header("UI Related")]
 
 
+    [SerializeField] private TMP_Text revealCardsText;
     [SerializeField] private TMP_Text matchesText;
     [SerializeField] private TMP_Text turnsText;
     int matches, turns = 0;
@@ -41,9 +42,10 @@ public class CardMatchUI : MonoBehaviour, ISavable
     public UnityEvent onMatchFailed;
     public UnityEvent onWinEvent;
 
+    bool isRevealingCards = false;
 
-
-
+    private const string MatchesKey = "CardMatchUIMatches";
+    private const string TurnsKey = "CardMatchUITurns";
 
     public void SetupGame(int rows, int columns, Color backgroundColor, int timeUntilHide)
     {
@@ -152,7 +154,7 @@ public class CardMatchUI : MonoBehaviour, ISavable
 
     private void OnCardClicked(Card card)
     {
-        if (cardStates[card] == CardState.Matched || flippedCards.Count >= 2 || cardStates[card] == CardState.FaceUp)
+        if (cardStates[card] == CardState.Matched || flippedCards.Count >= 2 || cardStates[card] == CardState.FaceUp|| isRevealingCards)
         {
             return;
         }
@@ -253,6 +255,8 @@ public class CardMatchUI : MonoBehaviour, ISavable
 
     private IEnumerator RevealCardsThenHide(float delay)
     {
+        revealCardsText.gameObject.SetActive(true);
+        isRevealingCards = true;
         foreach (Card card in cardStates.Keys)
         {
             ShowCardFace(card);
@@ -265,6 +269,9 @@ public class CardMatchUI : MonoBehaviour, ISavable
         {
             HideCardFace(card);
         }
+        isRevealingCards=false;
+
+        revealCardsText.gameObject.SetActive(false);
     }
 
 
@@ -280,16 +287,13 @@ public class CardMatchUI : MonoBehaviour, ISavable
 
     public void SaveData(GameData data)
     {
-  
-        data.totalMatches = matches;
-        data.turns = turns;
+        data.SetData<int>(MatchesKey, matches);
+        data.SetData<int>(TurnsKey, turns);
     }
 
     public void LoadData(GameData data)
     {
-
-      
-        matches = data.totalMatches;
-        turns = data.turns;
-    }
+        matches = data.GetData<int>(MatchesKey);
+        turns = data.GetData<int>(TurnsKey);
+     }
 }
