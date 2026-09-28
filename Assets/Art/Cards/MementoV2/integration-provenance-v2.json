@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "date": "2026-09-08",
+  "status": "partial-integration",
+  "assets": [
+    {
+      "path": "Assets/Art/Cards/MementoV2/sweets-atlas-green-v2.png",
+      "sha256": "2c0bcce8cdcd0350d5ee64382cba8b888a738af5f3cd897c91b1ac01e3fba95e",
+      "width": 1619,
+      "height": 972,
+      "prompt": "Use case: stylized-concept. Asset type: production game card-face atlas for a memory matching game. Image 1 is ONLY a style reference (Kenney Animal Pack Redux); NEVER redraw any animal, logos or text from it. Create a flat, friendly cartoon SWEETS icon sheet using the same simple rounded construction, darker coloured outlines, large simple white eyes with dark pupils, restrained two-tone shading and broad readable shapes as the animal reference. NOT painterly anime, not pixel art, no intricate ornament. EXACTLY FIFTEEN DIFFERENT icons in an evenly spaced FIVE COLUMN by THREE ROW grid. Each cell has identical size, one icon centered in its middle, with at least 15 percent clear margin on every side. No grid lines, no cell borders, no labels, no numbers, no words. Order is binding, reading rows from TOP LEFT: ROW1: a side-view strawberry Swiss roll cake slice with spiral; a pink macaron sandwich; an upright striped candy cane with hook at TOP; a capped strawberry soda bottle; an upright cupcake with wrapper at BOTTOM. ROW2: a pink spiral lollipop with stick DOWN; a ring doughnut with clear hole; a simple dessert fork with prongs pointing UP and handle DOWN; a red wobbling jelly pudding on a small plate; a chocolate bar with six visible chocolate squares. ROW3: one round chocolate-chip cookie; one single star-shaped golden candy; a crescent croissant; an ice cream cone with scoop UP and pointed cone DOWN; a festive TWO-TIER birthday cake with candles on TOP. Every object has its own unmistakable silhouette; do not substitute, repeat or rotate an icon. Palette strawberry pink, cream, golden pastry, chocolate brown, small purple accents. No green anywhere in the objects. BACKGROUND is perfectly flat pure chroma green RGB(0,255,0), including holes and gaps, for technical transparency extraction. No checkerboard, no green lighting, no cast shadows on the background. Objects may have their own dark outlines. Landscape 5:3 canvas, preferably 2560x1536.",
+      "runtime": "AnimalMemory/ArtV2/sweets-atlas-green-v2",
+      "identities": 15,
+      "key": "green",
+      "review": "Actual Unity runtime sprites rendered over jade; 15 distinct upright faces, uniform335-square canvases. Collection and gameplay use the same provider."
+    },
+    {
+      "path": "Assets/Art/Characters/MementoV2/Rei/rei-poses-green-v2.png",
+      "sha256": "8744d2753fefa0d19249ac524e9f327a5a159912598e88b0f9565df356a21b72",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Use case: identity-preserve. Asset type: SIX-POSE production sprite atlas for Rei, the final master of a friendly anime memory-card battle game. Reference image is the canonical character design; preserve her exact recognizable silver bob and ahoge, purple eyes, navy beret and long navy/gold coat, white blouse and skirt, dark tights, boots, astrolabe staff and compact moe proportions. Improve construction consistency and intentional clean silhouettes, not costume complexity. Create EXACTLY SIX full-body poses of this SAME character in a perfectly regular THREE COLUMNS by TWO ROWS sheet, with large clean gutters and each pose wholly inside its own equal rectangle. SAME body/head scale, costume details and warm neutral lighting in all six. Keep every foot, hand and staff tip inside its cell, about10%cell margin. ORDER reading TOP LEFT: (1) NEUTRAL: calm confident small smile, staff upright, open welcoming hand; (2) THINKING: assessing the opponent with one hand by chin, staff held close, thoughtful brow; (3) ABILITY: decisive outstretched staff and commanding free hand, compact blue crystal glow attached to staff only. BOTTOM LEFT: (4) DAMAGE REACTION: small startled recoil with shoulders back and eyes surprised, balanced feet, no injury; (5) DEFEATED: staff lowered, slumped shoulders and downward gaze, still standing and ready to speak, no tears or wounds; (6) VICTORY: composed pleased smile with eyes open, staff upright and free hand proudly at chest. Expressions/poses must read distinctly at small mobile size. Plain technical background PURE CHROMA GREEN RGB(0,255,0) across all gutters, holes and exterior. Green is absent from character design. No checkerboard, no shadows on background, no green reflections, no gradients in background. No text, labels, numbers, panels or decorative UI. Square high-resolution atlas preferably3072x3072. Six identical-sized cells, not a collage with random spacing.",
+      "key": "green",
+      "poses": [
+        "neutral",
+        "thinking",
+        "ability",
+        "damage",
+        "defeated",
+        "victory"
+      ],
+      "review": "Safe gutter extraction verified in Unity. Not yet connected to character presentation."
+    }
+  ],
+  "transparency": "Controlled chroma RGBA generated in memory, not a permanent alpha PNG. Never remove by brightness. Source art preserved.",
+  "protected": "Original animal pack and catalog unchanged.",
+  "verification": {
+    "focusedTests": "17/17 passed; job f2acc16b8af94e99918f2d4d2d42e0de",
+    "editMode": "432 completed, succeeded, no failures reported; job4024eecef0b34c0496afbde88121d168 (aggregate result unavailable)",
+    "builds": "None"
+  }
+}

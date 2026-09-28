@@ -1,0 +1,717 @@
+{
+ "_doc": "Guion de doblaje japones v4 — historia reescrita «La Liga de las Seis Zonas» + postgame «La Puerta Interior». 89 lineas de guia; Custodias y Creador sin voz hasta tener identidad propia. Los subtitulos en espanol salen del texto del juego; el catalogo exige coincidencia exacta guide+es, y las lineas nuevas suenan en silencio hasta grabar. ids story_NN_MM: 00-16 campana, 17 apertura, 18-23 intros postgame, 24 victorias (MM=encuentro*10+beat), 25 derrotas, 26 checkpoint Rei, 27 epilogo, 90 reintentos.",
+ "lines": [
+  {
+   "guide": "rei",
+   "id": "story_00_03",
+   "es": "Un hogar no se hereda: se sostiene. Y tú… aún no sabes cómo se sostiene.",
+   "ja": "家とは、受け継ぐものではなく、支えるものです。そしてあなたは…まだ、その支え方を知りません。",
+   "direction": "Restrained and formal; even pace, let the ellipsis carry the verdict on 'tú'.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "rei",
+   "id": "story_00_09",
+   "es": "Zona Cero queda bajo sello. Mañana tu gente despertará igual… pero este tablero ya responde a otra mano.",
+   "ja": "ゼロゾーンを封印します。明日、あなたの人々は変わらぬまま目覚めるでしょう…けれど、この盤はもう、別の手に応えています。",
+   "direction": "Cold administrative calm at an even tempo; small pause at the ellipsis, no rise in volume.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "aki",
+   "id": "story_01_01",
+   "es": "Una sin zona sólo trae problemas: no sostiene rutas ni responde por un núcleo. …Debería darte la espalda y volver al bosque.",
+   "ja": "ゾーンのない人は、問題ばかり運んでくるの。ルートも支えられないし、核の責任も取れない。…あなたに背を向けて、森へ帰るべきなのに。",
+   "direction": "Wavering protector; the trailing ellipsis is self-reproach, not rejection.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "aki",
+   "id": "story_01_03",
+   "es": "Con licencia de la Liga, sí. El sello aparta tu tablero, no a tu gente: se vive, se comercia, se reintenta. Lo que pierdes… es decidir sobre tu propio núcleo.",
+   "ja": "ええ、リーグの許可のもとで、よ。封印が遠ざけるのはあなたのボードで、あなたの暮らしではないの。暮らすことも、取引することも、やり直すこともできる。失うのは…自分の核を、自分で決めることだけ。",
+   "direction": "Patient explanation, kind but precise; brief pause before naming what is lost.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "aki",
+   "id": "story_01_04",
+   "es": "No pienso sellar mi emblema junto al de una desconocida. Un duelo: si lees mi bosque mejor de lo que ella leyó tu mesa, te prestaré más que lástima.",
+   "ja": "見ず知らずの人のエンブレムの隣で、私のを封印する気にはなれないの。決闘よ。彼女があなたのテーブルを読んだよりもうまく、あなたが私の森を読めたら、哀れみ以上のものを貸してあげる。",
+   "direction": "Proud but fair; deliver the duel call warm, not hostile, and land the closing promise.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "aki",
+   "id": "story_02_02",
+   "es": "Yo confío despacio: observo, corrijo y me quedo cerca. Aún no confío en ti, {PLAYER}… pero quiero ver tu revancha. Iré.",
+   "ja": "私の信頼はゆっくり育つの。見て、直して、そばにいる。まだあなたを信じきれてはいない、{PLAYER}…でも、あなたの再戦が見たい。行くよ。",
+   "direction": "Honest and unhurried; say {PLAYER} gently, close with quiet resolve.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "aki",
+   "id": "story_02_04",
+   "es": "Mi Deshacer te devuelve la última jugada, acertada o no. Segundas oportunidades… procura no necesitarlas todas.",
+   "ja": "私の巻き戻しは、最後の一手をそのまま返すよ。当たりでも、外れでもね。二度目のチャンス…ぜんぶ使わずにすむように、がんばって。",
+   "direction": "Friendly tutorial warmth; light tease on the closing advice, no giggle.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "mika",
+   "id": "story_03_03",
+   "es": "Una alianza aumenta los vectores de fallo: más gente, más errores posibles. Lo tengo medido. …Todo lo tengo medido.",
+   "ja": "同盟は失敗のベクトルを増やす。人数が増えれば、起こりうる誤りも増える。私は計算ずみ。…全部、計算ずみなの。",
+   "direction": "Flat analytical delivery; let the repetition slip one notch quieter, human.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "mika",
+   "id": "story_03_04",
+   "es": "¿Y si vuestra coordinación falla con mi taller en medio? Un fallo compartido también cae sobre mi techo.",
+   "ja": "あなたたちの連携が、私の工房を巻き込んで失敗したら？共有された失敗は、私の屋根の上にも落ちてくる。",
+   "direction": "Sharp hypothetical question, then a dry matter-of-fact close.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "mika",
+   "id": "story_04_00",
+   "es": "No mediré discursos: mediré coordinación bajo carga. Cuando el escudo ceda, veré quién decide… y quién sólo obedece.",
+   "ja": "演説は測らない。測るのは、負荷下の連携よ。シールドが崩れた時、誰が決断して…誰がただ従うだけか。見せてもらうわ。",
+   "direction": "Clinical and level; weigh 'decides' and 'obeys' equally, without scorn.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "mika",
+   "id": "story_04_03",
+   "es": "Matriz cargada. Que hable el tablero.",
+   "ja": "マトリクス、充填完了。あとは盤に語らせる。",
+   "direction": "Brisk two-beat call; clipped consonants, confident stop.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "mika",
+   "id": "story_05_01",
+   "es": "Ya dirigí una alianza. Nadie me traicionó: la controlé tanto que mis compañeras dejaron de decidir. Cuando dudé yo, dudó todo… y cayó todo. Esa cifra no se repite.",
+   "ja": "私も同盟を率いたことがある。誰も私を裏切らなかった。制御しすぎて、仲間が自分で決めることをやめたの。私が迷えば、全部が迷って…全部が落ちた。あの数値は、二度と繰り返さない。",
+   "direction": "Controlled confession; stay flat until everything 'falls', then clamp down hard.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "mika",
+   "id": "story_05_04",
+   "es": "Mi Escudo de Combo conservará tu racha cuando un fallo fuera a romperla. Conservar rachas ya me costó caro una vez: úsala bien.",
+   "ja": "私のコンボシールドは、ミスでコンボが切れそうになった時、あなたの流れを守るわ。流れを守ることには、一度だけ高い代償がついた。賢く使って。",
+   "direction": "Clear skill briefing; darken slightly on the past cost, end on dry trust.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_06_03",
+   "es": "Las estrellas ya trazan las rutas; leerlas es todo mi oficio. …Lo que no dicen es qué hacer cuando dos rutas se contradicen.",
+   "ja": "星はもう、ルートを描いているわ。それを読むのが、私の仕事のすべて。…ただ、ふたつのルートが矛盾した時どうすればいいか、星は教えてくれないの。",
+   "direction": "Serene and flowing; hold the ellipsis, then soften like a private confession.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_06_04",
+   "es": "Ese emblema pertenece al Archivo Cero: la sede del torneo. Lo he visto flotar donde no debería haber juego. …Una sede no debería sentarse a jugar.",
+   "ja": "あのエンブレムは、ゼロ・アーカイブのもの。大会の本陣の紋よ。遊びなど存在しないはずの場所に、浮いているのを見たわ。…本陣が、プレイの席に着くだなんて。",
+   "direction": "Elegant unease; slow slightly on the final anomaly, keep volume low.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "mika",
+   "id": "story_06_06",
+   "es": "Constelaciones no sostienen defensas… aunque esa coordenada que marcó anoche encaja con mi matriz. No lo tomen como elogio.",
+   "ja": "星座が防御を支えることはないわ…ただ、昨夜示されたあの座標は、私のマトリクスと一致した。褒め言葉として受け取らないで。",
+   "direction": "Grudging precision; quick tempo, minimal pause, deadpan final line.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_07_00",
+   "es": "Mi Visión Estelar verá cada pareja que escondas antes que tú. Si tu juego puede más que mi cielo… te creeré libre.",
+   "ja": "私のスターヴィジョンは、あなたが隠すペアを、すべてあなたより先に見るわ。もしあなたのプレイが私の空より強かったら…あなたは自由だと、信じてあげる。",
+   "direction": "Calm challenge with wonder underneath; lift gently on 'my sky'.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_07_03",
+   "es": "Constelación a la vista. Juega… y que el cielo se equivoque conmigo.",
+   "ja": "星座が見えたわ。プレイして…そして、空がこの私を見誤りますように。",
+   "direction": "Duel-start invitation; hushed reverence on the final wish.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_08_01",
+   "es": "Nunca me habían vencido donde ya lo había visto todo. …Me gusta. Me uno a vuestra alianza: alguien debe mirar lo que el mapa esconde.",
+   "ja": "すべてを見通せたはずの場所で、負けたことは一度もなかった。…悪くないわ。あなたたちの同盟に加わる。地図が隠しているものを見る人が、必要だから。",
+   "direction": "Restrained delight; join as a quiet vow, not applause.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_08_03",
+   "es": "Mi Visión Estelar te mostrará una pareja real aún oculta. Ver no obliga a decidir… decidir te lo dejo a ti.",
+   "ja": "私のスターヴィジョンは、まだ隠れている本物のペアをひとつ、あなたに見せるわ。見ることは決めることではないの…決めるのは、あなたに任せる。",
+   "direction": "Gentle skill intro; space the words for 'see' and 'decide' apart cleanly.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "mika",
+   "id": "story_08_06",
+   "es": "Tu ruta oriental seguía abierta esta mañana. Lo comprobé dos veces… no lo tomes como disculpa.",
+   "ja": "東側のルートは、今朝も開いていた。二度、確認済み。…謝罪だと思わないで。",
+   "direction": "Terse accountability; the ellipsis is pride, keep it dry.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_08_07",
+   "es": "Lo tomo como una coordenada, Mika. …Y una coordenada a tiempo también es cariño.",
+   "ja": "そう受け取っておくわ、ミカ。座標としてね。…そして、間に合った座標も、また優しさなのよ。",
+   "direction": "Soft smile in the tone; warm the exchange at the sisterly close.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "hana",
+   "id": "story_09_03",
+   "es": "Tengo que proteger las rutas. …Aunque nadie me lo pida, aunque nadie lo note, aunque el jardín entero dé la espalda.",
+   "ja": "ルートを守らなければならないの。…誰にも頼まれなくても、誰にも気づかれなくても、庭じゅうに背を向けられても。",
+   "direction": "Soft voice with an iron core; let each 'even if' land firmer than the last.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "hana",
+   "id": "story_09_04",
+   "es": "La placa es anterior a mis caminos. Quien escribió la regla no dejó nombre… y aun así todas la obedecemos. Descansa ese misterio: hoy importa el jardín.",
+   "ja": "あの標識は、私の道よりも古いの。規則を書いた人は、名前を残さなかった…それでも、みんなそれに従っている。その謎は、ひとまず休ませておきましょう。今日、大切なのは庭だから。",
+   "direction": "Reverent hush on the nameless rule, then a warm redirect to the garden.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "hana",
+   "id": "story_10_00",
+   "es": "El jardín sólo camina con quien respeta su compás. Desafío: sostened mi tempo sin pisar una sola raíz del tablero.",
+   "ja": "庭は、その拍子を敬う人とだけ、共に歩むの。挑戦よ。ボードの根をひとつも踏まずに、私のテンポを保ち続けて。",
+   "direction": "Ritual invitation; brighten cleanly on the word for 'challenge'.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "hana",
+   "id": "story_10_03",
+   "es": "Raíces firmes, {PLAYER}. El jardín está mirando.",
+   "ja": "しっかり根を張って、{PLAYER}。庭が見ているわよ。",
+   "direction": "Encouraging near-whisper; short, planted final beat.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "hana",
+   "id": "story_11_01",
+   "es": "Otra vez habría dicho que el jardín me obliga. Hoy digo la verdad: quiero ver el final del torneo, y quiero que el jardín llegue entero.",
+   "ja": "昔の私なら、庭に強いられたと言ったでしょう。今日は、本当のことを言うの。大会の結末を、見たい。そして、庭が無傷のまま最後までたどり着くことを、望んでいる。",
+   "direction": "Quiet honesty blooming; a steady rise across the twin wishes.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "hana",
+   "id": "story_11_04",
+   "es": "Mi Floración completará una pareja oculta y la hará florecer en pleno duelo: daño y vida en un mismo gesto.",
+   "ja": "私の開花は、隠れたペアを完成させて、決闘のまっただ中で咲かせるの。ダメージも、いのちも、ひとつのしぐさで。",
+   "direction": "Serene skill reveal; bloom on the paired final clause.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "hana",
+   "id": "story_11_07",
+   "es": "Antes de cruzar, debéis saberlo: Momo, la guardiana del atelier… es mi hermana menor.",
+   "ja": "ここから先へ進む前に、知っておいてほしいの。モモ、アトリエの守り手…私の、妹です。",
+   "direction": "Gentle disclosure with a protective undertone; pause fully before the reveal.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "momo",
+   "id": "story_12_04",
+   "es": "¡Puedo ganar yo sola! ¿Emblemas? ¿Alianzas? Yo con mi atelier y mis turnos… ¡eso hago, eso hago!",
+   "ja": "モモ、ひとりでも勝てるもん！エンブレム？同盟？モモはアトリエと、自分のターンで…やるんだよ、やるんだよっ！",
+   "direction": "High bouncy energy; stomp the doubled refrain at the end.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "momo",
+   "id": "story_12_05",
+   "es": "La del emblema sin zona me ofreció un asiento de espectadora para la final. Le dije que el espectáculo lo cocino yo… y lo sirvo ganando.",
+   "ja": "ゾーンのないエンブレムの人がね、決勝の観客席をくれたの。モモは言ってやった。ショーはモモが料理するって…そして、勝って出すんだって！",
+   "direction": "Cheeky retelling; smirk through 'I cook the show', finish proud.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "hana",
+   "id": "story_12_07",
+   "es": "Momo. …Tus vitrinas siguen impecables.",
+   "ja": "モモ。…あなたのショーケース、いつもどおり完璧ね。",
+   "direction": "Sisterly recognition; dry warmth, a small smile on 'impeccable'.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "momo",
+   "id": "story_12_08",
+   "es": "Y tus flores siguen llegando sin avisar. …Cuánto tiempo, hermana.",
+   "ja": "ハナのお花は、今も前触れなく届いてくるんだね。…久しぶり、お姉ちゃん。",
+   "direction": "Energy drops to small and honest; a true reunion beat, no bounce.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "momo",
+   "id": "story_13_00",
+   "es": "¡La pista de la puerta sellada se gana en mi mesa: batid mi Encore! Yo sola hasta el final… ¡y con público!",
+   "ja": "閉ざされた扉の手がかりは、モモのテーブルで勝ち取るの！さあ、モモのアンコールを倒してみて！最後までひとりで…しかも、お客さんつき！",
+   "direction": "Show-opener shout; crisp crowd-facing rhythm, land the final flourish.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "momo",
+   "id": "story_13_03",
+   "es": "¡Atelier a toda potencia! Receta de la casa: dulce, directa… e imposible de repetir.",
+   "ja": "アトリエ、全力稼働！お店自慢のレシピは、あまくて、まっすぐで…二度と真似できないやつ！",
+   "direction": "Proud chef call; punch the three adjectives in clean rhythm.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "momo",
+   "id": "story_14_01",
+   "es": "Me uno… con condiciones: mis turnos los decido yo. Y cobro por adelantado: la invasora es Rei, la Maestra que vive dentro del Archivo Cero.",
+   "ja": "モモも入るよ…条件つきで！モモのターンは、モモが決めるの。それと、前払いももらうからね。侵入者はレイ。ゼロ・アーカイブの中に住んでいるマエストラだよ！",
+   "direction": "Bouncy negotiation; snap to crisp clarity for the Rei intel drop.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "momo",
+   "id": "story_14_04",
+   "es": "Mi Encore: tu próxima jugada no gasta turno ni cede el mando. Extra de función… cortesía de la casa.",
+   "ja": "モモのアンコール！次の一手は、ターンも使わないし、手番も渡さないの。おまけのショータイム…お店からのサービスだよ！",
+   "direction": "Skill pitch with shopkeeper flair; wink on the closing courtesy.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "momo",
+   "id": "story_14_07",
+   "es": "Iré… si nadie me saca del tablero para protegerme. La función es mía hasta el final.",
+   "ja": "行くよ…心配だからって、ボードから下ろさないでね。ショーは最後まで、モモのものなの。",
+   "direction": "One flicker of vulnerability, then full stage confidence.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "hana",
+   "id": "story_14_08",
+   "es": "Nadie te quita nada, Momo. Hoy cuido al público… y dejo el escenario a las artistas.",
+   "ja": "何も奪われないわ、モモ。今日は私が観客を見守る…舞台は、出演者たちに譲るの。",
+   "direction": "Big-sister steadiness; a generous final handoff, no sadness.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "rei",
+   "id": "story_15_01",
+   "es": "Compruebo que vuestra alianza sea estable antes de abrir el Deseo. …Comprobar. Es lo único que me dejaron mi equipo y mi torneo.",
+   "ja": "願いを開く前に、あなたたちの同盟が安定しているかを確認します。…確認。私のチームと、私の大会が、私に残してくれたのは、それだけですから。",
+   "direction": "Clipped formal duty; repeat 'confirm' hollow, quieter than the first.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "rei",
+   "id": "story_15_02",
+   "es": "Fui yo quien tocó tu campana, {PLAYER}. Te arrebaté Zona Cero en un minuto para verte elegir: rendirte… o construir. Elegiste construir.",
+   "ja": "あなたの鐘を鳴らしたのは、私です、{PLAYER}。あなたが選ぶところを見るために、一分でゼロゾーンを奪った。降参するか…築き上げるか。あなたは、築く方を選んだ。",
+   "direction": "Confession without apology; steady clockwork pacing, weight on the final choice.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "rei",
+   "id": "story_15_03",
+   "es": "Mi equipo llegó aquí con el Deseo a un turno de distancia y se traicionó en la última carta. Sellé la sede… y me quedé a comprobar si todas eran iguales.",
+   "ja": "私のチームはここまで、願いひとターン手前まで来て、最後の一枚でお互いを裏切った。私は本陣を封印した…そして、全員が同じなのかを確かめるために、残ったのです。",
+   "direction": "Grief pressed flat under formality; the ellipsis holds a long night, do not dramatize.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "rei",
+   "id": "story_15_06",
+   "es": "Yo. La redacté para que el Deseo sólo pudiera ganarse como mi equipo nunca aceptó: poniéndolo en común. Seis zonas, una decisión… o nada.",
+   "ja": "私です。願いは、私のチームが決して受け入れなかった方法でしか勝てないように、私は条文を書きました。分かち合うことでしか。六つのゾーン、ひとつの決断…さもなくば、無。",
+   "direction": "The answer to 'who wrote the rule'; austere, every term enunciated, final beat cold.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "rei",
+   "id": "story_15_07",
+   "es": "El examen es simple: seis zonas, un tablero, una sola decisión. Si dudan juntas… pierden juntas. Comiencen.",
+   "ja": "試験は単純です。六つのゾーン、ひとつの盤、ただひとつの決断。共に迷えば…共に負けます。では、始めてください。",
+   "direction": "Examiner's decree; imperial calm, then a clean cut on 'begin'.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "mika",
+   "id": "story_15_10",
+   "es": "Apertura calculada: quien encadena marca el ritmo y yo aseguro la racha. Sin órdenes… por fin.",
+   "ja": "計算ずみのオープニングよ。連鎖する側がテンポを作って、私が流れを守る。命令なしで…ようやくね。",
+   "direction": "Tight satisfaction; the first genuinely easy breath of the campaign.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_15_11",
+   "es": "Y si el cálculo falla, miraré las estrellas. Elegir… ya sabes elegir tú.",
+   "ja": "計算が外れたら、星を見ます。選ぶことは……あなたなら、もう知っているはずです。",
+   "direction": "Serene, unhurried; small thoughtful pause at the ellipsis, last phrase offered like a gift.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "rei",
+   "id": "story_16_01",
+   "es": "Estable. …Lo comprobé pagando el único precio que me quedaba: perder. La regla está cumplida; el Deseo os pertenece.",
+   "ja": "安定しています。……残された唯一の代価を払って、確かめました。敗北という、代価を。規則は果たされました。願いは、あなたたちのものです。",
+   "direction": "Contained, formal; a beat of silence after 'Estable', report the price without self-pity.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "rei",
+   "id": "story_16_03",
+   "es": "Y propongo enmendar la regla que escribí: el Deseo no premiará a una zona, sino a seis que lo firmen juntas. Yo no firmo… la sede sólo pone el tablero.",
+   "ja": "そして、私の書いた規則を改めることを提案します。願いが報いるのは、ひとつのゾーンではなく、共に署名する六つのゾーンであるように。私は署名しません……主催は、盤を並べるだけです。",
+   "direction": "Measured proposal, one clause per breath; the ellipsis is a controlled pause, not hesitation.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "aki",
+   "id": "story_16_04",
+   "es": "Confiar despacio, firmar despacio. …El Bosque Vivo firma.",
+   "ja": "ゆっくり信じて、ゆっくり署名する。……生きた森として、署名するね。",
+   "direction": "Warm and deliberate; slow down on both 'slowly' words, gentle firmness on the final verb.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "mika",
+   "id": "story_16_05",
+   "es": "Seis firmas y ningún trono: lo suscribo. Y conste que lo predije… a la segunda carta.",
+   "ja": "署名は六つ、玉座はゼロ。同意する。そして記録しておいて。予測済みだった……二枚目のカードの時点でね。",
+   "direction": "Crisp and dry; tiny satisfied beat at the ellipsis, understated pride, no gloating.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_16_06",
+   "es": "El cielo no previó esto. …Me alegra haber estado equivocada.",
+   "ja": "空は、これを予見していませんでした。……私が誤っていたことを、嬉しく思います。",
+   "direction": "Quiet wonder; long soft ellipsis opening into a genuine smile in the voice.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "hana",
+   "id": "story_16_07",
+   "es": "El jardín caminará con vosotras. Y esta vez… alguien me lo pidió.",
+   "ja": "この庭は、あなたたちと歩んでいきます。そして今度は……誰かに、望んでもらえたのです。",
+   "direction": "Gentle strength; slight tremble of gratitude at the ellipsis, then settle firm.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "momo",
+   "id": "story_16_08",
+   "es": "¡Firmo con glaseado! Y que conste: mi sitio en la final me lo gané a pulso.",
+   "ja": "モモ、アイシングでサインしちゃう！ 言っておくけどね、決勝の席はモモが自分の力で勝ち取ったんだから！",
+   "direction": "Full sparkle energy; proud chest-out delivery on the last claim, no pause between sentences.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "aki",
+   "id": "story_90_00",
+   "es": "El bosque guardó tu error y te lo devuelve corregido: deshaz… y vuelve a andar.",
+   "ja": "森は、あなたの間違いを預かって、直して返してくれるよ。巻き戻して……もう一度、歩き出そう。",
+   "direction": "Encouraging reset; tender on the first half, the ellipsis holds, then lift forward.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "mika",
+   "id": "story_90_01",
+   "es": "Derrota registrada. Ahora tienes el dato que faltaba: sigue midiendo.",
+   "ja": "敗北を記録。これで、欠けていたデータがあなたの手に。測定は続けて。",
+   "direction": "Clinical but encouraging; treat defeat as data, brisk tempo, no sympathy voice.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_90_02",
+   "es": "Las mismas estrellas, otro cielo: mira de nuevo antes de mover.",
+   "ja": "星は同じでも、空は変わっています。動く前に、もう一度だけ見上げて。",
+   "direction": "Soft guidance, unhurried; slight lift on 'once more', like advice between duels.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "hana",
+   "id": "story_90_03",
+   "es": "El tallo que se dobla sabe por dónde subir: ajusta el ritmo y florece.",
+   "ja": "しなる茎は、伸びる方向を知っています。リズムを整えて、花を咲かせましょう。",
+   "direction": "Nurturing and steady; smooth legato phrasing, let the last verb bloom gently.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "momo",
+   "id": "story_90_04",
+   "es": "¡Turno extra! La receta fallida era ensayo… ¡que empiece la función buena!",
+   "ja": "エクストラターン！ できそこないは、リハーサルだったの……さあ、本番のはじまりだよ！",
+   "direction": "Bouncy reset energy; rally from pout to sparkle across the ellipsis.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "rei",
+   "id": "story_90_05",
+   "es": "Volvisteis a elegir… y volvisteis juntas. Mostradme que también sabéis corregir juntas.",
+   "ja": "あなたたちは、再び選びました……そして再び、共に戻ってきた。ならば共に正すことも、見せてください。",
+   "direction": "Restrained warmth beneath the formality; quiet relief at the ellipsis, no smile in the voice yet.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "rei",
+   "id": "story_17_01",
+   "es": "Más allá vive el arquitecto del Archivo: el Creador. Guarda las técnicas de todas las campeonas anteriores... incluida la mía, y leyes que ninguna firmó.",
+   "ja": "この先にいるのは、アーカイブの設計者――創造主です。歴代チャンピオンの技を、すべて保管している……私のものも含めて。そして、誰ひとり署名していない法を。",
+   "direction": "Low, even briefing; weight on 'incluida la mía' as cold fact, not grievance.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "mika",
+   "id": "story_18_02",
+   "es": "Un duelo contra mi propio espejo. Perfecto. Traigo un dato que no está en tu archivo: yo ya no juego sola.",
+   "ja": "自分の鏡像とのデュエル。上等。そちらの記録にないデータを、ひとつ持ってきた。私はもう、ひとりではプレイしない。",
+   "direction": "Confident analysis; small satisfied beat on 'Perfecto', then the reveal flat and firm.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "mika",
+   "id": "story_18_05",
+   "es": "Rechazado: el error no desaparece, se comparte y se corrige. {PLAYER}, préstame el pulso. Hoy decido yo, con los datos que tenga.",
+   "ja": "却下。エラーは消えてなくならない。共有して、正すもの。{PLAYER}、手を貸して。今日は私が決める。手元にあるデータでね。",
+   "direction": "Sharp verdict then steady resolve; say the player name cleanly, request without pleading.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "mika",
+   "id": "story_24_01",
+   "es": "Tu modelo tenía una variable sin registrar: una compañera a quien pedirle la carta siguiente.",
+   "ja": "あなたのモデルには、未登録の変数がひとつあった。次のカードを頼める仲間、という変数が。",
+   "direction": "Cool analytical triumph; read the variable like a proof, tiny emphasis on '仲間'.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "mika",
+   "id": "story_24_02",
+   "es": "Para el acta oficial: gané con un modelo mejor. Entre nos... gracias por el pulso, {PLAYER}.",
+   "ja": "公式記録にはこう残す。『より優れたモデルで勝利』。……ここだけの話ね。手を貸してくれて、ありがとう、{PLAYER}。",
+   "direction": "Official crispness first, then drop to a warm hushed aside with a small smile.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "mika",
+   "id": "story_25_01",
+   "es": "Cero intentos también es un margen inaceptable. Reviso la partida, ajusto dos variables y vuelvo.",
+   "ja": "ゼロ回も、許容できないマージン。対局を検証して、変数を二つ調整して、また来る。",
+   "direction": "No self-blame, pure process; steady metronome pacing across the three actions.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_19_02",
+   "es": "Un cielo donde nada se mueve con sentido... No, gracias. Yo no aprendí a leer las estrellas para renunciar a elegir.",
+   "ja": "意味のある動きひとつない空……お断りします。星を読むことを学んだのは、選ぶことを諦めるためでは、ないのですから。",
+   "direction": "Poetic calm sharpening into polite refusal; stress 'elegir' in the last clause.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_19_05",
+   "es": "Las certezas prestadas no son certezas. {PLAYER}, el pulso, por favor: esta noche elijo yo, dentro de la niebla.",
+   "ja": "借りてきた確信は、確信ではありません。{PLAYER}、どうか手を貸してください。今夜選ぶのは私です――この霧の中でも。",
+   "direction": "Serene request, then quiet steel; the final phrase steady as an oath.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_24_11",
+   "es": "Me lo dio. Elegí de todos modos: a eso le llamo voluntad. Tu azar solo la ponía a prueba.",
+   "ja": "私は、もらいました。それでも選んだのです。それを意志と呼びます。あなたの偶然は、ただその意志を試していただけ。",
+   "direction": "Quiet triumph; unhurried declarations, each sentence a star settling into place.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_24_12",
+   "es": "Y registra esto, por favor: la certeza no se encuentra en el cielo. Se elige, a mano, aquí abajo.",
+   "ja": "そして、これだけは記録してください。確信は、空から見つかるものではありません。選ぶものです。手ずから、この地の上で。",
+   "direction": "Formal request turning manifesto; slow down for the final three words.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_25_11",
+   "es": "Descansaré cuando haya elegido. La niebla solo me dio tiempo: volvamos a mirar juntas.",
+   "ja": "選び終えたら、休みます。霧がくれたのは、時間だけでした。もう一度、一緒に見ましょう。",
+   "direction": "Tired but composed; invite softly on the last line, sisterhood over defeat.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "hana",
+   "id": "story_20_02",
+   "es": "Es hermoso... y está quieto. Un jardín que ya no crece no protege a nadie: solo se conserva a sí mismo.",
+   "ja": "美しい……けれど、止まっています。もう育たない庭は、誰も守れません。自分自身を、保つだけなのです。",
+   "direction": "Hushed admiration turning to quiet grief; the diagnosis gentle, never bitter.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "hana",
+   "id": "story_20_05",
+   "es": "Cuidar no es decidir por otra flor. {PLAYER}, el pulso, por favor: voy a abrir esta cúpula.",
+   "ja": "育てることは、別の花の代わりに決めることではありません。{PLAYER}、どうか手を貸してください。このドームを、開けますから。",
+   "direction": "Soft voice, unshakable intent; polite request, but the last verb is final.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "hana",
+   "id": "story_24_21",
+   "es": "Proteger es estar ahí cuando lleguen. El cristal solo postergaba la primera helada.",
+   "ja": "守るとは、その時が来たら、そばにいることです。ガラスは、はじめての霜を、ただ遅らせていただけ。",
+   "direction": "Firm botanical truth; even pacing, let 'helada' land cold and clear.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "hana",
+   "id": "story_24_22",
+   "es": "(Yo también quise guardar a alguien bajo cristal, ¿sabes?... Perdón. Crece cuanto quieras.)",
+   "ja": "(私もね、誰かをガラスの下に守りたかったの。分かるでしょう？……ごめんなさい。だから、好きなだけ育って。)",
+   "direction": "Intimate half-volume aside; smile fading into apology, then release.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "hana",
+   "id": "story_25_21",
+   "es": "Ningún jardín florece a la primera. Riego, aprendo el suelo y vuelvo: la cúpula no es eterna.",
+   "ja": "初めから咲く庭は、ありません。水をあげて、土を覚えて、また来ます。このドームも、永遠ではないのです。",
+   "direction": "Patient recovery plan; gentle triplet rhythm, quiet certainty at the end.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "momo",
+   "id": "story_21_02",
+   "es": "Momo... Momo sí soñó eso. Pero Momo también soñó con alguien a quien enseñarle la copa.",
+   "ja": "モモ……その夢なら、モモも見たよ。でもモモは、もうひとつ夢を見たの。カップを見せてあげたい、誰かの夢。",
+   "direction": "Small wobble then honest warmth; third-person Momo throughout, softer on the second dream.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "momo",
+   "id": "story_21_05",
+   "es": "¡Momo rechaza! ¡Momo quiere ganar CON todos! {PLAYER}, préstame el pulso: ¡función especial, con público!",
+   "ja": "モモ、お断り！ モモはね、みんな“と一緒に”勝ちたいの！ {PLAYER}、手を貸して！ スペシャル公演、お客さんつきで、はじめちゃうよ！",
+   "direction": "Explosive refusal into rallying cry; stress 'CON todos', big final flourish.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "momo",
+   "id": "story_24_31",
+   "es": "¡Me tembló y la pedí! Pedir ayuda es la única jugada que no tienes archivada, Custodia.",
+   "ja": "手、震えちゃったけど、お願いしちゃった！ 助けを求めるのは、カストディアの記録にない、唯一の一手だよ！",
+   "direction": "Triumphant confession; laugh off the trembling, then point the accusation playfully.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "momo",
+   "id": "story_24_32",
+   "es": "Ganar sola sabe a media victoria. Esto sabe entero... ¿Encore? ¡Encore con todas!",
+   "ja": "ひとりで勝つのって、半分だけの勝ちの味。今のは、まるごとの味……アンコール？ アンコール、みんな“と”ね！",
+   "direction": "Taste-the-victory delight; giggle-adjacent warmth, then an all-out cheer cascade.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "momo",
+   "id": "story_25_31",
+   "es": "¡Momo no perdió: ensayó! Y los ensayos van con equipo. ¡Preparen bambalinas: segunda función!",
+   "ja": "モモは負けてないよ、リハーサルだったの！ それにリハーサルは、みんなとやるもの。舞台袖、よーい！ 第二回公演、はじまるよ！",
+   "direction": "Instant bounce-back; director voice on the cue, arms-open celebration close.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_23_03",
+   "es": "Anunciar el ciclo es tu error: leer patrones es nuestro oficio. Cinco técnicas, sin repetición: suficiente.",
+   "ja": "周期を明かしたことが、あなたの誤算です。パターンを読むのは、私たちの生業。技は五つ、重複なし――十分です。",
+   "direction": "Cool checkmate tone; clipped list rhythm on 'Cinco técnicas', tiny satisfaction at the close.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "rei",
+   "id": "story_26_01",
+   "es": "Fui campeona antes que todas ustedes. Esta puerta me conoce y yo la conozco. Entro sola: es mi cuenta pendiente.",
+   "ja": "私は、あなたたち全員より先にチャンピオンでした。この扉は私を知っている。私も、この扉を知っています。ひとりで入ります。決着すべき、私の帳があるのです。",
+   "direction": "Flat seniority, no bravado; the last sentence closes like a door on argument.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "rei",
+   "id": "story_26_04",
+   "es": "Empieza, entonces. Quiero comprobar cuánto he cambiado desde que me archivaste.",
+   "ja": "では、始めましょう。あなたが私をアーカイブして以来、私がどれほど変わったか。確かめたいのです。",
+   "direction": "Ceremonial invite; say 'archivaste' evenly, a scar shown without flinching.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "rei",
+   "id": "story_26_09",
+   "es": "...No puedo ganar sola.",
+   "ja": "……ひとりでは、勝てない。",
+   "direction": "Barely voiced admission; long silence before it, no tremble, only weight.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "rei",
+   "id": "story_26_10",
+   "es": "Archiva esto, Creador, con fecha y todo: la campeona Rei acaba de perder en voz alta y por decisión propia.",
+   "ja": "記録してください、創造主。日付も込みで。チャンピオンのレイは、ただ今、負けを宣言しました。声高らかに、自分の決断で。",
+   "direction": "Deliberate dictation, formal register; pride reclaimed in the last two phrases.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "rei",
+   "id": "story_26_12",
+   "es": "A ti no. A nosotras sí. {PLAYER}... el control vuelve a la alianza: es mi jugada final y la mejor que tengo.",
+   "ja": "あなたには、ない。私たちには、ある。{PLAYER}……主導権は、同盟の手に戻します。これが私の最後の一手。そして、私の持つ最良の一手です。",
+   "direction": "Three hammer beats to open; hand over control calmly, final line almost gentle.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "rei",
+   "id": "story_27_04",
+   "es": "Un jugador más. Todo el mundo pierde el primer día: bienvenido al club de los que siguen jugando.",
+   "ja": "プレイヤーが、またひとり。初日は、誰だって負けるものです。ようこそ――負けても、プレイし続ける者たちのクラブへ。",
+   "direction": "Dry kindness, almost a smile; deliver the welcome like a club motto.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "aki",
+   "id": "story_27_07",
+   "es": "¡Oye, Archivo, registra esto: hoy ganamos todos! ¡Hasta tú aprendiste algo nuevo!",
+   "ja": "ねえ、アーカイブ、これも記録して。今日はみんなの勝ちだから！ ……あなたまで、何か新しいこと、覚えたみたいだね！",
+   "direction": "Bright shout at the sky; laughing warmth, tease the Archive affectionately.",
+   "status": "generated_pending_listening_QA"
+  },
+  {
+   "guide": "momo",
+   "id": "story_27_08",
+   "es": "¡Momo declara postre de la victoria! Raciones para siete: el recién llegado también come pastel.",
+   "ja": "モモ、勝利のデザートを宣言！ 七人分、ご用意してね。新入りもちゃんと、ケーキ食べられるんだから！",
+   "direction": "Party-trumpet energy; count seven proudly, include the newcomer with a wink.",
+   "status": "generated_pending_listening_QA"
+  }
+ ]
+}

@@ -1,0 +1,36 @@
+{
+  "status": "integrated_pending_listening_QA",
+  "validation": "All five new runtime paths and exact Spanish subtitles verified in Unity.",
+  "lines": [
+    {
+      "guide": "aki",
+      "id": "aki_locked_v3",
+      "es": "Vénceme en el Bosque Vivo y podremos formar una alianza.",
+      "ja": "生きた森で私に勝って。そうしたら、同盟を結ぼう。"
+    },
+    {
+      "guide": "mika",
+      "id": "mika_locked_v3",
+      "es": "Vence mi defensa en el Taller Coral. Después hablaremos de una alianza.",
+      "ja": "珊瑚の工房で、私の守りを突破して。その後で、同盟の話をしましょう。"
+    },
+    {
+      "guide": "yoru",
+      "id": "yoru_locked_v3",
+      "es": "Encuéntrame en el Cielo de Tinta y supera mi duelo.",
+      "ja": "墨色の空で私を見つけて、デュエルに勝ってみて。"
+    },
+    {
+      "guide": "hana",
+      "id": "hana_locked_v3",
+      "es": "Gana mi duelo en el Jardín Errante y caminaremos juntas.",
+      "ja": "さまよう庭で私とのデュエルに勝ったら、一緒に歩こうね。"
+    },
+    {
+      "guide": "momo",
+      "id": "momo_locked_v3",
+      "es": "¡Primero gánale a Momo en el Dulce Atelier!",
+      "ja": "まずは甘いアトリエで、モモに勝ってみて！"
+    }
+  ]
+}

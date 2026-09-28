@@ -1,0 +1,429 @@
+{
+  "version": 1,
+  "status": "integrated_pending_listening_QA",
+  "job": "job-39d504b12174",
+  "source": "Assets/AnimalMemory/Progression/MementoMatchCampaign.cs",
+  "language": "ja",
+  "review": "Translations drafted by assistant; Japanese linguistic and audio QA pending.",
+  "rules": [
+    "Use existing synthetic character reference, never a generic random identity.",
+    "No ASMR, whispers, breathy close-mic delivery, moaning, or actor imitation.",
+    "Delivery direction is metadata, NOT text to be spoken; Fish accepts supported emotion tags only.",
+    "Bind only when exact Spanish source matches; stale lines must not play.",
+    "Do not change player save or make a build."
+  ],
+  "lines": [
+    {
+      "guide": "aki",
+      "id": "story_01_00",
+      "es": "Has llegado hasta mi núcleo. Sin una zona propia, podrías intentar quedarte con el bosque. ¿Por qué iba a confiar en ti?",
+      "ja": "私の核まで来たんだね。自分のゾーンを失ったあなたなら、この森を奪おうとするかもしれない。どうして信じていいの？",
+      "direction": "Firm, protective; ask the last question directly, not breathily.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "aki",
+      "id": "story_01_02",
+      "es": "Las palabras no detendrán a la campeona. Vénceme primero: necesito saber que puedes defender el bosque cuando yo no pueda.",
+      "ja": "言葉だけじゃ、チャンピオンは止められない。まず私に勝って。私が守れない時、あなたがこの森を守れるか、確かめたいの。",
+      "direction": "Resolved challenge; clear projected speech, controlled intensity.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "aki",
+      "id": "story_01_04",
+      "es": "Entonces conserva la calma. Mi Deshacer puede cambiar una jugada, pero no la decisión de confiar en alguien.",
+      "ja": "それなら、落ち着いてね。私の巻き戻しは一手を変えられる。でも、誰かを信じると決めた気持ちは変えないよ。",
+      "direction": "Warm but determined, natural pauses, no whisper.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "aki",
+      "id": "story_02_00",
+      "es": "Ganaste sin intentar borrar mi zona. Registraré el Pacto del Bosque.",
+      "ja": "私のゾーンを奪わずに、勝ってくれたんだね。森の盟約を結ぶよ。",
+      "direction": "Relieved respect, smile in the tone without giggling.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "aki",
+      "id": "story_02_03",
+      "es": "Mi Deshacer corrige una jugada, incluso una pareja. Después necesita cinco turnos.",
+      "ja": "私の巻き戻しなら、ペアができた手も、一手戻せるよ。もう一度使えるまで、五ターン必要だからね。",
+      "direction": "Friendly tutorial delivery; articulate five turns.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "mika",
+      "id": "story_03_03",
+      "es": "Las alianzas fallan cuando el miedo supera a los números. Demuestra que la tuya no lo hará.",
+      "ja": "恐怖が計算を上回れば、同盟は崩れる。あなたたちの同盟は違うと、証明して。",
+      "direction": "Crisp analytical challenge, human rather than robotic.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "mika",
+      "id": "story_03_04",
+      "es": "Compartir defensas también significa compartir errores.",
+      "ja": "守りを共有するなら、失敗も共有することになる。",
+      "direction": "Measured warning; normal conversational volume.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "mika",
+      "id": "story_04_01",
+      "es": "Mediré vuestra coordinación. Un discurso no protege una frontera.",
+      "ja": "あなたたちの連携を測るわ。演説だけでは、境界は守れない。",
+      "direction": "Confident precision, slight emphasis on coordination.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "mika",
+      "id": "story_04_04",
+      "es": "Comienza la prueba de carga.",
+      "ja": "負荷試験、開始。",
+      "direction": "Short clear challenge, energetic attack onset.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "mika",
+      "id": "story_05_00",
+      "es": "Los datos cambiaron: cooperar produce menos riesgo que competir aisladas.",
+      "ja": "データが変わったわ。別々に争うより、協力するほうがリスクは低い。",
+      "direction": "Surprised admission softened into respect.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "mika",
+      "id": "story_05_03",
+      "es": "Mi Escudo de Combo conservará tu racha cuando un fallo fuera a romperla.",
+      "ja": "私のコンボシールドなら、ミスで途切れるはずのコンボを守れるわ。",
+      "direction": "Clear explanatory tone, emphasize skill name.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "yoru",
+      "id": "story_06_03",
+      "es": "Las estrellas muestran cinco rutas que terminan. La sexta está en blanco.",
+      "ja": "星が示す五つの道は、そこで途切れている。六つ目だけは、まだ何も描かれていない。",
+      "direction": "Quietly thoughtful but fully voiced; not ASMR or airy.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "yoru",
+      "id": "story_06_04",
+      "es": "La figura que describes lleva el emblema del Archivo Cero. Ese lugar no debería participar.",
+      "ja": "その人物がつけていたのは、アーカイブ・ゼロの紋章ね。あそこが争いに加わるはずはないのに。",
+      "direction": "Concerned realization, deliberate but not slow.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "yoru",
+      "id": "story_07_01",
+      "es": "Mi Visión Estelar encontrará cualquier pareja que escondas.",
+      "ja": "私の星の眼なら、どんな隠れたペアも見つけられる。",
+      "direction": "Gentle confidence with a firmer final clause.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "yoru",
+      "id": "story_07_04",
+      "es": "Que hable el cielo.",
+      "ja": "空に答えを聞きましょう。",
+      "direction": "Inviting challenge, clean voiced onset.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "yoru",
+      "id": "story_08_00",
+      "es": "El registro confirma que cinco técnicas fueron copiadas por el Archivo. Os guiaré hasta allí.",
+      "ja": "記録で確認できたわ。五つの技が、アーカイブにコピーされている。そこまで案内するね。",
+      "direction": "Concrete discovery; clear emphasis on five techniques.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "yoru",
+      "id": "story_08_03",
+      "es": "Mi Visión Estelar mostrará una pareja real que siga oculta.",
+      "ja": "私の星の眼は、まだ隠れている本物のペアを一組、見せてくれるわ。",
+      "direction": "Helpful and precise; one pair not three random cards.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "hana",
+      "id": "story_09_03",
+      "es": "Todos prometen proteger el jardín hasta que necesitan atravesarlo.",
+      "ja": "みんな、庭を守るって約束するの。でも通り道が必要になると、その約束を忘れる。",
+      "direction": "Hurt distrust, firm diction, no crying.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "hana",
+      "id": "story_09_04",
+      "es": "Mis caminos sostienen varias fronteras. Una derrota dañaría a más de una zona.",
+      "ja": "私の道は、いくつものゾーンの境界を支えているの。私が負けたら、一つのゾーンだけでは済まない。",
+      "direction": "Earnest concern, strong breath support.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "hana",
+      "id": "story_10_01",
+      "es": "El jardín sólo confiará en alguien capaz de conservar su ritmo.",
+      "ja": "この庭が信じるのは、そのリズムを守れる人だけ。",
+      "direction": "Steady challenge, growing conviction.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "hana",
+      "id": "story_10_04",
+      "es": "Que florezca el tablero.",
+      "ja": "さあ、盤面に花を咲かせよう！",
+      "direction": "Bright projected excitement, no shrill scream.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "hana",
+      "id": "story_11_00",
+      "es": "La Campana iba a cortar nuestras rutas. Vuestra coordinación las mantuvo abiertas; iré con vosotras.",
+      "ja": "鐘が鳴ったら、道は切れるはずだった。でも、みんなの連携が道を守ってくれた。私も一緒に行くよ。",
+      "direction": "Relief building into cheerful commitment.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "hana",
+      "id": "story_11_03",
+      "es": "Mi Floración completará una pareja oculta y hará daño en duelo.",
+      "ja": "私の開花なら、隠れたペアを一組そろえられるよ。デュエルでは、相手にダメージも与えるの。",
+      "direction": "Friendly explanation, not a combat shout.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "momo",
+      "id": "story_12_03",
+      "es": "¡Mi zona sigue en pie porque yo sí juego para ganar!",
+      "ja": "モモのゾーンが無事なのは、本気で勝ちにいってるからだよ！",
+      "direction": "Small bright anime voice, playful competitive pride; no breathiness.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "momo",
+      "id": "story_12_04",
+      "es": "La del emblema me ofreció ser espectadora. Prefiero ganarme mi deseo.",
+      "ja": "紋章のあの人に、見てるだけでいいって言われたの。でもモモは、自分で願いを勝ち取りたい！",
+      "direction": "Indignant then determined, quick but intelligible.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "momo",
+      "id": "story_13_01",
+      "es": "¡Si quieres mi pista, supera mi Encore!",
+      "ja": "ヒントが欲しいなら、モモのアンコールに勝ってみて！",
+      "direction": "Playful challenge, lively projected voice.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "momo",
+      "id": "story_13_04",
+      "es": "¡Encore de supervivencia!",
+      "ja": "生き残りをかけた、アンコール！",
+      "direction": "Energetic short battle call, no distortion.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "momo",
+      "id": "story_14_00",
+      "es": "Me uno. La silueta era Rei, Maestra del Archivo Cero. Su puerta sólo se abre al reunir los emblemas de nuestras cinco zonas: ahora los tenemos.",
+      "ja": "モモも仲間になる。あの影はレイ、アーカイブ・ゼロのマスターだよ。あそこの扉を開けるには、五つのゾーンの紋章が全部必要なの。これで、そろったね！",
+      "direction": "Sincere reveal, slow down the name and five emblems; cheerful finish.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "momo",
+      "id": "story_14_03",
+      "es": "Mi Encore hará que tu próxima jugada no consuma turno ni ceda el control.",
+      "ja": "モモのアンコールを使うと、次の一手はターンを消費しないよ。相手に手番も渡さないの！",
+      "direction": "Bright helpful teaching, articulate mechanics.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "aki",
+      "id": "story_16_04",
+      "es": "Elegiste mi alianza cuando podías reclamar el bosque. Yo elijo este deseo.",
+      "ja": "森を奪うこともできたのに、あなたは私との同盟を選んでくれた。今度は私が、この願いを選ぶよ。",
+      "direction": "Warm shared victory, clear voiced projection, no whisper.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "mika",
+      "id": "story_16_05",
+      "es": "Seis votos, seis zonas y una victoria. El resultado es estable.",
+      "ja": "六つの賛成票、六つのゾーン、そして一つの勝利。安定した結果ね。",
+      "direction": "Warm shared victory, clear voiced projection, no whisper.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "yoru",
+      "id": "story_16_06",
+      "es": "Ahora el registro muestra una ruta que todas aceptamos.",
+      "ja": "今、記録には、みんなが選んだ一つの道が描かれているわ。",
+      "direction": "Warm shared victory, clear voiced projection, no whisper.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "hana",
+      "id": "story_16_07",
+      "es": "Nuestras fronteras ya no son muros. Son caminos.",
+      "ja": "私たちの境界は、もう壁じゃない。みんなをつなぐ道になったんだね。",
+      "direction": "Warm shared victory, clear voiced projection, no whisper.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "momo",
+      "id": "story_16_08",
+      "es": "¡Ganamos juntas y nadie desaparece!",
+      "ja": "みんなで勝ったんだね！誰も消えずにすんだよ！",
+      "direction": "Warm shared victory, clear voiced projection, no whisper.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "aki",
+      "id": "story_90_00",
+      "es": "El bosque recuerda dónde dudaste. Úsalo.",
+      "ja": "どこで迷ったか、森は覚えているよ。それを次に生かしてね。",
+      "direction": "Encouraging retry, keep established personality, no taunting or whisper.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "mika",
+      "id": "story_90_01",
+      "es": "Un resultado adverso también aporta datos.",
+      "ja": "不利な結果からも、データは得られるわ。",
+      "direction": "Encouraging retry, keep established personality, no taunting or whisper.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "yoru",
+      "id": "story_90_02",
+      "es": "La ruta sigue ahí; cambia el ángulo.",
+      "ja": "道はまだそこにあるわ。見る角度を変えてみて。",
+      "direction": "Encouraging retry, keep established personality, no taunting or whisper.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "hana",
+      "id": "story_90_03",
+      "es": "Una raíz puede doblarse sin romperse.",
+      "ja": "根っこは、曲がってもしっかりつながっているよ。",
+      "direction": "Encouraging retry, keep established personality, no taunting or whisper.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "momo",
+      "id": "story_90_04",
+      "es": "¡Una derrota sólo mejora el siguiente encore!",
+      "ja": "一回負けたくらい、次のアンコールがよくなるだけだよ！",
+      "direction": "Encouraging retry, keep established personality, no taunting or whisper.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "rei",
+      "id": "story_00_05",
+      "es": "Una zona no te pertenece hasta que eres capaz de defenderla.",
+      "ja": "守り抜く力がなければ、そのゾーンはあなたのものとは言えない。",
+      "direction": "Own original Rei reference; confident clear champion delivery, no whisper. Performance QA pending.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "rei",
+      "id": "story_00_09",
+      "es": "Zona Cero queda bajo mi sello. Recupérala antes de la Campana Final o quedarás fuera.",
+      "ja": "ゾーン・ゼロは私の封印の下に置く。最後の鐘が鳴るまでに取り戻しなさい。できなければ、失格よ。",
+      "direction": "Own original Rei reference; confident clear champion delivery, no whisper. Performance QA pending.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "rei",
+      "id": "story_15_01",
+      "es": "Te oí prometer que ganarías sin quitarle el hogar a nadie. Tomé Zona Cero para obligarte a elegir: conquistar otra zona o perderlo todo. No esperaba que regresaras con una alianza.",
+      "ja": "誰の故郷も奪わずに勝つ。その約束を聞いたわ。ゾーン・ゼロを奪えば、他のゾーンを征服するか、すべてを失うか、選ぶしかないと思った。同盟を連れて戻るとは、予想していなかった。",
+      "direction": "Own original Rei reference; confident clear champion delivery, no whisper. Performance QA pending.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "rei",
+      "id": "story_15_03",
+      "es": "Mi antiguo equipo dijo lo mismo y se traicionó ante el Deseo. No entregaré otra zona a una promesa.",
+      "ja": "昔の仲間も、同じことを言った。そして願いを前に、裏切り合ったの。約束だけを信じて、またゾーンを任せるつもりはない。",
+      "direction": "Own original Rei reference; confident clear champion delivery, no whisper. Performance QA pending.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "rei",
+      "id": "story_15_05",
+      "es": "Usaré Deshacer, Escudo, Visión, Floración y Encore. Datos perfectos contra vuestra confianza.",
+      "ja": "巻き戻し、シールド、星の眼、開花、そしてアンコール。完全なデータと、あなたたちの信頼。どちらが勝つかしら。",
+      "direction": "Own original Rei reference; confident clear champion delivery, no whisper. Performance QA pending.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "rei",
+      "id": "story_15_07",
+      "es": "Entonces demostrad que seis zonas pueden tomar una decisión unánime.",
+      "ja": "ならば証明しなさい。六つのゾーンが、一つの決断を選べることを。",
+      "direction": "Own original Rei reference; confident clear champion delivery, no whisper. Performance QA pending.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "rei",
+      "id": "story_16_01",
+      "es": "Vuestra Alianza evitó eliminaciones, pero la regla actual sólo reconoce a una capitana vencedora.",
+      "ja": "同盟によって、脱落者は出なかった。でも今のルールでは、勝者と認められるのは、たった一人のキャプテンだけ。",
+      "direction": "Own original Rei reference; confident clear champion delivery, no whisper. Performance QA pending.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "rei",
+      "id": "story_16_09",
+      "es": "Examen aprobado. Me equivoqué al desconfiar de vuestro equipo.",
+      "ja": "試験は合格よ。あなたたちのチームを信じなかったのは、私の間違いだった。",
+      "direction": "Own original Rei reference; confident clear champion delivery, no whisper. Performance QA pending.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    },
+    {
+      "guide": "rei",
+      "id": "story_90_05",
+      "es": "Una alianza se mide por cómo corrige su siguiente decisión.",
+      "ja": "同盟の価値は、次の決断をどう立て直すかで決まる。",
+      "direction": "Own original Rei reference; confident clear champion delivery, no whisper. Performance QA pending.",
+      "status": "generated_imported_bound_listening_QA_pending"
+    }
+  ],
+  "generation": {
+    "provider": "local ComfyUI FishS2VoiceCloneTTS",
+    "model": "s2-pro",
+    "temperature": 0.55,
+    "top_p": 0.75,
+    "repetition_penalty": 1.2,
+    "chunk_length": 240,
+    "precision": "bfloat16",
+    "attention": "sage_attention",
+    "reference_text": "",
+    "reference_text_note": "No verified transcript available; reused existing synthetic reference without inventing transcript.",
+    "seedByGuide": {
+      "aki": 511137,
+      "mika": 512137,
+      "yoru": 513137,
+      "hana": 514137,
+      "momo": 519137,
+      "rei": 520137
+    }
+  },
+  "validation": {
+    "all48ExactSourceAndGuideMatches": true,
+    "missingClips": 0,
+    "unmappedGuardianLines": 0,
+    "sourceCheck": "Live Unity campaign scenes0–16 and retry levels0,4,8,12,16,20",
+    "listeningQA": "not_performed",
+    "runtimeBinding": "verified PlayMode Aki story_02_00 and Rei story_15_01; skip/advance/typewriter behavior verified"
+  }
+}

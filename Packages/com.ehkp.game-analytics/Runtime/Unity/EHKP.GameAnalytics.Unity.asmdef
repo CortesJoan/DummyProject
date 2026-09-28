@@ -1,0 +1,7 @@
+{
+  "name": "EHKP.GameAnalytics.Unity",
+  "references": [
+    "EHKP.GameAnalytics.Core"
+  ],
+  "rootNamespace": "EHKP.GameAnalytics"
+}

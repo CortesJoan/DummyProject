@@ -1,0 +1,26 @@
+{
+  "version": 3,
+  "date": "2026-09-08",
+  "generator": "built-in image_gen",
+  "source": "rei-poses-green-v2.png",
+  "target": "rei-poses-green-v3.png",
+  "prompt": "Use case: precise-object-edit. Input image: EDIT TARGET six-pose Rei game sprite atlas. Change ONLY the large glowing aura around the staff in the TOP RIGHT (ability) cell. Remove that soft blue/cyan glow, orbit trails and floating sparkles, exposing the same pure RGB(0,255,0) chroma-green background around the solid staff. Keep the solid ornate gold staff and blue crystal, matching the other five staffs. Preserve all six bodies, poses, facial expressions, hair, white clothing, proportions, placements, pixel dimensions and backgrounds unchanged. No new effects, no recolouring of characters, no checkerboard. Exactly the same 3 columns by2rows atlas with the same empty gutters. Background key must be uniform pure green, no gradient or coloured fringe. This removes baked VFX so game animation can handle effects separately.",
+  "sha256": "9741de85c2bbddeef40cf7e174a28358d9b0073f5d49f1e1fd7d78619c026ba2",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "decision": "Remove baked ability glow to avoid chroma contamination; retain six distinct poses and white clothing.",
+  "runtime": "AnimalMemory/ArtV2/rei-poses-green-v3",
+  "integration": [
+    "DuelOpponentFieldView: neutral, thinking, ability, damage, defeated, victory",
+    "AnimalMemoryMenuController shared neutral portrait and face crop including VN"
+  ],
+  "validation": [
+    "12 focused tests passed",
+    "Ability reviewed on jade, black, white and magenta backgrounds",
+    "Actual duel view sprite assignment verified rei_v2_neutral",
+    "Temporary gameplay screenshot harness showed background only; NOT accepted as gameplay visual evidence. End-to-end gameplay/VN capture remains pending."
+  ],
+  "originalsPreserved": true
+}

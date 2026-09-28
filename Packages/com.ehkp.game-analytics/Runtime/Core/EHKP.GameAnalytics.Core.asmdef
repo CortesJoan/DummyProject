@@ -1,0 +1,5 @@
+{
+  "name": "EHKP.GameAnalytics.Core",
+  "rootNamespace": "EHKP.GameAnalytics",
+  "noEngineReferences": true
+}

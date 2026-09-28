@@ -1,0 +1,7 @@
+{
+  "name": "com.ehkp.game-analytics",
+  "version": "0.1.0",
+  "displayName": "EHKP First-party Game Analytics",
+  "description": "Consent-first bounded event queue and optional HTTPS Unity adapter. No vendor SDK or gameplay dependencies.",
+  "unity": "2022.3"
+}

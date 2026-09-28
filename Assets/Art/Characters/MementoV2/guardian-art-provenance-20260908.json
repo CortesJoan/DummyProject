@@ -1,0 +1,85 @@
+{
+  "date": "2026-09-08",
+  "job": "job-6d8facda2b0d",
+  "generator": "builtin image_gen",
+  "model": "not exposed by tool; GPT Image 2.5 cannot be confirmed",
+  "requested_model_note": "User accepted continuation after limitation explained; no claim of model2.5 provenance.",
+  "animal_cards": "untouched",
+  "pose_order": [
+    "neutral",
+    "thinking",
+    "ability",
+    "damage",
+    "defeated",
+    "victory"
+  ],
+  "source_dimensions": [
+    1536,
+    1024
+  ],
+  "alpha_pipeline": "Flat explicit chroma source; runtime MementoChromaMatte produces RGBA. Source PNGs intentionally opaque. Never global white/luminance removal.",
+  "review_status": "Editor art integration verified: 54/54 focused tests passed after clearing stale editor-only cache following Mika source reimport. Final Mika ability RGBA visually inspected. Physical-mobile and auditory release acceptance remain pending.",
+  "assets": [
+    {
+      "id": "aki",
+      "key": "magenta",
+      "source_generated_file": "exec-c86124a1-ff59-4873-8790-9596621a296f.png",
+      "runtime_source": "Assets/Art/Resources/AnimalMemory/ArtV2/aki-poses-magenta-v2.png",
+      "sha256": "8f14b46e4dcd9965b4279a3dc3db12d5087a5b44ff5ead2a519f056d5c01c57d",
+      "prompt": "Use case: stylized-concept. Image1 is character identity reference ONLY, not a layout to copy. Rebuild Aki as a NEW production six-pose game sprite sheet with SAFE SPACING. 3 columns and 2 rows. Each figure including raised fingers/boots completely inside its cell with an empty margin of 10% of the cell height. In particular keep a WIDE CONTINUOUS EMPTY HORIZONTAL STRIP across the center of the sheet separating both rows, and two empty vertical strips separating columns. Reduce all six figures to fit; don't fill frame. Background uniform flat MAGENTA #FF00FF, no checkerboard/gradient/shadow. Preserve character identity from image: cute petite wholesome anime forest adventurer, brown side ponytail with flower+leaves, green eyes, green jacket ivory buttoned blouse orange neck scarf, practical brown shorts dark opaque tights leatherboots. Polish clear silhouettes, green leaf accessories symbolize patient recovery and rewind, clock in abilitypose. Exact6poses lefttoright: upperrow neutral greeting, thoughtful, casting rewind holding gold leaf pocketwatch; lowerrow startled damage, defeated standing rueful, happy victory. Samebody/outfit/colors/scaleforall, no labels/text. No cropped hair, fingers, feet, effects. Pure magenta outside all figures and in spaces betweenhair/limbs; no magenta lighting on subject. High resolution landscape."
+    },
+    {
+      "id": "mika",
+      "key": "green",
+      "source_generated_file": "exec-0681fcdc-7108-4732-8a01-6bda44fa6153.png",
+      "runtime_source": "Assets/Art/Resources/AnimalMemory/ArtV2/mika-poses-green-v2.png",
+      "sha256": "8bede1cd3ef0a3503a10ec1c9fcf059443eedb3d3622cfc45598523d485a9e35",
+      "prompt": "Use case: precise-object-edit. Edit this six-pose Mika spriteatlas ONLY in the upper-right ability pose's large golden clock-shield ring. All empty spaces inside that ring, between the golden numerals and spokes, MUST be the exact SAME flat pure saturated chroma green #00FF00 as the outside background. Remove yellow/green translucent fill and glow haze from the open spaces: keep only opaque crisp gold ring outlines/numerals/spokes/sparks, with clean gaps filled PURE #00FF00 for later transparency. Keep character, watch, hands, expressions, all other5poses, layout and size EXACTLY unchanged. Background outsidefigures remains #00FF00. Do not recolor gold drawn lines. No new details/text.",
+      "initial_prompt": "Use case: stylized-concept. Create a production sprite atlas for Memento Match. Image1 is identity reference: ONLY MIKA, orange-haired character in TOP ROW; do not draw Yoru/bottom row or app UI. Upgrade Mika with polished crisp anime game painting, cute petite youthful moe proportions and friendly expressive eyes, fully clothed wholesome adventurer. Preserve orange bob haircut, gold gear hairclip, orange-red practical cropped jacket over cream blouse, black shorts and opaque dark tights, rugged orange boots, brass pocket watch. Design rationale: precise energetic mechanic, gear and watch communicate timing and combo shield; gold mechanical accents restrained, silhouette clear on small mobile screen. SIX full-body poses exactly: upper row neutral confident, thinking with hand on chin, ability projecting a golden clock shield; lower row startled taking damage, defeated shoulders down but standing and unharmed, exuberant victory. All same outfit/face/body scale, both boots and hands visible, distinct readable expressions. Layout: three equal columns x two equal rows, center each body at x=1/6,1/2,5/6 image width; generous 8% empty space inside every cell on all sides, no character crosses cell borders. Absolutely flat solid chroma GREEN #00FF00 background everywhere outside characters; no gradients, floor shadows, scenery, checkerboard, text or labels. Green exclusively background, no green illumination on figures. High resolution 3072x2048."
+    },
+    {
+      "id": "yoru",
+      "key": "green",
+      "source_generated_file": "exec-dd403358-6c09-42ef-b936-4f75ce0c1d02.png",
+      "runtime_source": "Assets/Art/Resources/AnimalMemory/ArtV2/yoru-poses-green-v2.png",
+      "sha256": "7574c96992ac2f0617418ef2f6bb0c1bc93898dfa761a22dab61eebc3a3ed365",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the hair coloration of all six Yoru figures in this game sprite sheet. The flat WHITE strips/panels along the outer edges and behind her long hair are ERRONEOUS old background remnants, NOT white hair, not ribbons and not highlights. Repaint those large flat white strips as coherent dark INDIGO/VIOLET HAIR LOCKS matching the immediately adjacent hair, with natural subtle lavender shine rather than white. On ALL SIX poses Yoru must have completely indigo-to-violet hair, no white side streaks/panels. Preserve eye whites, face/skin, lilac blouse and gold details. Preserve exact 3x2layout, all six poses, body size, expressions, outfit, crisp anime style, green background and margins. Don't change anything else. Background remains uniform flat pure #00FF00 with no gradients or shadows."
+    },
+    {
+      "id": "hana",
+      "key": "magenta",
+      "source_generated_file": "exec-330ac808-e920-45ec-a70d-a1170529bab4.png",
+      "runtime_source": "Assets/Art/Resources/AnimalMemory/ArtV2/hana-poses-magenta-v2.png",
+      "sha256": "88909b251539d874ec3c97f99e27dc5ef59001308d176331c398b511a77e559b",
+      "prompt": "Use case: stylized-concept. Create a polished six-pose anime GAME SPRITE ATLAS of HANA only, the green-haired gardener in TOP ROW of referenceimage. Reference image is identity only, notlayout. Do NOT draw Momo/pinkcharacter. Preserve Hana: short sage-green bob, warm amber eyes, flower hairpin, cream gardenerjacket, sage shirt with leafbow, practical green shorts, brownbelt with seedpouch, rugged green/brownboots, little brass/green wateringcan. Petite youthful cute moe proportions, wholesome outdoors outfit. Art direction: round soft silhouette and seedpouches show nurturing recovery, wateringcan is practical tool rather than randomwand; flowers intentional smallaccents. Sixfullbody poses: row1 neutralwelcoming, thoughtful assessing seedlings, ability pouring small shimmeringgold drops from wateringcan; row2 flinching unharmed, defeated standing headslightlybowed, cheerful victory raisingcan. Consistent face/outfit/bodyscale everypose. Exactly3equalcolumns x2equalrows, fullheads/hands/hair/feet within eachcell, emptygutter betweenallcells especiallyfullhorizontalemptystripatmidline; generouspadding, no cropping. Pure flat saturated MAGENTA #FF00FF outsidefigures, no backgroundgradient/shadows/scene/checkerboard/text. Magenta not oncharacter. Crisp polished handpainted anime linework. Landscape highresolution."
+    },
+    {
+      "id": "momo",
+      "key": "green",
+      "source_generated_file": "exec-d7e53c11-9437-415c-a271-68dfca76b5d9.png",
+      "runtime_source": "Assets/Art/Resources/AnimalMemory/ArtV2/momo-poses-green-v2.png",
+      "sha256": "d6936abd438eb0f12b28dea6c39d8f68475a1f39d34d0655a88b046ce91f4135",
+      "prompt": "Use case: stylized-concept. Production six-pose spriteatlas for MementoMatch. Image1 is identityreference ONLY for MOMO pink-haired character in BOTTOM ROW. Do not draw Hana/greenhaired girl. Preserve recognizable pink doublebuns with loose curls, violet eyes, little cream pastrychef hat with chocolatebow, cream buttoned chefblouse with cocoa cuffs, brown flared skirt with apronlike ivorytrim, pink/cream striped tights, brown ankleboots, large pinkspiral lollipop. Cute petite youthful moe anime game character, wholesome fullyclothed, playful competitive pastrychef. Visual rationale: chefhat and pipinglike trim signal baker, spiral candy suggests her extra encoreturn; expressive energetic silhouette contrasts calmHana/Yoru. Six FULL BODY consistentposes: upperrow neutral cheekysmiling holdinglollipop, thinking with fingertipnearcheek, ability pointinglollipop with small gold ribbonlike flourish; lowerrow surprised damage unharmed, defeated standing pouting with shouldersdown and loweredlollipop, happy victory cheerful raisedfist. 3equalcolumns x2equalrows exactorder. Allposes sameface/costume/bodyscale. Fullheads/hats/fingers/boots within eachcell; generousblankgutter betweenrows/columns, don'tcrop. Background uniformpure saturated GREEN #00FF00, green onlyoutsidefigure, no spill/gradient/shadows/checkerboard/text/UI. Crisp delicate outlines and polished colorful animepaint. Landscapehighresolution."
+    }
+  ],
+  "rejected_iterations": [
+    {
+      "file": "aki-poses-alpha-candidate-v2.png",
+      "reason": "No alpha channel; baked checkerboard, excluded from Resources."
+    },
+    {
+      "file": "Assets/Art/Characters/MementoV2/Aki/aki-poses-magenta-v2.png",
+      "reason": "Early keyed iteration lacked inter-row gutter; superseded by different source under Assets/Art/Resources."
+    },
+    {
+      "file": "Assets/Art/Characters/MementoV2/Yoru/yoru-poses-green-v2.png",
+      "reason": "Early iteration retained white hair-side remnants; localized repaint applied in runtime source."
+    }
+  ],
+  "yoru_initial_prompt": "Use case: stylized-concept. Production six-pose character sprite sheet for Memento Match. Image1 is identity reference: ONLY YORU in the BOTTOM ROW, the purple-haired astronomer; do not draw Mika/top row or any app UI. Preserve recognizable long indigo hair fading violet at ends, crescent moon hairclip, violet eyes, navy long coat with fine gold constellation embroidery, high-neck lilac blouse, black tailored shorts with opaque dark tights, navy boots and small brass armillary instrument. Polish into clean detailed anime game illustration, petite youthful moe proportions, gentle observant personality, wholesome fully clothed. Art rationale: crescent and constellation motifs communicate her stellar vision pair-reveal power; clear long-coat silhouette contrasts shorter-jacket Mika; restrained gold stars not clutter. SIX full-body distinct poses in this exact order: upper row neutral gentle, thoughtful fingertip at chin, ability raising armillary and a small violet constellation connecting TWO stars; lower row flinch taking damage unharmed, defeated standing shoulders lowered with rueful smile, victory relieved smile holding instrument near heart. Same body/face/hair/outfit and scale across poses. 3equal columns x2equal rows; each full character including all hair, hands, boots and ability comfortably INSIDE its cell with generous margins; no overlapping across cells. Background must be perfectly flat pure saturated chroma GREEN #00FF00, no backdrop lighting or green reflections, no white cutout remnants, no floor shadows, no gradients/checkerboard/text/labels/UI. Crisp outlines, natural painted highlights preserved. High resolution3072x2048.",
+  "test_evidence": {
+    "job_id": "7f6aba45cc6e45f48d210c294c516ee1",
+    "passed": 54,
+    "failed": 0
+  }
+}

@@ -1,0 +1,717 @@
+{
+ "_doc": "Frases guia (G/S) de la historia reescrita pendientes de grabación japonesa. El catálogo MementoStoryVoiceCatalog exige texto exacto: hasta grabar, estas líneas suenan en silencio. ids story_NN_MM se asignan al montar v4.",
+ "lines": [
+  {
+   "guide": "rei",
+   "id": "story_00_03",
+   "es": "Un hogar no se hereda: se sostiene. Y tú… aún no sabes cómo se sostiene.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "rei",
+   "id": "story_00_09",
+   "es": "Zona Cero queda bajo sello. Mañana tu gente despertará igual… pero este tablero ya responde a otra mano.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "aki",
+   "id": "story_01_01",
+   "es": "Una sin zona sólo trae problemas: no sostiene rutas ni responde por un núcleo. …Debería darte la espalda y volver al bosque.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "aki",
+   "id": "story_01_03",
+   "es": "Con licencia de la Liga, sí. El sello aparta tu tablero, no a tu gente: se vive, se comercia, se reintenta. Lo que pierdes… es decidir sobre tu propio núcleo.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "aki",
+   "id": "story_01_04",
+   "es": "No pienso sellar mi emblema junto al de una desconocida. Un duelo: si lees mi bosque mejor de lo que ella leyó tu mesa, te prestaré más que lástima.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "aki",
+   "id": "story_02_02",
+   "es": "Yo confío despacio: observo, corrijo y me quedo cerca. Aún no confío en ti, {PLAYER}… pero quiero ver tu revancha. Iré.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "aki",
+   "id": "story_02_04",
+   "es": "Mi Deshacer te devuelve la última jugada, acertada o no. Segundas oportunidades… procura no necesitarlas todas.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "mika",
+   "id": "story_03_03",
+   "es": "Una alianza aumenta los vectores de fallo: más gente, más errores posibles. Lo tengo medido. …Todo lo tengo medido.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "mika",
+   "id": "story_03_04",
+   "es": "¿Y si vuestra coordinación falla con mi taller en medio? Un fallo compartido también cae sobre mi techo.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "mika",
+   "id": "story_04_00",
+   "es": "No mediré discursos: mediré coordinación bajo carga. Cuando el escudo ceda, veré quién decide… y quién sólo obedece.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "mika",
+   "id": "story_04_03",
+   "es": "Matriz cargada. Que hable el tablero.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "mika",
+   "id": "story_05_01",
+   "es": "Ya dirigí una alianza. Nadie me traicionó: la controlé tanto que mis compañeras dejaron de decidir. Cuando dudé yo, dudó todo… y cayó todo. Esa cifra no se repite.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "mika",
+   "id": "story_05_04",
+   "es": "Mi Escudo de Combo conservará tu racha cuando un fallo fuera a romperla. Conservar rachas ya me costó caro una vez: úsala bien.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_06_03",
+   "es": "Las estrellas ya trazan las rutas; leerlas es todo mi oficio. …Lo que no dicen es qué hacer cuando dos rutas se contradicen.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_06_04",
+   "es": "Ese emblema pertenece al Archivo Cero: la sede del torneo. Lo he visto flotar donde no debería haber juego. …Una sede no debería sentarse a jugar.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "mika",
+   "id": "story_06_06",
+   "es": "Constelaciones no sostienen defensas… aunque esa coordenada que marcó anoche encaja con mi matriz. No lo tomen como elogio.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_07_00",
+   "es": "Mi Visión Estelar verá cada pareja que escondas antes que tú. Si tu juego puede más que mi cielo… te creeré libre.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_07_03",
+   "es": "Constelación a la vista. Juega… y que el cielo se equivoque conmigo.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_08_01",
+   "es": "Nunca me habían vencido donde ya lo había visto todo. …Me gusta. Me uno a vuestra alianza: alguien debe mirar lo que el mapa esconde.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_08_03",
+   "es": "Mi Visión Estelar te mostrará una pareja real aún oculta. Ver no obliga a decidir… decidir te lo dejo a ti.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "mika",
+   "id": "story_08_06",
+   "es": "Tu ruta oriental seguía abierta esta mañana. Lo comprobé dos veces… no lo tomes como disculpa.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_08_07",
+   "es": "Lo tomo como una coordenada, Mika. …Y una coordenada a tiempo también es cariño.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "hana",
+   "id": "story_09_03",
+   "es": "Tengo que proteger las rutas. …Aunque nadie me lo pida, aunque nadie lo note, aunque el jardín entero dé la espalda.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "hana",
+   "id": "story_09_04",
+   "es": "La placa es anterior a mis caminos. Quien escribió la regla no dejó nombre… y aun así todas la obedecemos. Descansa ese misterio: hoy importa el jardín.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "hana",
+   "id": "story_10_00",
+   "es": "El jardín sólo camina con quien respeta su compás. Desafío: sostened mi tempo sin pisar una sola raíz del tablero.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "hana",
+   "id": "story_10_03",
+   "es": "Raíces firmes, {PLAYER}. El jardín está mirando.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "hana",
+   "id": "story_11_01",
+   "es": "Otra vez habría dicho que el jardín me obliga. Hoy digo la verdad: quiero ver el final del torneo, y quiero que el jardín llegue entero.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "hana",
+   "id": "story_11_04",
+   "es": "Mi Floración completará una pareja oculta y la hará florecer en pleno duelo: daño y vida en un mismo gesto.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "hana",
+   "id": "story_11_07",
+   "es": "Antes de cruzar, debéis saberlo: Momo, la guardiana del atelier… es mi hermana menor.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "momo",
+   "id": "story_12_04",
+   "es": "¡Puedo ganar yo sola! ¿Emblemas? ¿Alianzas? Yo con mi atelier y mis turnos… ¡eso hago, eso hago!",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "momo",
+   "id": "story_12_05",
+   "es": "La del emblema sin zona me ofreció un asiento de espectadora para la final. Le dije que el espectáculo lo cocino yo… y lo sirvo ganando.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "hana",
+   "id": "story_12_07",
+   "es": "Momo. …Tus vitrinas siguen impecables.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "momo",
+   "id": "story_12_08",
+   "es": "Y tus flores siguen llegando sin avisar. …Cuánto tiempo, hermana.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "momo",
+   "id": "story_13_00",
+   "es": "¡La pista de la puerta sellada se gana en mi mesa: batid mi Encore! Yo sola hasta el final… ¡y con público!",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "momo",
+   "id": "story_13_03",
+   "es": "¡Atelier a toda potencia! Receta de la casa: dulce, directa… e imposible de repetir.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "momo",
+   "id": "story_14_01",
+   "es": "Me uno… con condiciones: mis turnos los decido yo. Y cobro por adelantado: la invasora es Rei, la Maestra que vive dentro del Archivo Cero.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "momo",
+   "id": "story_14_04",
+   "es": "Mi Encore: tu próxima jugada no gasta turno ni cede el mando. Extra de función… cortesía de la casa.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "momo",
+   "id": "story_14_07",
+   "es": "Iré… si nadie me saca del tablero para protegerme. La función es mía hasta el final.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "hana",
+   "id": "story_14_08",
+   "es": "Nadie te quita nada, Momo. Hoy cuido al público… y dejo el escenario a las artistas.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "rei",
+   "id": "story_15_01",
+   "es": "Compruebo que vuestra alianza sea estable antes de abrir el Deseo. …Comprobar. Es lo único que me dejaron mi equipo y mi torneo.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "rei",
+   "id": "story_15_02",
+   "es": "Fui yo quien tocó tu campana, {PLAYER}. Te arrebaté Zona Cero en un minuto para verte elegir: rendirte… o construir. Elegiste construir.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "rei",
+   "id": "story_15_03",
+   "es": "Mi equipo llegó aquí con el Deseo a un turno de distancia y se traicionó en la última carta. Sellé la sede… y me quedé a comprobar si todas eran iguales.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "rei",
+   "id": "story_15_06",
+   "es": "Yo. La redacté para que el Deseo sólo pudiera ganarse como mi equipo nunca aceptó: poniéndolo en común. Seis zonas, una decisión… o nada.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "rei",
+   "id": "story_15_07",
+   "es": "El examen es simple: seis zonas, un tablero, una sola decisión. Si dudan juntas… pierden juntas. Comiencen.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "mika",
+   "id": "story_15_10",
+   "es": "Apertura calculada: quien encadena marca el ritmo y yo aseguro la racha. Sin órdenes… por fin.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_15_11",
+   "es": "Y si el cálculo falla, miraré las estrellas. Elegir… ya sabes elegir tú.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "rei",
+   "id": "story_16_01",
+   "es": "Estable. …Lo comprobé pagando el único precio que me quedaba: perder. La regla está cumplida; el Deseo os pertenece.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "rei",
+   "id": "story_16_03",
+   "es": "Y propongo enmendar la regla que escribí: el Deseo no premiará a una zona, sino a seis que lo firmen juntas. Yo no firmo… la sede sólo pone el tablero.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "aki",
+   "id": "story_16_04",
+   "es": "Confiar despacio, firmar despacio. …El Bosque Vivo firma.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "mika",
+   "id": "story_16_05",
+   "es": "Seis firmas y ningún trono: lo suscribo. Y conste que lo predije… a la segunda carta.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_16_06",
+   "es": "El cielo no previó esto. …Me alegra haber estado equivocada.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "hana",
+   "id": "story_16_07",
+   "es": "El jardín caminará con vosotras. Y esta vez… alguien me lo pidió.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "momo",
+   "id": "story_16_08",
+   "es": "¡Firmo con glaseado! Y que conste: mi sitio en la final me lo gané a pulso.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "aki",
+   "id": "story_90_00",
+   "es": "El bosque guardó tu error y te lo devuelve corregido: deshaz… y vuelve a andar.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "mika",
+   "id": "story_90_01",
+   "es": "Derrota registrada. Ahora tienes el dato que faltaba: sigue midiendo.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_90_02",
+   "es": "Las mismas estrellas, otro cielo: mira de nuevo antes de mover.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "hana",
+   "id": "story_90_03",
+   "es": "El tallo que se dobla sabe por dónde subir: ajusta el ritmo y florece.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "momo",
+   "id": "story_90_04",
+   "es": "¡Turno extra! La receta fallida era ensayo… ¡que empiece la función buena!",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "rei",
+   "id": "story_90_05",
+   "es": "Volvisteis a elegir… y volvisteis juntas. Mostradme que también sabéis corregir juntas.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "rei",
+   "id": "story_17_01",
+   "es": "Más allá vive el arquitecto del Archivo: el Creador. Guarda las técnicas de todas las campeonas anteriores... incluida la mía, y leyes que ninguna firmó.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "mika",
+   "id": "story_18_02",
+   "es": "Un duelo contra mi propio espejo. Perfecto. Traigo un dato que no está en tu archivo: yo ya no juego sola.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "mika",
+   "id": "story_18_05",
+   "es": "Rechazado: el error no desaparece, se comparte y se corrige. {PLAYER}, préstame el pulso. Hoy decido yo, con los datos que tenga.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "mika",
+   "id": "story_24_01",
+   "es": "Tu modelo tenía una variable sin registrar: una compañera a quien pedirle la carta siguiente.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "mika",
+   "id": "story_24_02",
+   "es": "Para el acta oficial: gané con un modelo mejor. Entre nos... gracias por el pulso, {PLAYER}.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "mika",
+   "id": "story_25_01",
+   "es": "Cero intentos también es un margen inaceptable. Reviso la partida, ajusto dos variables y vuelvo.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_19_02",
+   "es": "Un cielo donde nada se mueve con sentido... No, gracias. Yo no aprendí a leer las estrellas para renunciar a elegir.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_19_05",
+   "es": "Las certezas prestadas no son certezas. {PLAYER}, el pulso, por favor: esta noche elijo yo, dentro de la niebla.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_24_11",
+   "es": "Me lo dio. Elegí de todos modos: a eso le llamo voluntad. Tu azar solo la ponía a prueba.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_24_12",
+   "es": "Y registra esto, por favor: la certeza no se encuentra en el cielo. Se elige, a mano, aquí abajo.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_25_11",
+   "es": "Descansaré cuando haya elegido. La niebla solo me dio tiempo: volvamos a mirar juntas.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "hana",
+   "id": "story_20_02",
+   "es": "Es hermoso... y está quieto. Un jardín que ya no crece no protege a nadie: solo se conserva a sí mismo.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "hana",
+   "id": "story_20_05",
+   "es": "Cuidar no es decidir por otra flor. {PLAYER}, el pulso, por favor: voy a abrir esta cúpula.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "hana",
+   "id": "story_24_21",
+   "es": "Proteger es estar ahí cuando lleguen. El cristal solo postergaba la primera helada.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "hana",
+   "id": "story_24_22",
+   "es": "(Yo también quise guardar a alguien bajo cristal, ¿sabes?... Perdón. Crece cuanto quieras.)",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "hana",
+   "id": "story_25_21",
+   "es": "Ningún jardín florece a la primera. Riego, aprendo el suelo y vuelvo: la cúpula no es eterna.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "momo",
+   "id": "story_21_02",
+   "es": "Momo... Momo sí soñó eso. Pero Momo también soñó con alguien a quien enseñarle la copa.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "momo",
+   "id": "story_21_05",
+   "es": "¡Momo rechaza! ¡Momo quiere ganar CON todos! {PLAYER}, préstame el pulso: ¡función especial, con público!",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "momo",
+   "id": "story_24_31",
+   "es": "¡Me tembló y la pedí! Pedir ayuda es la única jugada que no tienes archivada, Custodia.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "momo",
+   "id": "story_24_32",
+   "es": "Ganar sola sabe a media victoria. Esto sabe entero... ¿Encore? ¡Encore con todas!",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "momo",
+   "id": "story_25_31",
+   "es": "¡Momo no perdió: ensayó! Y los ensayos van con equipo. ¡Preparen bambalinas: segunda función!",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "yoru",
+   "id": "story_23_03",
+   "es": "Anunciar el ciclo es tu error: leer patrones es nuestro oficio. Cinco técnicas, sin repetición: suficiente.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "rei",
+   "id": "story_26_01",
+   "es": "Fui campeona antes que todas ustedes. Esta puerta me conoce y yo la conozco. Entro sola: es mi cuenta pendiente.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "rei",
+   "id": "story_26_04",
+   "es": "Empieza, entonces. Quiero comprobar cuánto he cambiado desde que me archivaste.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "rei",
+   "id": "story_26_09",
+   "es": "...No puedo ganar sola.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "rei",
+   "id": "story_26_10",
+   "es": "Archiva esto, Creador, con fecha y todo: la campeona Rei acaba de perder en voz alta y por decisión propia.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "rei",
+   "id": "story_26_12",
+   "es": "A ti no. A nosotras sí. {PLAYER}... el control vuelve a la alianza: es mi jugada final y la mejor que tengo.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "rei",
+   "id": "story_27_04",
+   "es": "Un jugador más. Todo el mundo pierde el primer día: bienvenido al club de los que siguen jugando.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "aki",
+   "id": "story_27_07",
+   "es": "¡Oye, Archivo, registra esto: hoy ganamos todos! ¡Hasta tú aprendiste algo nuevo!",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  },
+  {
+   "guide": "momo",
+   "id": "story_27_08",
+   "es": "¡Momo declara postre de la victoria! Raciones para siete: el recién llegado también come pastel.",
+   "ja": "",
+   "direction": "",
+   "status": "pending_recording"
+  }
+ ]
+}

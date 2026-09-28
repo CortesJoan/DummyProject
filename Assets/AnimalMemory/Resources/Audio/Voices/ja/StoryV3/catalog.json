@@ -1,0 +1,364 @@
+{
+  "lines": [
+    {
+      "id": "story_01_00",
+      "guide": "aki",
+      "es": "Has llegado hasta mi núcleo. Sin una zona propia, podrías intentar quedarte con el bosque. ¿Por qué iba a confiar en ti?",
+      "ja": "私の核まで来たんだね。自分のゾーンを失ったあなたなら、この森を奪おうとするかもしれない。どうして信じていいの？"
+    },
+    {
+      "id": "story_01_02",
+      "guide": "aki",
+      "es": "Las palabras no detendrán a la campeona. Vénceme primero: necesito saber que puedes defender el bosque cuando yo no pueda.",
+      "ja": "言葉だけじゃ、チャンピオンは止められない。まず私に勝って。私が守れない時、あなたがこの森を守れるか、確かめたいの。"
+    },
+    {
+      "id": "story_01_04",
+      "guide": "aki",
+      "es": "Entonces conserva la calma. Mi Deshacer puede cambiar una jugada, pero no la decisión de confiar en alguien.",
+      "ja": "それなら、落ち着いてね。私の巻き戻しは一手を変えられる。でも、誰かを信じると決めた気持ちは変えないよ。"
+    },
+    {
+      "id": "story_02_00",
+      "guide": "aki",
+      "es": "Ganaste sin intentar borrar mi zona. Registraré el Pacto del Bosque.",
+      "ja": "私のゾーンを奪わずに、勝ってくれたんだね。森の盟約を結ぶよ。"
+    },
+    {
+      "id": "story_02_03",
+      "guide": "aki",
+      "es": "Mi Deshacer corrige una jugada, incluso una pareja. Después necesita cinco turnos.",
+      "ja": "私の巻き戻しなら、ペアができた手も、一手戻せるよ。もう一度使えるまで、五ターン必要だからね。"
+    },
+    {
+      "id": "story_03_03",
+      "guide": "mika",
+      "es": "Las alianzas fallan cuando el miedo supera a los números. Demuestra que la tuya no lo hará.",
+      "ja": "恐怖が計算を上回れば、同盟は崩れる。あなたたちの同盟は違うと、証明して。"
+    },
+    {
+      "id": "story_03_04",
+      "guide": "mika",
+      "es": "Compartir defensas también significa compartir errores.",
+      "ja": "守りを共有するなら、失敗も共有することになる。"
+    },
+    {
+      "id": "story_04_01",
+      "guide": "mika",
+      "es": "Mediré vuestra coordinación. Un discurso no protege una frontera.",
+      "ja": "あなたたちの連携を測るわ。演説だけでは、境界は守れない。"
+    },
+    {
+      "id": "story_04_04",
+      "guide": "mika",
+      "es": "Comienza la prueba de carga.",
+      "ja": "負荷試験、開始。"
+    },
+    {
+      "id": "story_05_00",
+      "guide": "mika",
+      "es": "Los datos cambiaron: cooperar produce menos riesgo que competir aisladas.",
+      "ja": "データが変わったわ。別々に争うより、協力するほうがリスクは低い。"
+    },
+    {
+      "id": "story_05_03",
+      "guide": "mika",
+      "es": "Mi Escudo de Combo conservará tu racha cuando un fallo fuera a romperla.",
+      "ja": "私のコンボシールドなら、ミスで途切れるはずのコンボを守れるわ。"
+    },
+    {
+      "id": "story_06_03",
+      "guide": "yoru",
+      "es": "Las estrellas muestran cinco rutas que terminan. La sexta está en blanco.",
+      "ja": "星が示す五つの道は、そこで途切れている。六つ目だけは、まだ何も描かれていない。"
+    },
+    {
+      "id": "story_06_04",
+      "guide": "yoru",
+      "es": "La figura que describes lleva el emblema del Archivo Cero. Ese lugar no debería participar.",
+      "ja": "その人物がつけていたのは、アーカイブ・ゼロの紋章ね。あそこが争いに加わるはずはないのに。"
+    },
+    {
+      "id": "story_07_01",
+      "guide": "yoru",
+      "es": "Mi Visión Estelar encontrará cualquier pareja que escondas.",
+      "ja": "私の星の眼なら、どんな隠れたペアも見つけられる。"
+    },
+    {
+      "id": "story_07_04",
+      "guide": "yoru",
+      "es": "Que hable el cielo.",
+      "ja": "空に答えを聞きましょう。"
+    },
+    {
+      "id": "story_08_00",
+      "guide": "yoru",
+      "es": "El registro confirma que cinco técnicas fueron copiadas por el Archivo. Os guiaré hasta allí.",
+      "ja": "記録で確認できたわ。五つの技が、アーカイブにコピーされている。そこまで案内するね。"
+    },
+    {
+      "id": "story_08_03",
+      "guide": "yoru",
+      "es": "Mi Visión Estelar mostrará una pareja real que siga oculta.",
+      "ja": "私の星の眼は、まだ隠れている本物のペアを一組、見せてくれるわ。"
+    },
+    {
+      "id": "story_09_03",
+      "guide": "hana",
+      "es": "Todos prometen proteger el jardín hasta que necesitan atravesarlo.",
+      "ja": "みんな、庭を守るって約束するの。でも通り道が必要になると、その約束を忘れる。"
+    },
+    {
+      "id": "story_09_04",
+      "guide": "hana",
+      "es": "Mis caminos sostienen varias fronteras. Una derrota dañaría a más de una zona.",
+      "ja": "私の道は、いくつものゾーンの境界を支えているの。私が負けたら、一つのゾーンだけでは済まない。"
+    },
+    {
+      "id": "story_10_01",
+      "guide": "hana",
+      "es": "El jardín sólo confiará en alguien capaz de conservar su ritmo.",
+      "ja": "この庭が信じるのは、そのリズムを守れる人だけ。"
+    },
+    {
+      "id": "story_10_04",
+      "guide": "hana",
+      "es": "Que florezca el tablero.",
+      "ja": "さあ、盤面に花を咲かせよう！"
+    },
+    {
+      "id": "story_11_00",
+      "guide": "hana",
+      "es": "La Campana iba a cortar nuestras rutas. Vuestra coordinación las mantuvo abiertas; iré con vosotras.",
+      "ja": "鐘が鳴ったら、道は切れるはずだった。でも、みんなの連携が道を守ってくれた。私も一緒に行くよ。"
+    },
+    {
+      "id": "story_11_03",
+      "guide": "hana",
+      "es": "Mi Floración completará una pareja oculta y hará daño en duelo.",
+      "ja": "私の開花なら、隠れたペアを一組そろえられるよ。デュエルでは、相手にダメージも与えるの。"
+    },
+    {
+      "id": "story_12_03",
+      "guide": "momo",
+      "es": "¡Mi zona sigue en pie porque yo sí juego para ganar!",
+      "ja": "モモのゾーンが無事なのは、本気で勝ちにいってるからだよ！"
+    },
+    {
+      "id": "story_12_04",
+      "guide": "momo",
+      "es": "La del emblema me ofreció ser espectadora. Prefiero ganarme mi deseo.",
+      "ja": "紋章のあの人に、見てるだけでいいって言われたの。でもモモは、自分で願いを勝ち取りたい！"
+    },
+    {
+      "id": "story_13_01",
+      "guide": "momo",
+      "es": "¡Si quieres mi pista, supera mi Encore!",
+      "ja": "ヒントが欲しいなら、モモのアンコールに勝ってみて！"
+    },
+    {
+      "id": "story_13_04",
+      "guide": "momo",
+      "es": "¡Encore de supervivencia!",
+      "ja": "生き残りをかけた、アンコール！"
+    },
+    {
+      "id": "story_14_00",
+      "guide": "momo",
+      "es": "Me uno. La silueta era Rei, Maestra del Archivo Cero. Su puerta sólo se abre al reunir los emblemas de nuestras cinco zonas: ahora los tenemos.",
+      "ja": "モモも仲間になる。あの影はレイ、アーカイブ・ゼロのマスターだよ。あそこの扉を開けるには、五つのゾーンの紋章が全部必要なの。これで、そろったね！"
+    },
+    {
+      "id": "story_14_03",
+      "guide": "momo",
+      "es": "Mi Encore hará que tu próxima jugada no consuma turno ni ceda el control.",
+      "ja": "モモのアンコールを使うと、次の一手はターンを消費しないよ。相手に手番も渡さないの！"
+    },
+    {
+      "id": "story_16_04",
+      "guide": "aki",
+      "es": "Elegiste mi alianza cuando podías reclamar el bosque. Yo elijo este deseo.",
+      "ja": "森を奪うこともできたのに、あなたは私との同盟を選んでくれた。今度は私が、この願いを選ぶよ。"
+    },
+    {
+      "id": "story_16_05",
+      "guide": "mika",
+      "es": "Seis votos, seis zonas y una victoria. El resultado es estable.",
+      "ja": "六つの賛成票、六つのゾーン、そして一つの勝利。安定した結果ね。"
+    },
+    {
+      "id": "story_16_06",
+      "guide": "yoru",
+      "es": "Ahora el registro muestra una ruta que todas aceptamos.",
+      "ja": "今、記録には、みんなが選んだ一つの道が描かれているわ。"
+    },
+    {
+      "id": "story_16_07",
+      "guide": "hana",
+      "es": "Nuestras fronteras ya no son muros. Son caminos.",
+      "ja": "私たちの境界は、もう壁じゃない。みんなをつなぐ道になったんだね。"
+    },
+    {
+      "id": "story_16_08",
+      "guide": "momo",
+      "es": "¡Ganamos juntas y nadie desaparece!",
+      "ja": "みんなで勝ったんだね！誰も消えずにすんだよ！"
+    },
+    {
+      "id": "story_90_00",
+      "guide": "aki",
+      "es": "El bosque recuerda dónde dudaste. Úsalo.",
+      "ja": "どこで迷ったか、森は覚えているよ。それを次に生かしてね。"
+    },
+    {
+      "id": "story_90_01",
+      "guide": "mika",
+      "es": "Un resultado adverso también aporta datos.",
+      "ja": "不利な結果からも、データは得られるわ。"
+    },
+    {
+      "id": "story_90_02",
+      "guide": "yoru",
+      "es": "La ruta sigue ahí; cambia el ángulo.",
+      "ja": "道はまだそこにあるわ。見る角度を変えてみて。"
+    },
+    {
+      "id": "story_90_03",
+      "guide": "hana",
+      "es": "Una raíz puede doblarse sin romperse.",
+      "ja": "根っこは、曲がってもしっかりつながっているよ。"
+    },
+    {
+      "id": "story_90_04",
+      "guide": "momo",
+      "es": "¡Una derrota sólo mejora el siguiente encore!",
+      "ja": "一回負けたくらい、次のアンコールがよくなるだけだよ！"
+    },
+    {
+      "id": "story_00_05",
+      "guide": "rei",
+      "es": "Una zona no te pertenece hasta que eres capaz de defenderla.",
+      "ja": "守り抜く力がなければ、そのゾーンはあなたのものとは言えない。"
+    },
+    {
+      "id": "story_00_09",
+      "guide": "rei",
+      "es": "Zona Cero queda bajo mi sello. Recupérala antes de la Campana Final o quedarás fuera.",
+      "ja": "ゾーン・ゼロは私の封印の下に置く。最後の鐘が鳴るまでに取り戻しなさい。できなければ、失格よ。"
+    },
+    {
+      "id": "story_15_01",
+      "guide": "rei",
+      "es": "Te oí prometer que ganarías sin quitarle el hogar a nadie. Tomé Zona Cero para obligarte a elegir: conquistar otra zona o perderlo todo. No esperaba que regresaras con una alianza.",
+      "ja": "誰の故郷も奪わずに勝つ。その約束を聞いたわ。ゾーン・ゼロを奪えば、他のゾーンを征服するか、すべてを失うか、選ぶしかないと思った。同盟を連れて戻るとは、予想していなかった。"
+    },
+    {
+      "id": "story_15_03",
+      "guide": "rei",
+      "es": "Mi antiguo equipo dijo lo mismo y se traicionó ante el Deseo. No entregaré otra zona a una promesa.",
+      "ja": "昔の仲間も、同じことを言った。そして願いを前に、裏切り合ったの。約束だけを信じて、またゾーンを任せるつもりはない。"
+    },
+    {
+      "id": "story_15_05",
+      "guide": "rei",
+      "es": "Usaré Deshacer, Escudo, Visión, Floración y Encore. Datos perfectos contra vuestra confianza.",
+      "ja": "巻き戻し、シールド、星の眼、開花、そしてアンコール。完全なデータと、あなたたちの信頼。どちらが勝つかしら。"
+    },
+    {
+      "id": "story_15_07",
+      "guide": "rei",
+      "es": "Entonces demostrad que seis zonas pueden tomar una decisión unánime.",
+      "ja": "ならば証明しなさい。六つのゾーンが、一つの決断を選べることを。"
+    },
+    {
+      "id": "story_16_01",
+      "guide": "rei",
+      "es": "Vuestra Alianza evitó eliminaciones, pero la regla actual sólo reconoce a una capitana vencedora.",
+      "ja": "同盟によって、脱落者は出なかった。でも今のルールでは、勝者と認められるのは、たった一人のキャプテンだけ。"
+    },
+    {
+      "id": "story_16_09",
+      "guide": "rei",
+      "es": "Examen aprobado. Me equivoqué al desconfiar de vuestro equipo.",
+      "ja": "試験は合格よ。あなたたちのチームを信じなかったのは、私の間違いだった。"
+    },
+    {
+      "id": "story_90_05",
+      "guide": "rei",
+      "es": "Una alianza se mide por cómo corrige su siguiente decisión.",
+      "ja": "同盟の価値は、次の決断をどう立て直すかで決まる。"
+    },
+    {
+      "id": "story_06_20",
+      "guide": "mika",
+      "es": "Un mapa fiable necesita medidas, Yoru, no horóscopos.",
+      "ja": "正確な地図に必要なのは測定よ、ヨル。占いじゃないわ。"
+    },
+    {
+      "id": "story_06_21",
+      "guide": "yoru",
+      "es": "Y alguien tiene que decidir dónde medir. Mis estrellas señalaron este camino antes que tus instrumentos.",
+      "ja": "でも、どこを測るかは誰かが決めないと。あなたの計器より先に、星がこの道を示したの。"
+    },
+    {
+      "id": "story_08_20",
+      "guide": "mika",
+      "es": "Sigo sin creer en tus predicciones. Pero el camino que marcaste sigue abierto.",
+      "ja": "あなたの予言を信じたわけじゃないわ。でも、印をつけた道は、まだ開いている。"
+    },
+    {
+      "id": "story_08_21",
+      "guide": "yoru",
+      "es": "Y seguirá abierto si lo refuerzas. Puedes discutir conmigo mientras trabajamos.",
+      "ja": "あなたが補強してくれれば、開いたままにできる。言い合いなら、手を動かしながらでもできるでしょう？"
+    },
+    {
+      "id": "story_11_20",
+      "guide": "hana",
+      "es": "Antes de seguir: Momo es mi hermana. Cada vez que intento protegerla, cree que estoy decidiendo por ella.",
+      "ja": "先に言っておくね。モモは私の妹なの。守ろうとするたびに、自分のことを勝手に決められたって思うみたい。"
+    },
+    {
+      "id": "story_12_20",
+      "guide": "hana",
+      "es": "Momo, no he venido a sacarte del torneo. He venido a preguntarte qué quieres hacer.",
+      "ja": "モモ、大会から連れ戻しに来たんじゃないよ。あなたがどうしたいのか、聞きに来たの。"
+    },
+    {
+      "id": "story_12_21",
+      "guide": "momo",
+      "es": "¡Pues empieza por dejar de hablar por mí, Hana! Mi deseo también cuenta.",
+      "ja": "だったら、私の代わりに話すのをやめてよ、ハナ！私の願いだって大事なんだから！"
+    },
+    {
+      "id": "story_14_20",
+      "guide": "momo",
+      "es": "Hana, voy con vosotras. Pero cuando me toque hablar, me dejas terminar.",
+      "ja": "ハナ、みんなと一緒に行くよ。でも、私が話すときは、最後まで聞いてね。"
+    },
+    {
+      "id": "story_14_21",
+      "guide": "hana",
+      "es": "De acuerdo. Y cuando necesites ayuda, pídemela. No tienes que ganártela.",
+      "ja": "わかった。助けが必要なときは、ちゃんと言ってね。強さを証明しなくても、助けるから。"
+    },
+    {
+      "id": "story_14_22",
+      "guide": "momo",
+      "es": "No prometo dejar de discutir contigo. Pero sí llegar juntas a la final.",
+      "ja": "もう言い合いしない、なんて約束はできないよ。でも、一緒に決勝まで行く。それは約束する。"
+    },
+    {
+      "id": "story_15_20",
+      "guide": "mika",
+      "es": "Yoru, busca una apertura. Yo comprobaré tus coordenadas.",
+      "ja": "ヨル、突破口を探して。座標は私が確かめる。"
+    },
+    {
+      "id": "story_15_21",
+      "guide": "yoru",
+      "es": "Por fin una predicción en la que estamos de acuerdo: ninguna se queda atrás.",
+      "ja": "やっと、同じ未来が見えたね。誰一人、置いていかない。"
+    }
+  ]
+}

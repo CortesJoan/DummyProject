@@ -1,0 +1,500 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:Style src="project://database/Assets/AnimalMemory/UI/AnimalMemoryMenu.uss" />
+    <ui:Style src="project://database/Assets/AnimalMemory/UI/MementoGameSkin.uss" />
+    <ui:Style src="project://database/Assets/AnimalMemory/UI/MementoPostgame.uss" />
+
+    <ui:VisualElement name="screen" class="screen shell-screen">
+        <ui:VisualElement class="lobby-background" picking-mode="Ignore" />
+        <ui:VisualElement class="lobby-atmosphere" picking-mode="Ignore" />
+        <ui:VisualElement class="mobile-shell">
+            <ui:VisualElement class="shell-topbar">
+                <ui:VisualElement class="shell-brand">
+                    <ui:Label text="MM" class="brand-mark shell-brand-mark" />
+                    <ui:VisualElement>
+                        <ui:Label text="MEMENTO MATCH" class="shell-title" />
+                        <ui:Label text="LA LIGA DE LAS SEIS ZONAS" class="shell-subtitle" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:Button name="shop-open" text="TIENDA" class="shop-entry" />
+                <ui:VisualElement class="shell-currency">
+                    <ui:Label text="ESTRELLAS" class="shell-currency-kicker" />
+                    <ui:Label name="paw-stars-label" text="0 ★" class="shell-currency-value" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement class="shell-body">
+                <ui:VisualElement name="shell-navigation" class="shell-navigation">
+                    <ui:Button name="nav-home" text="INICIO" class="shell-nav-button selected" />
+                    <ui:Button name="nav-story" text="HISTORIA" class="shell-nav-button" />
+                    <ui:Button name="nav-team" text="EQUIPO" class="shell-nav-button" />
+                    <ui:Button name="nav-collection" text="COLECCIÓN" class="shell-nav-button" />
+                    <ui:Button name="nav-settings" text="AJUSTES" class="shell-nav-button" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="shell-content">
+                    <ui:VisualElement name="page-home" class="shell-page active home-page">
+                        <ui:VisualElement class="home-hero-card">
+                            <ui:VisualElement class="home-stage-light" picking-mode="Ignore" />
+                            <ui:VisualElement name="home-guide-image" class="home-guide-image" picking-mode="Ignore" />
+                            <ui:VisualElement class="home-hero-copy">
+                                <ui:Label text="LA LIGA DE LAS SEIS ZONAS" class="page-kicker" />
+                                <ui:Label text="TU PRÓXIMO&#10;RECUERDO" class="home-headline" />
+                                <ui:Label text="Recupera tu zona. Reúne a tu equipo." class="page-description" />
+                                <ui:VisualElement class="home-progress-line">
+                                    <ui:Label name="progress-label" text="0 / 20 niveles · 0 / 60 estrellas" class="home-progress" />
+                                </ui:VisualElement>
+                                <ui:Button name="home-story-button" text="HISTORIA&#10;CONTINUAR" class="page-primary-button" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                        <ui:VisualElement class="home-secondary-card">
+                            <ui:VisualElement class="home-training-copy">
+                                <ui:Label text="ENTRENAMIENTO LIBRE" class="page-section-title" />
+                                <ui:Label name="loadout-summary" text="BARAJA · BOSQUE / GUÍA · SIN EQUIPAR / PASIVA · PULSO DEL RELEVO" class="page-description compact-copy" />
+                            </ui:VisualElement>
+                            <ui:VisualElement class="difficulty-row shell-difficulty-row">
+                                <ui:Button name="easy-button" text="FÁCIL&#10;2 × 3" class="difficulty-button easy" />
+                                <ui:Button name="normal-button" text="NORMAL&#10;4 × 5" class="difficulty-button normal" />
+                                <ui:Button name="hard-button" text="DIFÍCIL&#10;6 × 5" class="difficulty-button hard" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="page-story" class="shell-page story-page">
+                        <ui:VisualElement class="page-header-card story-header-card">
+                            <ui:Label text="MODO HISTORIA" class="page-kicker" />
+                            <ui:Label text="LA LIGA DE LAS SEIS ZONAS" class="page-title" />
+                            <ui:Label text="Las zonas de toda la arena compiten por un deseo. Recupera la tuya formando alianzas y llega al duelo final con todo tu equipo." class="page-description" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="story-route-card">
+                            <ui:VisualElement class="story-route-mark"><ui:Label text="6" class="story-route-number" /><ui:Label text="ZONAS" class="story-route-unit" /></ui:VisualElement>
+                            <ui:VisualElement class="story-route-copy">
+                                <ui:Label text="SIGUIENTE ETAPA" class="page-kicker" />
+                                <ui:Label text="Cinco alianzas abren el camino al Archivo Cero, donde se decide el deseo." class="page-description" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:Button name="campaign-open" text="ABRIR MAPA DEL RELEVO" class="page-primary-button story-primary" />
+                        <ui:Button name="story-replay-open" text="REJUGAR HISTORIA" class="page-secondary-button story-replay-entry" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="page-team" class="shell-page team-page">
+                        <ui:VisualElement class="page-heading">
+                            <ui:VisualElement><ui:Label text="EQUIPO" class="page-kicker" /><ui:Label text="ELIGE TU GUÍA" class="page-title" /></ui:VisualElement>
+                            <ui:Label text="Solo la guardiana equipada aporta su habilidad durante la partida." class="page-description heading-description" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="team-layout">
+                            <ui:VisualElement class="team-roster-card">
+                                <ui:VisualElement class="guide-row shell-guide-row">
+                                    <ui:Button name="aki-guide" text="AKI&#10;HISTORIA · MUNDO 1" class="guide-button locked" />
+                                    <ui:Button name="mika-guide" text="MIKA&#10;BLOQUEADA" class="guide-button locked" />
+                                    <ui:Button name="yoru-guide" text="YORU&#10;BLOQUEADA" class="guide-button locked" />
+                                    <ui:Button name="hana-guide" text="HANA&#10;BLOQUEADA" class="guide-button locked" />
+                                    <ui:Button name="momo-guide" text="MOMO&#10;BLOQUEADA" class="guide-button locked" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            <ui:VisualElement class="team-profile-card">
+                                <ui:VisualElement name="hostess-image" class="hostess-image shell-hostess-image" />
+                                <ui:VisualElement class="team-profile-copy">
+                                    <ui:Label name="guide-name" text="AKI · GUARDIANA DEL BOSQUE" class="team-guide-name" />
+                                    <ui:Label name="guide-ability" text="DESHACER · restaura jugada y combo · CD 5" class="team-guide-ability" />
+                                    <ui:Label name="hostess-line" text="Completa su mundo para reclutarla y equipar su habilidad." class="team-guide-line" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:Button name="challenge-button" text="DESBLOQUEO · COMPLETA EL MUNDO DE ESTA GUARDIANA" class="page-primary-button team-primary" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="page-collection" class="shell-page collection-page">
+                        <ui:VisualElement class="page-heading">
+                            <ui:VisualElement><ui:Label text="COLECCIÓN" class="page-kicker" /><ui:Label text="BARAJAS Y VÍNCULOS" class="page-title" /></ui:VisualElement>
+                            <ui:Label name="set-badge" text="BARAJAS 1 / 6" class="collection-counter" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="collection-active-card">
+                            <ui:Label text="BARAJA EQUIPADA" class="page-kicker" />
+                            <ui:Label name="theme-description" text="Aki · Bosque Vivo" class="collection-active-title" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="theme-grid shell-theme-grid">
+                            <ui:Button name="forest-theme" text="AKI · BOSQUE&#10;EQUIPADA" class="theme-button selected" />
+                            <ui:Button name="coral-theme" text="MIKA · CORAL&#10;BLOQUEADA" class="theme-button locked" />
+                            <ui:Button name="night-theme" text="YORU · CIELO&#10;BLOQUEADA" class="theme-button locked" />
+                            <ui:Button name="garden-theme" text="HANA · JARDÍN&#10;BLOQUEADA" class="theme-button locked" />
+                            <ui:Button name="sweets-theme" text="MOMO · DULCES&#10;BLOQUEADA" class="theme-button locked" />
+                            <ui:Button name="clockwork-theme" text="ARCHIVO · RELOJES&#10;BLOQUEADA" class="theme-button locked" />
+                        </ui:VisualElement>
+                        <ui:Button name="achievements-button" text="VER LOGROS DEL ARCHIVO" class="page-primary-button collection-primary" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="page-settings" class="shell-page settings-page">
+                        <ui:VisualElement class="page-header-card settings-header-card">
+                            <ui:Label text="AJUSTES" class="page-kicker" />
+                            <ui:Label text="PANTALLA, SONIDO Y SESIÓN" class="page-title" />
+                            <ui:Label text="Tu progreso se guarda automáticamente después de cada etapa." class="page-description" />
+                        </ui:VisualElement>
+                        <ui:ScrollView name="settings-scroll" class="settings-list" mode="Vertical" horizontal-scroller-visibility="Hidden">
+                            <ui:VisualElement class="audio-mixer-card orientation-card">
+                                <ui:Label text="ORIENTACIÓN" class="audio-mixer-title" />
+                                <ui:VisualElement class="orientation-choices">
+                                    <ui:Button name="orientation-auto" text="AUTOMÁTICO" class="orientation-choice selected" />
+                                    <ui:Button name="orientation-portrait" text="VERTICAL" class="orientation-choice" />
+                                    <ui:Button name="orientation-landscape" text="HORIZONTAL" class="orientation-choice" />
+                                </ui:VisualElement>
+                                <ui:Label text="Automático sigue el giro del móvil. Vertical u horizontal mantienen la vista elegida." class="orientation-hint" />
+                            </ui:VisualElement>
+                            <ui:VisualElement class="audio-mixer-card">
+                                <ui:Label text="MEZCLADOR" class="audio-mixer-title" />
+                                <ui:Slider name="music-volume" label="MÚSICA" low-value="0" high-value="1" value="0.28" class="audio-slider" />
+                                <ui:Slider name="sfx-volume" label="EFECTOS" low-value="0" high-value="1" value="0.9" class="audio-slider" />
+                                <ui:Slider name="voice-volume" label="VOCES" low-value="0" high-value="1" value="1" class="audio-slider" />
+                            </ui:VisualElement>
+                            <ui:Button name="mute-button" text="SONIDO: ON" class="settings-button" />
+                            <ui:Button name="delete-save-button" text="BORRAR PARTIDA" class="settings-button danger" />
+                            <ui:Button name="quit-button" text="SALIR DEL JUEGO" class="settings-button" />
+                        </ui:ScrollView>
+                        <ui:Label text="v1.20 · LA LIGA DE LAS SEIS ZONAS" class="version-label shell-version" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+
+    <ui:VisualElement name="gameplay-hud" class="gameplay-hud">
+        <ui:VisualElement class="hud-top">
+            <ui:VisualElement class="hud-brand">
+                <ui:Label text="MM" class="hud-mark" />
+                <ui:VisualElement>
+                    <ui:Label text="MEMENTO MATCH" class="hud-title" />
+                    <ui:Label name="hud-mode" text="PARTIDA LIBRE · AKI" class="hud-mode" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="hud-stat-row">
+                <ui:VisualElement class="hud-stat"><ui:Label text="PUNTOS" class="hud-kicker" /><ui:Label name="hud-score" text="0" class="hud-value" /></ui:VisualElement>
+                <ui:VisualElement class="hud-stat combo-stat"><ui:Label text="COMBO" class="hud-kicker" /><ui:Label name="hud-combo" text="×0" class="hud-value accent combo-hud-value" /></ui:VisualElement>
+                <ui:VisualElement class="hud-stat"><ui:Label text="TURNOS" class="hud-kicker" /><ui:Label name="hud-turns" text="0" class="hud-value" /></ui:VisualElement>
+                <ui:VisualElement class="hud-stat"><ui:Label text="PAREJAS" class="hud-kicker" /><ui:Label name="hud-matches" text="0 / 0" class="hud-value" /></ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="tutorial-overlay" class="tutorial-overlay" picking-mode="Ignore">
+                <ui:VisualElement class="tutorial-card" picking-mode="Ignore">
+                    <ui:VisualElement class="tutorial-number" picking-mode="Ignore"><ui:Label name="tutorial-step" text="1 / 2" picking-mode="Ignore" /></ui:VisualElement>
+                    <ui:VisualElement name="tutorial-guide-face" class="tutorial-guide-face" picking-mode="Ignore" />
+                    <ui:VisualElement class="tutorial-copy" picking-mode="Ignore">
+                        <ui:Label name="tutorial-kicker" text="PRIMER RELEVO" class="tutorial-kicker" picking-mode="Ignore" />
+                        <ui:Label name="tutorial-title" text="ENCUENTRA UNA PAREJA" class="tutorial-title" picking-mode="Ignore" />
+                        <ui:Label name="tutorial-body" text="Toca dos cartas iguales. Si fallas, recuerda dónde estaban." class="tutorial-body" picking-mode="Ignore" />
+                    </ui:VisualElement>
+                    <ui:Button name="tutorial-continue" text="×" tooltip="Ocultar consejo" class="tutorial-continue" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Button name="return-menu-button" text="← MENÚ" class="hud-menu-button" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="combo-burst" class="combo-burst">
+            <ui:VisualElement class="combo-speed-line combo-line-one" />
+            <ui:VisualElement class="combo-speed-line combo-line-two" />
+            <ui:VisualElement class="combo-count-frame">
+                <ui:Label name="combo-burst-count" text="×1" class="combo-burst-count" />
+            </ui:VisualElement>
+            <ui:VisualElement class="combo-burst-copy">
+                <ui:Label name="combo-burst-heading" text="CHAIN" class="combo-burst-heading" />
+                <ui:Label name="combo-burst-rank" text="CHAIN START" class="combo-burst-rank" />
+            </ui:VisualElement>
+            <ui:VisualElement class="combo-spark spark-one" />
+            <ui:VisualElement class="combo-spark spark-two" />
+            <ui:VisualElement class="combo-spark spark-three" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="voice-subtitle-box" class="voice-subtitle-box">
+            <ui:VisualElement name="voice-subtitle-face" class="voice-subtitle-face" />
+            <ui:VisualElement class="voice-subtitle-copy">
+                <ui:Label name="voice-subtitle-speaker" text="AKI" class="voice-subtitle-speaker" />
+                <ui:Label name="voice-subtitle-line" text="Un error no tiene por qué ser el final." class="voice-subtitle-line" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement class="hud-bottom">
+            <ui:VisualElement name="duel-versus-hud" class="duel-versus-hud">
+                <ui:VisualElement name="player-health-card" class="duel-health-card player-card">
+                    <ui:VisualElement class="health-heading">
+                        <ui:Label text="JUGADOR" class="health-owner player" />
+                        <ui:Label name="player-health-label" text="TÚ · 5/5" class="duel-health-label player" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="player-health-track" class="health-track player-health-track">
+                        <ui:VisualElement name="player-health-fill" class="health-fill player-health-fill">
+                            <ui:VisualElement class="health-fill-core" />
+                            <ui:VisualElement class="health-fill-gloss" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="health-segments">
+                            <ui:VisualElement class="health-segment" /><ui:VisualElement class="health-segment" />
+                            <ui:VisualElement class="health-segment" /><ui:VisualElement class="health-segment" />
+                            <ui:VisualElement class="health-segment" /><ui:VisualElement class="health-segment last" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="health-frame-highlight" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="duel-center">
+                    <ui:Label text="VS" class="duel-vs" />
+                    <ui:Label name="rival-status" text="TU TURNO" class="rival-status" />
+                </ui:VisualElement>
+                <ui:VisualElement name="rival-health-card" class="duel-health-card rival-card">
+                    <ui:VisualElement class="health-heading">
+                        <ui:Label name="rival-name" text="MIKA" class="health-owner rival" />
+                        <ui:Label name="rival-health-label" text="5/5" class="duel-health-label rival" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="rival-health-track" class="health-track rival-health-track">
+                        <ui:VisualElement name="rival-fill" class="health-fill rival-fill">
+                            <ui:VisualElement class="health-fill-core" />
+                            <ui:VisualElement class="health-fill-gloss" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="health-segments">
+                            <ui:VisualElement class="health-segment" /><ui:VisualElement class="health-segment" />
+                            <ui:VisualElement class="health-segment" /><ui:VisualElement class="health-segment" />
+                            <ui:VisualElement class="health-segment" /><ui:VisualElement class="health-segment last" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="health-frame-highlight" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="power-cluster" class="power-cluster">
+                <ui:VisualElement name="power-guide-face" class="power-guide-face" />
+                <ui:Button name="power-button" text="DESHACER&#10;LISTO" class="power-button" />
+                <ui:Button name="supplies-open" text="AYUDAS" class="supplies-hud-button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+
+    <ui:VisualElement name="skill-cut-in-overlay" class="skill-cut-in-overlay">
+        <ui:VisualElement name="skill-cut-in-band" class="skill-cut-in-band">
+            <ui:VisualElement class="skill-cut-in-accent" />
+            <ui:VisualElement class="skill-cut-in-face-frame">
+                <ui:VisualElement name="skill-cut-in-face" class="skill-cut-in-face" />
+            </ui:VisualElement>
+            <ui:VisualElement class="skill-cut-in-copy">
+                <ui:Label name="skill-cut-in-kicker" text="ACTIVACIÓN DE HABILIDAD" class="skill-cut-in-kicker" />
+                <ui:Label name="skill-cut-in-name" text="VISIÓN ESTELAR" class="skill-cut-in-name" />
+                <ui:Label name="skill-cut-in-quote" text="Las estrellas ya conocen la pareja." class="skill-cut-in-quote" />
+                <ui:Label text="TOCA PARA SALTAR" class="skill-skip-hint" picking-mode="Ignore" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+
+    <ui:VisualElement name="skill-proc-toast" class="skill-proc-toast">
+        <ui:VisualElement name="skill-proc-face" class="skill-proc-face" />
+        <ui:VisualElement class="skill-proc-copy">
+            <ui:Label name="skill-proc-name" text="ESCUDO DE COMBO" class="skill-proc-name" />
+            <ui:Label name="skill-proc-effect" text="EFECTO ACTIVADO" class="skill-proc-effect" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+
+    <ui:VisualElement name="duel-dialogue-overlay" class="duel-dialogue-overlay">
+        <ui:VisualElement class="duel-dialogue-shade" />
+        <ui:VisualElement class="duel-dialogue-card">
+            <ui:VisualElement name="duel-dialogue-face" class="duel-dialogue-face" />
+            <ui:VisualElement class="duel-dialogue-copy">
+                <ui:Label name="duel-dialogue-name" text="MIKA" class="duel-dialogue-name" />
+                <ui:Label name="duel-dialogue-line" text="Ese movimiento no estaba en mis cálculos." class="duel-dialogue-line" />
+                <ui:Button name="duel-dialogue-continue" text="CONTINUAR" class="duel-dialogue-continue" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+
+    <ui:VisualElement name="result-overlay" class="modal-overlay">
+        <ui:VisualElement class="result-panel">
+            <ui:VisualElement class="result-emblem" picking-mode="Ignore" />
+            <ui:Label name="result-kicker" text="RESULTADO" class="result-kicker" />
+            <ui:Label name="result-title" text="RECUERDO COMPLETO" class="result-title" />
+            <ui:Label name="result-summary" text="Resumen de la partida" class="result-summary" />
+            <ui:VisualElement class="result-reward">
+                <ui:Label text="RECOMPENSA" class="hud-kicker" />
+                <ui:Label name="result-stars" text="+0 ★" class="result-stars" />
+            </ui:VisualElement>
+            <ui:Label name="result-achievements" text="" class="result-achievements" />
+            <ui:VisualElement name="result-continue-offer" class="result-continue-offer" style="display: none;">
+                <ui:Button name="result-continue-ad" text="VER ANUNCIO Y CONTINUAR" class="result-button primary" />
+                <ui:Label name="result-continue-status" text="Una vez por intento · recupera media vida y conserva tu avance." class="result-continue-status" />
+            </ui:VisualElement>
+            <ui:VisualElement class="result-actions">
+                <ui:Button name="result-retry" text="JUGAR DE NUEVO" class="result-button secondary" />
+                <ui:Button name="result-menu" text="VOLVER AL MENÚ" class="result-button primary" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+
+    <ui:VisualElement name="achievements-overlay" class="modal-overlay">
+        <ui:VisualElement class="achievements-panel">
+            <ui:VisualElement class="achievements-heading">
+                <ui:VisualElement>
+                    <ui:Label text="ARCHIVO DE VÍNCULOS" class="result-kicker" />
+                    <ui:Label text="LOGROS" class="result-title compact" />
+                </ui:VisualElement>
+                <ui:Button name="achievements-close" text="CERRAR" class="utility-button" />
+            </ui:VisualElement>
+            <ui:ScrollView name="achievements-scroll" mode="Vertical" class="achievements-scroll" horizontal-scroller-visibility="Hidden">
+                <ui:VisualElement name="achievement-list" class="achievement-list" />
+            </ui:ScrollView>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="campaign-overlay" class="modal-overlay campaign-overlay">
+        <ui:VisualElement class="campaign-panel">
+            <ui:VisualElement class="campaign-heading">
+                <ui:VisualElement class="campaign-heading-copy">
+                    <ui:Label text="RELEVO DE LAS CIEN" class="result-kicker" />
+                    <ui:Label text="CAMPAÑA" class="result-title compact" />
+                    <ui:Label name="campaign-overview" text="0 / 20 niveles · 0 / 60 estrellas" class="campaign-overview" />
+                </ui:VisualElement>
+                <ui:Button name="campaign-credits" text="CRÉDITOS" class="utility-button campaign-credits" />
+                <ui:Button name="campaign-close" text="CERRAR" class="utility-button" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="campaign-world-tabs">
+                <ui:Button name="campaign-world-0" text="1&#10;AKI" class="campaign-world-button selected" />
+                <ui:Button name="campaign-world-1" text="2&#10;MIKA" class="campaign-world-button" />
+                <ui:Button name="campaign-world-2" text="3&#10;YORU" class="campaign-world-button" />
+                <ui:Button name="campaign-world-3" text="4&#10;HANA" class="campaign-world-button" />
+                <ui:Button name="campaign-world-4" text="5&#10;MOMO" class="campaign-world-button" />
+                <ui:Button name="campaign-final" text="FINAL&#10;0/20" class="campaign-world-button final-boss locked last" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="campaign-world-card">
+                <ui:VisualElement class="campaign-world-copy">
+                    <ui:Label name="campaign-world-kicker" text="MUNDO 1 / 5" class="campaign-world-kicker" />
+                    <ui:Label name="campaign-world-title" text="BOSQUE DE LOS PRIMEROS RECUERDOS" class="campaign-world-title" />
+                    <ui:Label name="campaign-world-progress" text="0 / 4 completados" class="campaign-world-progress" />
+                </ui:VisualElement>
+                <ui:VisualElement name="campaign-guardian" class="campaign-guardian" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="campaign-node-row">
+                <ui:Button name="campaign-node-0" text="01&#10;HUELLAS&#10;○○○" class="campaign-node selected" />
+                <ui:Button name="campaign-node-1" text="02&#10;SENDERO&#10;○○○" class="campaign-node locked" />
+                <ui:Button name="campaign-node-2" text="03&#10;CLAROS&#10;○○○" class="campaign-node locked" />
+                <ui:Button name="campaign-node-3" text="04&#10;DUELO AKI&#10;○○○" class="campaign-node boss locked last" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="campaign-level-detail">
+                <ui:VisualElement class="campaign-level-copy">
+                    <ui:Label name="campaign-level-kicker" text="NIVEL 1 · PARTIDA" class="campaign-level-kicker" />
+                    <ui:Label name="campaign-level-title" text="HUELLAS AL ALBA" class="campaign-level-title" />
+                    <ui:Label name="campaign-level-objective" text="Encuentra tres parejas y abre el sendero." class="campaign-level-objective" />
+                    <ui:Label name="campaign-level-rules" text="2 × 3 · ★ completa · ★ eficiencia · ★ reto" class="campaign-level-rules" />
+                </ui:VisualElement>
+                <ui:Button name="campaign-start" text="JUGAR NIVEL 1" class="campaign-start-button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+
+    <ui:VisualElement name="guide-equip-overlay" class="modal-overlay guide-equip-overlay">
+        <ui:VisualElement class="guide-equip-panel">
+            <ui:VisualElement name="guide-equip-portrait" class="guide-equip-portrait" />
+            <ui:VisualElement class="guide-equip-copy">
+                <ui:Label text="NUEVA HABILIDAD DISPONIBLE" class="result-kicker" />
+                <ui:Label name="guide-equip-name" text="AKI SE UNE AL EQUIPO" class="guide-equip-title" />
+                <ui:Label name="guide-equip-ability" text="DESHACER · restaura la última jugada y el combo anterior." class="guide-equip-ability" />
+                <ui:Label text="¿Quieres equipar esta habilidad para la siguiente etapa?" class="guide-equip-question" />
+                <ui:VisualElement class="guide-equip-actions">
+                    <ui:Button name="guide-equip-keep" text="MANTENER HABILIDAD ACTUAL" class="page-secondary-button guide-equip-button" />
+                    <ui:Button name="guide-equip-confirm" text="EQUIPAR AHORA" class="page-primary-button guide-equip-button primary" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+
+    <ui:VisualElement name="story-replay-overlay" class="modal-overlay story-replay-overlay">
+        <ui:VisualElement class="story-replay-panel">
+            <ui:VisualElement class="story-replay-heading">
+                <ui:VisualElement>
+                    <ui:Label text="ARCHIVO DEL RELEVO" class="result-kicker" />
+                    <ui:Label text="REJUGAR HISTORIA" class="result-title compact" />
+                </ui:VisualElement>
+                <ui:Button name="story-replay-close" text="CERRAR" class="utility-button" />
+            </ui:VisualElement>
+            <ui:Label text="Vuelve a ver escenas ya descubiertas. No cambia estrellas, recompensas ni progreso." class="page-description" />
+            <ui:VisualElement class="story-replay-world-tabs">
+                <ui:Button name="story-replay-world-0" text="1&#10;AKI" class="story-replay-world selected" />
+                <ui:Button name="story-replay-world-1" text="2&#10;MIKA" class="story-replay-world locked" />
+                <ui:Button name="story-replay-world-2" text="3&#10;YORU" class="story-replay-world locked" />
+                <ui:Button name="story-replay-world-3" text="4&#10;HANA" class="story-replay-world locked" />
+                <ui:Button name="story-replay-world-4" text="5&#10;MOMO" class="story-replay-world locked last" />
+            </ui:VisualElement>
+            <ui:Label name="story-replay-world-title" text="ETAPA DEL BOSQUE VIVO" class="story-replay-world-title" />
+            <ui:VisualElement class="story-replay-scenes">
+                <ui:Button name="story-replay-scene-0" text="INTRODUCCIÓN&#10;VOLVER A VER" class="story-replay-scene" />
+                <ui:Button name="story-replay-scene-1" text="DESAFÍO&#10;BLOQUEADO" class="story-replay-scene locked" />
+                <ui:Button name="story-replay-scene-2" text="RECLUTAMIENTO&#10;BLOQUEADO" class="story-replay-scene locked last" />
+            </ui:VisualElement>
+            <ui:Button name="story-replay-final" text="FINAL · REI · BLOQUEADO" class="page-secondary-button story-replay-epilogue locked" />
+            <ui:Button name="story-replay-epilogue" text="EPÍLOGO · BLOQUEADO" class="page-secondary-button story-replay-epilogue locked" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+
+    <ui:VisualElement name="player-name-overlay" class="modal-overlay player-name-overlay">
+        <ui:VisualElement class="player-name-panel">
+            <ui:Label text="INSCRIPCIÓN AL RELEVO" class="result-kicker" />
+            <ui:Label text="¿CÓMO QUIERES QUE TE LLAMEN?" class="player-name-title" />
+            <ui:Label text="Tú eres la protagonista: una aspirante que lucha por recuperar su hogar. Elige el nombre con el que te conocerán tus compañeras." class="player-name-copy" />
+            <ui:TextField name="player-name-field" label="NOMBRE DEL ASPIRANTE" max-length="16" class="player-name-field" />
+            <ui:Label name="player-name-feedback" text="Escribe entre 2 y 16 caracteres." class="player-name-feedback" />
+            <ui:Button name="player-name-confirm" text="COMENZAR EL RELEVO" class="story-next-button player-name-confirm" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+
+    <ui:VisualElement name="story-overlay" class="modal-overlay story-overlay">
+        <ui:VisualElement class="story-panel">
+            <ui:VisualElement name="story-stage" class="story-stage">
+                <ui:VisualElement name="story-background" class="story-background world-0" />
+                <ui:Label name="story-stage-chapter" text="BOSQUE DE LOS PRIMEROS RECUERDOS" class="story-stage-chapter" />
+                <ui:VisualElement name="story-portrait" class="story-portrait" />
+                <ui:VisualElement class="story-dialogue-card">
+                    <ui:VisualElement class="story-dialogue-heading">
+                        <ui:Label name="story-speaker" text="RELATOR DEL RELEVO" class="story-speaker" />
+                        <ui:Label name="story-progress" text="1 / 6" class="story-progress" />
+                    </ui:VisualElement>
+                    <ui:Label name="story-line" text="Un nuevo relevo está a punto de comenzar." class="story-line" />
+                    <ui:Button name="story-next" text="CONTINUAR" class="story-next-button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="story-header">
+                <ui:VisualElement>
+                    <ui:Label name="story-kicker" text="MUNDO 1 / 5" class="result-kicker" />
+                    <ui:Label name="story-chapter" text="BOSQUE DE LOS PRIMEROS RECUERDOS" class="story-chapter" />
+                </ui:VisualElement>
+                <ui:Button name="story-skip" text="SALTAR" class="utility-button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+
+    <ui:VisualElement name="final-celebration-overlay" class="modal-overlay final-celebration-overlay">
+        <ui:VisualElement class="final-celebration-panel">
+            <ui:Label text="DESEO CONCEDIDO" class="final-kicker" />
+            <ui:Label text="EL RELEVO ESTÁ COMPLETO" class="final-title" />
+            <ui:Label text="Nuestra alianza ha elegido recordar junta. Tu equipo ya no compite por un deseo: lo comparte." class="final-copy" />
+            <ui:VisualElement class="final-team-strip">
+                <ui:VisualElement name="final-team-face-0" class="final-team-face" />
+                <ui:VisualElement name="final-team-face-1" class="final-team-face" />
+                <ui:VisualElement name="final-team-face-2" class="final-team-face" />
+                <ui:VisualElement name="final-team-face-3" class="final-team-face" />
+                <ui:VisualElement name="final-team-face-4" class="final-team-face" />
+                <ui:VisualElement name="final-team-face-5" class="final-team-face last" />
+            </ui:VisualElement>
+            <ui:VisualElement class="final-reward-card">
+                <ui:Label text="RECOMPENSA FINAL" class="hud-kicker" />
+                <ui:Label text="BARAJA DEL ARCHIVO" class="final-reward-title" />
+                <ui:Label text="Un tablero exclusivo de engranajes y mecanismos queda disponible en Colección." class="final-reward-copy" />
+            </ui:VisualElement>
+            <ui:VisualElement class="final-actions">
+                <ui:Button name="final-credits" text="VER CRÉDITOS" class="page-secondary-button final-button" />
+                <ui:Button name="final-equip-archive" text="EQUIPAR ARCHIVO Y VER CRÉDITOS" class="page-primary-button final-button primary" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+
+    <ui:VisualElement name="credits-overlay" class="modal-overlay credits-overlay">
+        <ui:VisualElement class="credits-panel">
+            <ui:Label text="ARCHIVO COMPLETO" class="result-kicker" />
+            <ui:Label text="MEMENTO MATCH" class="credits-title" />
+            <ui:Label text="Seis zonas · veintiún niveles · cinco alianzas · un deseo" class="credits-subtitle" />
+            <ui:VisualElement class="credits-rule" />
+            <ui:Label text="Diseño y producción · EvilHack Kogara Productions&#10;Desarrollo asistido · EHKP Agent Circle&#10;Arte, voces y música · flujos locales de producción&#10;&#10;Gracias por completar el Deseo de las Seis Zonas." class="credits-copy" />
+            <ui:Label text="JUEGO LIBRE Y TODOS LOS DUELOS DISPONIBLES" class="credits-unlocked" />
+            <ui:Button name="credits-close" text="VOLVER AL ARCHIVO" class="story-next-button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

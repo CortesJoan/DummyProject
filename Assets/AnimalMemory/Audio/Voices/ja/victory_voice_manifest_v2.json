@@ -1,0 +1,72 @@
+[
+  {
+    "guide": "aki",
+    "japanese": "[excited tone] 今回は私の勝ち。もう一回やろう？",
+    "reference": "voices/memento_match/aki_anchor.wav",
+    "seed": 511137,
+    "model": "s2-pro",
+    "temperature": 0.55,
+    "top_p": 0.75,
+    "repetition_penalty": 1.2,
+    "chunk_length": 240,
+    "raw": "aki_victory_00001.flac",
+    "master": "aki_victory.flac",
+    "master_sha256": "57FD493483DEEFDB23329654C4BA4C320936261786254ECA8D47258BC74B22BC"
+  },
+  {
+    "guide": "mika",
+    "japanese": "結果確認。私の勝ちね。再戦はいつでもどうぞ。",
+    "reference": "voices/memento_match/mika_anchor.wav",
+    "seed": 512137,
+    "model": "s2-pro",
+    "temperature": 0.55,
+    "top_p": 0.75,
+    "repetition_penalty": 1.2,
+    "chunk_length": 240,
+    "raw": "mika_victory_00001.flac",
+    "master": "mika_victory.wav",
+    "master_sha256": "5AC219FEC4C67A3FCE9FC86CCA975B9BA1B6CAD1C29F3EAFD37ADB1562827B42"
+  },
+  {
+    "guide": "yoru",
+    "japanese": "今夜、星が選んだのは私ね。",
+    "reference": "voices/memento_match/yoru_anchor.wav",
+    "seed": 513137,
+    "model": "s2-pro",
+    "temperature": 0.55,
+    "top_p": 0.75,
+    "repetition_penalty": 1.2,
+    "chunk_length": 240,
+    "raw": "yoru_victory_00001.flac",
+    "master": "yoru_victory.wav",
+    "master_sha256": "038BEC109322CA1B41829BE1CF6C1F3A2397CAD79EFE3BB4B5B74E3D46BC137D"
+  },
+  {
+    "guide": "hana",
+    "japanese": "[delight] この勝負、私の花が咲いたね！",
+    "reference": "hana_ref.wav",
+    "seed": 514137,
+    "model": "s2-pro",
+    "temperature": 0.55,
+    "top_p": 0.75,
+    "repetition_penalty": 1.2,
+    "chunk_length": 240,
+    "raw": "hana_victory_00001.flac",
+    "master": "hana_victory.flac",
+    "master_sha256": "17A3EC32E9686E3188840300AB24AF39A862ACF81F0E75EE5F85EFB832D8EC50"
+  },
+  {
+    "guide": "momo",
+    "japanese": "[excited] モモの勝ち！ごほうびは、もーらいっ！",
+    "reference": "momo_ref_rori_v2.flac",
+    "seed": 519137,
+    "model": "s2-pro",
+    "temperature": 0.55,
+    "top_p": 0.75,
+    "repetition_penalty": 1.2,
+    "chunk_length": 240,
+    "raw": "momo_victory_00001.flac",
+    "master": "momo_victory.flac",
+    "master_sha256": "1C6E847308413393C788B1C7198886CE8E86690899193B10C75371DD50F512C6"
+  }
+]

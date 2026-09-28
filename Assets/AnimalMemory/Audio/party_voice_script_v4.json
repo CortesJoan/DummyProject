@@ -1,0 +1,102 @@
+{
+  "version": 4,
+  "status": "imported_catalogued_unity_decode_verified_listening_review_pending",
+  "lines": [
+    {
+      "scene": 6,
+      "guide": "mika",
+      "id": "story_06_20",
+      "es": "Un mapa fiable necesita medidas, Yoru, no horóscopos.",
+      "ja": "正確な地図に必要なのは測定よ、ヨル。占いじゃないわ。",
+      "direction": "Mika: crisp skeptical scientist, lively natural speech; no whisper or ASMR."
+    },
+    {
+      "scene": 6,
+      "guide": "yoru",
+      "id": "story_06_21",
+      "es": "Y alguien tiene que decidir dónde medir. Mis estrellas señalaron este camino antes que tus instrumentos.",
+      "ja": "でも、どこを測るかは誰かが決めないと。あなたの計器より先に、星がこの道を示したの。",
+      "direction": "Yoru: composed but pointed teasing, fully voiced, not breathy."
+    },
+    {
+      "scene": 8,
+      "guide": "mika",
+      "id": "story_08_20",
+      "es": "Sigo sin creer en tus predicciones. Pero el camino que marcaste sigue abierto.",
+      "ja": "あなたの予言を信じたわけじゃないわ。でも、印をつけた道は、まだ開いている。",
+      "direction": "Mika: grudging concrete acknowledgement, clear projection."
+    },
+    {
+      "scene": 8,
+      "guide": "yoru",
+      "id": "story_08_21",
+      "es": "Y seguirá abierto si lo refuerzas. Puedes discutir conmigo mientras trabajamos.",
+      "ja": "あなたが補強してくれれば、開いたままにできる。言い合いなら、手を動かしながらでもできるでしょう？",
+      "direction": "Yoru: dry playful challenge, warm resolve, not hushed."
+    },
+    {
+      "scene": 11,
+      "guide": "hana",
+      "id": "story_11_20",
+      "es": "Antes de seguir: Momo es mi hermana. Cada vez que intento protegerla, cree que estoy decidiendo por ella.",
+      "ja": "先に言っておくね。モモは私の妹なの。守ろうとするたびに、自分のことを勝手に決められたって思うみたい。",
+      "direction": "Hana: sincere worried older sister, normal speaking volume, not crying."
+    },
+    {
+      "scene": 12,
+      "guide": "hana",
+      "id": "story_12_20",
+      "es": "Momo, no he venido a sacarte del torneo. He venido a preguntarte qué quieres hacer.",
+      "ja": "モモ、大会から連れ戻しに来たんじゃないよ。あなたがどうしたいのか、聞きに来たの。",
+      "direction": "Hana: patient but nervous, direct invitation."
+    },
+    {
+      "scene": 12,
+      "guide": "momo",
+      "id": "story_12_21",
+      "es": "¡Pues empieza por dejar de hablar por mí, Hana! Mi deseo también cuenta.",
+      "ja": "だったら、私の代わりに話すのをやめてよ、ハナ！私の願いだって大事なんだから！",
+      "direction": "Momo: bright youthful moe synthetic voice, defiant energy, projected not shrill, no ASMR."
+    },
+    {
+      "scene": 14,
+      "guide": "momo",
+      "id": "story_14_20",
+      "es": "Hana, voy con vosotras. Pero cuando me toque hablar, me dejas terminar.",
+      "ja": "ハナ、みんなと一緒に行くよ。でも、私が話すときは、最後まで聞いてね。",
+      "direction": "Momo: firm boundary then affection, energetic youthful clear delivery."
+    },
+    {
+      "scene": 14,
+      "guide": "hana",
+      "id": "story_14_21",
+      "es": "De acuerdo. Y cuando necesites ayuda, pídemela. No tienes que ganártela.",
+      "ja": "わかった。助けが必要なときは、ちゃんと言ってね。強さを証明しなくても、助けるから。",
+      "direction": "Hana: warm steady older sister, no whisper."
+    },
+    {
+      "scene": 14,
+      "guide": "momo",
+      "id": "story_14_22",
+      "es": "No prometo dejar de discutir contigo. Pero sí llegar juntas a la final.",
+      "ja": "もう言い合いしない、なんて約束はできないよ。でも、一緒に決勝まで行く。それは約束する。",
+      "direction": "Momo: cheeky sincere resolve, clear smiling tone."
+    },
+    {
+      "scene": 15,
+      "guide": "mika",
+      "id": "story_15_20",
+      "es": "Yoru, busca una apertura. Yo comprobaré tus coordenadas.",
+      "ja": "ヨル、突破口を探して。座標は私が確かめる。",
+      "direction": "Mika: concise tactical trust, energetic."
+    },
+    {
+      "scene": 15,
+      "guide": "yoru",
+      "id": "story_15_21",
+      "es": "Por fin una predicción en la que estamos de acuerdo: ninguna se queda atrás.",
+      "ja": "やっと、同じ未来が見えたね。誰一人、置いていかない。",
+      "direction": "Yoru: resolved warm confidence, strongly voiced."
+    }
+  ]
+}

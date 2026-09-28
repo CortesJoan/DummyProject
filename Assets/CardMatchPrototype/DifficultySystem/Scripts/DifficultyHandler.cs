@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 public class DifficultyHandler : MonoBehaviour
@@ -7,30 +6,47 @@ public class DifficultyHandler : MonoBehaviour
     [SerializeField] private List<GameDifficulty> availableDifficulties;
     private GameDifficulty currentDifficulty;
 
-
-
     public GameDifficulty GetCurrentDifficulty()
     {
         return currentDifficulty;
     }
+
     public void SetCurrentDifficultyLevel(int levelIndex)
     {
-        if (levelIndex >= 0 && levelIndex < availableDifficulties.Count)
+        if (availableDifficulties == null || availableDifficulties.Count == 0)
         {
-            currentDifficulty = availableDifficulties[levelIndex];
+            Debug.LogError("Cannot set difficulty because no difficulty levels are configured.");
+            currentDifficulty = null;
+            return;
         }
-        else
+
+        int clampedIndex = Mathf.Clamp(levelIndex, 0, availableDifficulties.Count - 1);
+        if (clampedIndex != levelIndex)
         {
-            Debug.LogError($"Invalid difficulty index.There are {availableDifficulties.Count} difficulties. Setting max difficulty instead");
-            currentDifficulty = availableDifficulties.Last();
+            Debug.LogWarning($"Difficulty index {levelIndex} is out of range; using {clampedIndex}.");
         }
+
+        currentDifficulty = availableDifficulties[clampedIndex];
     }
+
     public int GetCurrentDifficultyLevel()
     {
-        return availableDifficulties.IndexOf(currentDifficulty);
+        if (availableDifficulties == null || availableDifficulties.Count == 0)
+        {
+            return 0;
+        }
+
+        int currentIndex = availableDifficulties.IndexOf(currentDifficulty);
+        return currentIndex >= 0 ? currentIndex : 0;
     }
+
     public int GetNextDifficultyLevel()
     {
-        return GetCurrentDifficultyLevel() + 1;
+        if (availableDifficulties == null || availableDifficulties.Count == 0)
+        {
+            return 0;
+        }
+
+        return Mathf.Min(GetCurrentDifficultyLevel() + 1, availableDifficulties.Count - 1);
     }
 }

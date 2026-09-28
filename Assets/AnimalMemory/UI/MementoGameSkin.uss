@@ -1,0 +1,1045 @@
+/* Memento Match · Enamel Adventure v4. Character stage, sapphire enamel and illustrated navigation.
+ * Rounded targets and circular portraits; existing responsive geometry is preserved.
+ * Background provenance: Documentation~/MEMORY_ALBUM_UI_2026-09-12.md.
+ */
+
+.shell-screen {
+    padding: 0;
+    background-color: rgb(18,39,67);
+}
+.lobby-background, .lobby-atmosphere {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.lobby-background {
+    background-image: url("../Art/StoryBackgrounds/story-bg-forest-v1.png");
+    -unity-background-scale-mode: scale-and-crop;
+    background-position: center;
+}
+.lobby-atmosphere {
+    background-color: rgba(105,175,195,0.12);
+}
+.shell-screen .mobile-shell {
+    max-width: none;
+    border-width: 0;
+    border-radius: 0;
+    background-color: transparent;
+}
+.shell-screen .shell-topbar {
+    flex-shrink: 0;
+    height: 82px;
+    padding: 10px 34px;
+    background-color: rgb(18,39,67);
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(163,165,155);
+}
+.shell-screen .shell-brand-mark {
+    width: 50px;
+    height: 50px;
+    margin-right: 16px;
+    border-radius: 24px;
+    border-width: 1px;
+    border-color: rgb(163,165,155);
+    background-color: rgb(18,39,67);
+    color: rgb(242,241,233);
+    font-size: 20px;
+    rotate: -3deg;
+}
+.shell-screen .shell-title {
+    color: rgb(242,241,233);
+    font-size: 26px;
+    letter-spacing: 3px;
+}
+.shell-screen .shell-subtitle {
+    color: rgb(242,241,233);
+    font-size: 13px;
+    letter-spacing: 1.6px;
+}
+.shell-screen .shell-currency-kicker {
+    color: rgb(242,241,233);
+    font-size: 12px;
+}
+.shell-screen .shell-currency-value {
+    color: rgb(242,241,233);
+    font-size: 27px;
+}
+.shell-screen .shell-body {
+    flex-direction: column-reverse;
+}
+.shell-screen .shell-content {
+    min-height: 0;
+}
+.shell-screen .shell-navigation {
+    width: 100%;
+    height: 92px;
+    flex-shrink: 0;
+    padding: 10px 12%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(18,39,67);
+    border-width: 0;
+    border-top-width: 1px;
+    border-top-color: rgb(163,165,155);
+}
+.shell-screen .shell-nav-button {
+    width: 20%;
+    min-width: 0;
+    height: 68px;
+    margin: 0 7px;
+    padding: 8px;
+    flex-grow: 1;
+    border-width: 0;
+    border-bottom-width: 2px;
+    border-bottom-color: rgb(163,165,155);
+    border-radius: 0;
+    background-color: rgb(18,39,67);
+    color: rgb(242,241,233);
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    transition-property: background-color, color, border-bottom-color;
+    transition-duration: 140ms;
+}
+.shell-screen .shell-nav-button:hover {
+    color: rgb(242,241,233);
+    background-color: rgb(18,39,67);
+    border-bottom-color: rgb(163,165,155);
+}
+.shell-screen .shell-nav-button.selected {
+    color: rgb(242,241,233);
+    background-color: rgb(18,39,67);
+    border-left-width: 0;
+    border-bottom-width: 4px;
+    border-bottom-color: rgb(163,165,155);
+}
+.shell-screen .shell-page {
+    padding: 26px 5%;
+}
+.shell-screen .page-kicker {
+    color: rgb(242,241,233);
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.shell-screen .page-title {
+    color: rgb(242,241,233);
+    font-size: 36px;
+}
+.shell-screen .page-description {
+    color: rgb(242,241,233);
+    font-size: 21px;
+    line-height: 27px;
+}
+.shell-screen .page-section-title {
+    color: rgb(242,241,233);
+    font-size: 20px;
+}
+.shell-screen .page-heading {
+    padding: 8px 14px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(163,165,155);
+    background-color: rgb(18,39,67);
+}
+.shell-screen .heading-description {
+    font-size: 18px;
+}
+
+/* Open character stage, not a dashboard of equal-weight cards. */
+.shell-screen .home-page {
+    flex-direction: column;
+    padding: 0 5% 14px;
+}
+.shell-screen .home-hero-card {
+    flex-grow: 1;
+    position: relative;
+    min-height: 0;
+    padding: 0;
+    border-width: 0;
+    border-radius: 0;
+    background-color: transparent;
+    overflow: hidden;
+}
+.home-stage-light {
+    position: absolute;
+    width: 42%;
+    height: 18%;
+    right: 1%;
+    bottom: 2%;
+    border-radius: 50%;
+    background-color: rgba(105,175,195,0.12);
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(163,165,155);
+}
+.shell-screen .home-guide-image {
+    left: auto;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 48%;
+    height: 100%;
+    opacity: 1;
+    background-position: center bottom;
+    -unity-background-scale-mode: scale-to-fit;
+}
+.shell-screen .home-hero-copy {
+    width: 49%;
+    align-self: center;
+    padding: 26px;
+    background-color: rgb(18,39,67);
+    border-left-width: 3px;
+    border-left-color: rgb(163,165,155);
+}
+.shell-screen .home-headline {
+    margin-top: 16px;
+    color: rgb(242,241,233);
+    font-size: 46px;
+    line-height: 50px;
+    letter-spacing: 0.8px;
+}
+.shell-screen .home-hero-copy .page-description {
+    margin-top: 14px;
+    color: rgb(242,241,233);
+    font-size: 22px;
+    line-height: 29px;
+}
+.shell-screen .home-progress-line {
+    margin-top: 24px;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-width: 0;
+    border-top-width: 1px;
+    border-top-color: rgb(163,165,155);
+    border-radius: 0;
+    background-color: transparent;
+}
+.shell-screen .home-progress {
+    color: rgb(242,241,233);
+    font-size: 17px;
+    white-space: normal;
+}
+.shell-screen #home-story-button {
+    height: 86px;
+    flex-shrink: 0;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+}
+.shell-screen .home-secondary-card {
+    width: 100%;
+    min-width: 0;
+    min-height: 92px;
+    max-height: 116px;
+    flex-shrink: 0;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 12px 18px;
+    border-width: 0;
+    border-top-width: 1px;
+    border-top-color: rgb(163,165,155);
+    border-radius: 0;
+    background-color: rgb(18,39,67);
+}
+.shell-screen .home-training-copy {
+    width: 48%;
+    min-width: 0;
+    padding-right: 16px;
+}
+.shell-screen .home-training-copy .compact-copy {
+    color: rgb(242,241,233);
+    font-size: 14px;
+    line-height: 18px;
+}
+.shell-screen .shell-difficulty-row {
+    flex-grow: 1;
+    flex-direction: row;
+    margin: 0;
+}
+.shell-screen .shell-difficulty-row .difficulty-button {
+    width: 30%;
+    min-width: 0;
+    flex-grow: 1;
+    height: 64px;
+    margin: 0 5px;
+    font-size: 17px;
+}
+
+/* Painted materials: one quiet central face, ornament reserved for edges.
+ * Source cuts: panel 1254px with 150px corners; button 2172x724px with 180px side / 80px top.
+ * Slice scale keeps source detail out of text on small targets.
+ */
+.page-primary-button,
+.campaign-start-button,
+.story-next-button,
+.result-button.primary,
+.duel-dialogue-continue {
+    background-image: none;
+    -unity-background-scale-mode: stretch-to-fill;
+    -unity-background-image-tint-color: white;
+    border-width: 0;
+    border-radius: 24px;
+    background-color: transparent;
+    color: rgb(242,241,233);
+    -unity-font-style: bold;
+    transition-property: -unity-background-image-tint-color, scale;
+    transition-duration: 120ms;
+}
+.page-primary-button:hover,
+.campaign-start-button:hover,
+.story-next-button:hover,
+.result-button.primary:hover,
+.duel-dialogue-continue:hover {
+    background-color: transparent;
+    -unity-background-image-tint-color: rgb(255, 243, 194);
+}
+.page-primary-button:active,
+.campaign-start-button:active,
+.story-next-button:active,
+.result-button.primary:active {
+    scale: 0.98 0.98;
+    -unity-background-image-tint-color: rgb(206, 184, 142);
+}
+.page-primary-button:disabled,
+.campaign-start-button:disabled,
+.story-next-button:disabled {
+    -unity-background-image-tint-color: rgb(116, 128, 121);
+    color: rgb(242,241,233);
+}
+.shell-screen .page-primary-button {
+    height: 68px;
+    font-size: 21px;
+}
+.shell-screen .page-secondary-button {
+    height: 58px;
+    font-size: 18px;
+}
+.page-secondary-button,
+.utility-button,
+.settings-button,
+.difficulty-button,
+.result-button.secondary,
+.hud-menu-button,
+.tutorial-continue {
+    border-width: 1px;
+    border-color: rgb(163,165,155);
+    border-radius: 24px;
+    background-color: rgb(18,39,67);
+    color: rgb(242,241,233);
+}
+.page-secondary-button:hover,
+.utility-button:hover,
+.settings-button:hover,
+.difficulty-button:hover,
+.result-button.secondary:hover,
+.hud-menu-button:hover {
+    background-color: rgb(18,39,67);
+    border-color: rgb(163,165,155);
+    color: rgb(242,241,233);
+}
+
+/* Inventory pages stay quiet; only selected objects get an antique-gold edge. */
+.shell-screen .page-header-card,
+.shell-screen .story-route-card,
+.shell-screen .team-roster-card,
+.shell-screen .collection-active-card,
+.shell-screen .audio-mixer-card {
+    background-color: rgb(18,39,67);
+    border-width: 1px;
+    border-color: rgb(163,165,155);
+    border-radius: 24px;
+}
+.shell-screen .team-profile-card {
+    background-color: rgb(18,39,67);
+    border-width: 1px;
+    border-color: rgb(163,165,155);
+    border-radius: 24px;
+}
+.shell-screen .team-profile-copy {
+    background-color: rgb(18,39,67);
+}
+.shell-screen .team-guide-name {
+    font-size: 28px;
+    white-space: normal;
+}
+.shell-screen .team-guide-ability {
+    font-size: 20px;
+    line-height: 26px;
+    color: rgb(242,241,233);
+}
+.shell-screen .team-guide-line {
+    font-size: 20px;
+    line-height: 27px;
+    color: rgb(242,241,233);
+}
+.shell-screen .shell-guide-row {
+    height: auto;
+    min-height: 0;
+    flex-grow: 1;
+}
+.shell-screen .shell-guide-row .guide-button {
+    min-width: 0;
+    flex-shrink: 0;
+    font-size: 17px;
+    border-radius: 24px;
+    border-width: 1px;
+    border-color: rgb(163,165,155);
+    background-color: rgb(18,39,67);
+    color: rgb(242,241,233);
+}
+.shell-screen .shell-theme-grid .theme-button {
+    border-radius: 24px;
+    border-width: 1px;
+    border-color: rgb(163,165,155);
+    background-color: rgb(18,39,67);
+    color: rgb(242,241,233);
+    font-size: 17px;
+}
+.shell-screen .shell-guide-row .guide-button.selected,
+.shell-screen .shell-theme-grid .theme-button.selected {
+    border-width: 2px;
+    border-color: rgb(163,165,155);
+    background-color: rgb(18,39,67);
+    color: rgb(242,241,233);
+}
+.shell-screen .shell-guide-row .guide-button.locked,
+.shell-screen .shell-theme-grid .theme-button.locked {
+    opacity: 0.65;
+    background-color: rgb(18,39,67);
+}
+.shell-screen .collection-preview-face {
+    border-radius: 24px;
+    border-color: rgb(163,165,155);
+    background-color: rgb(18,39,67);
+}
+.shell-screen .collection-active-title { font-size: 24px; }
+.shell-screen .collection-counter { font-size: 19px; }
+.shell-screen .audio-mixer-title { font-size: 17px; }
+.shell-screen .audio-slider { height: 46px; font-size: 19px; }
+.shell-screen .settings-button { font-size: 19px; }
+.shell-screen .shell-version { color: rgb(196,207,219); font-size: 13px; }
+
+/* Orientation choices share the game's selected-gold language. */
+.shell-screen .settings-page { min-height: 0; justify-content: flex-start; }
+.shell-screen .settings-header-card { flex-shrink: 0; }
+.shell-screen .settings-list { flex-grow: 1; flex-shrink: 1; min-height: 0; }
+.shell-screen .settings-list .unity-scroll-view__content-container { padding-right: 8px; }
+.shell-screen .orientation-card { flex-shrink: 0; }
+.orientation-choices { flex-direction: row; }
+.orientation-choice {
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 0;
+    height: 60px;
+    margin: 0 3px;
+    border-width: 1px;
+    border-radius: 24px;
+    border-color: rgb(163,165,155);
+    background-color: rgb(18,39,67);
+    color: rgb(242,241,233);
+    font-size: 17px;
+    -unity-font-style: bold;
+}
+.orientation-choice.selected {
+    background-color: rgb(37,68,97);
+    border-color: rgb(163,165,155);
+    color: rgb(242,241,233);
+}
+.orientation-choice:hover { border-color: rgb(163,165,155); }
+.orientation-choice:focus { border-width: 2px; border-color: rgb(163,165,155); }
+.orientation-hint { white-space: normal; color: rgb(68,111,137); font-size: 16px; margin-top: 9px; }
+.shell-screen.portrait .orientation-choice { height: 48px; font-size: 12px; }
+.shell-screen.portrait .orientation-hint { font-size: 13px; }
+.shell-screen.small-landscape .orientation-choice { height: 88px; font-size: 25px; }
+.shell-screen.small-landscape .orientation-hint { font-size: 24px; }
+
+/* Major windows share the painted frame. No geometry is imposed on VN. */
+.result-panel,
+.achievements-panel,
+.campaign-panel,
+.guide-equip-panel,
+.story-replay-panel,
+.player-name-panel,
+.final-celebration-panel,
+.credits-panel {
+    background-image: none;
+    -unity-background-scale-mode: stretch-to-fill;
+    -unity-background-image-tint-color: white;
+    border-width: 0;
+    border-radius: 24px;
+    background-color: rgb(18,39,67);
+}
+.result-title,
+.result-title.compact,
+.achievement-name {
+    color: rgb(242,241,233);
+}
+.result-kicker,
+.result-achievements,
+.achievement-state {
+    color: rgb(242,241,233);
+}
+.result-summary,
+.achievement-description {
+    color: rgb(242,241,233);
+}
+.result-reward,
+.final-reward-card {
+    border-radius: 24px;
+    border-width: 1px;
+    border-color: rgb(163,165,155);
+    background-color: rgb(18,39,67);
+}
+.result-emblem {
+    width: 66px;
+    height: 6px;
+    margin-bottom: 15px;
+    border-left-width: 18px;
+    border-right-width: 18px;
+    border-color: rgb(163,165,155);
+    background-color: rgb(37,68,97);
+}
+.achievement-item {
+    border-radius: 24px;
+    border-color: rgb(163,165,155);
+    background-color: rgb(18,39,67);
+}
+.achievement-item.unlocked {
+    border-color: rgb(163,165,155);
+    background-color: rgb(18,39,67);
+}
+.campaign-world-card,
+.campaign-level-detail {
+    border-radius: 24px;
+    background-color: rgb(18,39,67);
+}
+.campaign-world-button,
+.campaign-node,
+.story-replay-world,
+.story-replay-scene {
+    border-radius: 24px;
+}
+.modal-overlay {
+    background-color: rgb(18,39,67);
+}
+
+/* Optional rewarded continuation uses the same in-game frame and never crowds the two free exits. */
+.result-continue-offer { width: 100%; margin-top: 12px; margin-bottom: 12px; flex-shrink: 0; }
+.result-continue-offer .result-button { width: 100%; min-height: 48px; flex-shrink: 0; }
+.result-continue-status { color: rgb(185,203,216); font-size: 12px; white-space: normal; -unity-text-align: middle-center; margin-top: 6px; }
+.result-panel { min-height: 0; max-height: 94%; padding-top: 20px; padding-bottom: 20px; }
+#result-overlay.portrait .result-title { font-size: 25px; }
+
+/* Battle material only: preserve existing safe bounds, tutorial font overrides,
+ * health ownership colors, damage flashes and cooldown legibility.
+ */
+.hud-top {
+    background-image: none;
+    -unity-background-scale-mode: stretch-to-fill;
+    border-radius: 24px;
+    border-color: rgb(163,165,155);
+    background-color: rgb(18,39,67);
+}
+.hud-mark {
+    border-radius: 24px;
+    background-color: rgb(18,39,67);
+    color: rgb(242,241,233);
+    border-width: 1px;
+    border-color: rgb(163,165,155);
+}
+.hud-mode, .hud-kicker {
+    color: rgb(242,241,233);
+}
+.duel-health-card {
+    border-radius: 24px;
+    background-color: rgb(18,39,67);
+}
+.power-button {
+    border-radius: 24px;
+    background-color: rgb(18,39,67);
+    border-color: rgb(163,165,155);
+}
+.power-guide-face,
+.duel-dialogue-face,
+.voice-subtitle-face,
+.skill-proc-face {
+    border-radius: 24px;
+    border-color: rgb(163,165,155);
+}
+.duel-dialogue-card,
+.voice-subtitle-box,
+.skill-proc-toast {
+    border-radius: 24px;
+    background-color: rgb(18,39,67);
+}
+.story-overlay .story-dialogue-card {
+    background-image: none;
+    -unity-background-scale-mode: stretch-to-fill;
+    border-radius: 24px;
+    border-color: rgb(163,165,155);
+    background-color: rgb(18,39,67);
+}
+.story-overlay .story-header {
+    border-radius: 24px;
+    background-color: rgb(18,39,67);
+}
+.story-overlay .story-speaker {
+    color: rgb(242,241,233);
+}
+.story-overlay .story-line {
+    color: rgb(242,241,233);
+}
+
+/* Portrait is a staged illustration over a bottom action, not a shrunken desktop. */
+.shell-screen.portrait .shell-topbar {
+    height: 64px;
+    padding: 7px 14px;
+}
+.shell-screen.portrait .shell-brand-mark {
+    width: 35px;
+    height: 39px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+.shell-screen.portrait .shell-title { font-size: 19px; letter-spacing: 1.5px; }
+.shell-screen.portrait .shell-subtitle { font-size: 8px; letter-spacing: 0.7px; }
+.shell-screen.portrait .shell-currency-kicker { font-size: 8px; }
+.shell-screen.portrait .shell-currency-value { font-size: 19px; }
+.shell-screen.portrait .shell-navigation {
+    height: 78px;
+    padding: 6px 5px;
+}
+.shell-screen.portrait .shell-nav-button {
+    min-width: 0;
+    height: 60px;
+    margin: 0 3px;
+    padding: 4px 1px;
+    border-top-width: 0;
+    font-size: 11px;
+    letter-spacing: 0.3px;
+}
+.shell-screen.portrait .shell-nav-button.selected {
+    border-top-width: 0;
+    border-bottom-width: 3px;
+}
+.shell-screen.portrait .shell-page {
+    padding: 16px 12px;
+}
+.shell-screen.portrait .page-kicker { font-size: 11px; letter-spacing: 1px; }
+.shell-screen.portrait .page-title { font-size: 25px; }
+.shell-screen.portrait .page-description { font-size: 15px; line-height: 20px; }
+.shell-screen.portrait .page-section-title { font-size: 13px; }
+.shell-screen.portrait .home-page {
+    padding: 0 12px 8px;
+}
+.shell-screen.portrait .home-hero-card {
+    padding: 0;
+    min-height: 0;
+}
+.shell-screen.portrait .home-stage-light {
+    width: 86%;
+    height: 11%;
+    right: 7%;
+    bottom: 34%;
+}
+.shell-screen.portrait .home-guide-image {
+    left: 2%;
+    right: auto;
+    top: 0;
+    bottom: auto;
+    width: 96%;
+    height: 63%;
+    background-position: center bottom;
+}
+.shell-screen.portrait .home-hero-copy {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 8px;
+    width: auto;
+    padding: 15px 18px;
+    background-color: rgb(18,39,67);
+    border-left-width: 2px;
+}
+.shell-screen.portrait .home-headline {
+    margin-top: 8px;
+    font-size: 27px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+}
+.shell-screen.portrait .home-hero-copy .page-description {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 19px;
+}
+.shell-screen.portrait .home-progress-line {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    padding: 7px 0 0;
+}
+.shell-screen.portrait .home-progress {
+    font-size: 12px;
+}
+.shell-screen.portrait #home-story-button {
+    height: 62px;
+    font-size: 17px;
+    letter-spacing: 0.7px;
+}
+.shell-screen.portrait .home-secondary-card {
+    min-height: 82px;
+    max-height: 108px;
+    margin: 0;
+    padding: 8px 10px;
+}
+.shell-screen.portrait .home-training-copy {
+    width: 34%;
+    padding-right: 6px;
+}
+.shell-screen.portrait .home-training-copy .compact-copy {
+    font-size: 9px;
+    line-height: 12px;
+    margin-top: 4px;
+}
+.shell-screen.portrait .shell-difficulty-row {
+    margin: 0;
+}
+.shell-screen.portrait .shell-difficulty-row .difficulty-button {
+    height: 52px;
+    margin: 0 3px;
+    font-size: 11px;
+}
+.shell-screen.portrait .page-primary-button { height: 58px; font-size: 16px; }
+.shell-screen.portrait .page-secondary-button { height: 52px; font-size: 14px; }
+.shell-screen.portrait .team-profile-copy { padding: 16px 12px; }
+.shell-screen.portrait .team-guide-name { font-size: 20px; }
+.shell-screen.portrait .team-guide-ability { font-size: 15px; line-height: 21px; }
+.shell-screen.portrait .team-guide-line { font-size: 15px; line-height: 21px; }
+.shell-screen.portrait .shell-guide-row { height: 64px; flex-grow: 0; }
+.shell-screen.portrait .shell-guide-row .guide-button { width: 18%; flex-shrink: 1; font-size: 10px; }
+.shell-screen.portrait .shell-theme-grid .theme-button { font-size: 12px; }
+.shell-screen.portrait .collection-active-title { font-size: 20px; }
+.shell-screen.portrait .collection-counter { font-size: 13px; }
+.shell-screen.portrait .audio-mixer-title { font-size: 13px; }
+.shell-screen.portrait .audio-slider { height: 44px; font-size: 15px; }
+.shell-screen.portrait .settings-button { font-size: 15px; }
+.shell-screen.portrait .shell-version { font-size: 10px; }
+.story-overlay.portrait .story-dialogue-card { border-radius: 0; }
+
+/* Optional viewport class supplied by the existing controller; no media queries. */
+.shell-screen.small-landscape .shell-title { font-size: 32px; }
+.shell-screen.small-landscape .shell-subtitle { font-size: 19px; }
+.shell-screen.small-landscape .shell-topbar { height: 102px; }
+.shell-screen.small-landscape .shell-navigation { height: 122px; padding: 8px 8%; }
+.shell-screen.small-landscape .shell-nav-button { height: 104px; min-height: 104px; font-size: 30px; }
+.shell-screen.small-landscape .home-hero-copy { padding: 18px 24px; width: 56%; }
+.shell-screen.small-landscape .home-headline { font-size: 42px; line-height: 47px; margin-top: 9px; }
+.shell-screen.small-landscape .home-hero-copy .page-kicker { font-size: 23px; }
+.shell-screen.small-landscape .home-hero-copy .page-description { font-size: 28px; line-height: 33px; margin-top: 10px; }
+.shell-screen.small-landscape .home-progress-line { margin-top: 12px; margin-bottom: 12px; }
+.shell-screen.small-landscape .home-progress { font-size: 23px; }
+.shell-screen.small-landscape #home-story-button { height: 104px; min-height: 104px; font-size: 30px; }
+.shell-screen.small-landscape .home-secondary-card { min-height: 122px; max-height: 130px; }
+.shell-screen.small-landscape .home-training-copy .compact-copy { display: none; }
+.shell-screen.small-landscape .home-training-copy .page-section-title { font-size: 28px; }
+.shell-screen.small-landscape .shell-difficulty-row .difficulty-button { height: 104px; min-height: 104px; font-size: 28px; }
+.shell-screen.small-landscape .page-title { font-size: 40px; }
+.shell-screen.small-landscape .page-description { font-size: 28px; line-height: 33px; }
+.shell-screen.small-landscape .page-primary-button { height: 88px; font-size: 29px; }
+.shell-screen.small-landscape .page-secondary-button { height: 76px; font-size: 26px; }
+.shell-screen.small-landscape .shell-guide-row .guide-button { height: 75px; font-size: 24px; }
+.shell-screen.small-landscape .shell-theme-grid .theme-button { height: 154px; font-size: 25px; }
+.shell-screen.small-landscape .team-guide-name { font-size: 34px; }
+.shell-screen.small-landscape .team-guide-ability { font-size: 27px; line-height: 32px; }
+.shell-screen.small-landscape .team-guide-line { font-size: 27px; line-height: 32px; }
+.shell-screen.small-landscape .settings-button { height: 78px; font-size: 27px; }
+.shell-screen.small-landscape .audio-slider { height: 62px; font-size: 27px; }
+
+/* Shared VN viewport class; game-specific materials stay in this skin.
+ * UI units are scaled from 1920x1080: 100 units is about 44px at 800x480.
+ */
+.story-overlay.landscape.small-landscape .story-dialogue-card {
+    min-height: 340px;
+    height: 340px;
+    padding: 24px 28px;
+}
+.story-overlay.landscape.small-landscape .story-line {
+    font-size: 38px;
+    white-space: normal;
+}
+.story-overlay.landscape.small-landscape .story-speaker { font-size: 30px; }
+.story-overlay.landscape.small-landscape .story-progress { font-size: 24px; }
+.story-overlay.landscape.small-landscape .story-next-button {
+    min-height: 100px;
+    height: 100px;
+    width: 390px;
+    font-size: 30px;
+}
+.story-overlay.landscape.small-landscape .story-header { min-height: 110px; }
+.story-overlay.landscape.small-landscape .story-chapter { font-size: 32px; }
+.story-overlay.landscape.small-landscape #story-skip {
+    min-height: 100px;
+    height: 100px;
+    min-width: 240px;
+    font-size: 30px;
+}
+
+/* Bounded modal content: headings and close actions never scroll away. */
+.achievements-panel { height: 82%; min-height: 0; }
+.achievements-heading { flex-shrink: 0; }
+.achievements-scroll { flex-grow: 1; flex-shrink: 1; min-height: 0; }
+.achievement-list { flex-shrink: 0; }
+.achievement-item { flex-shrink: 0; }
+.campaign-world-button { flex-basis: 0; flex-grow: 1; flex-shrink: 1; min-width: 0; }
+.modal-overlay.portrait .campaign-world-button { flex-basis: 0; min-width: 0; margin-right: 4px; font-size: 11px; }
+
+/* Practice and scripted ambush are separate from the gameplay board. */
+.opening-memory-overlay { position: absolute; left: 0; right: 0; top: 0; bottom: 0; background-color: rgb(18,39,67); align-items: center; justify-content: center; padding: 12px; }
+.opening-memory-overlay.impact { background-color: rgb(18,39,67); }
+.opening-memory-panel { width: 90%; max-width: 670px; height: 94%; min-height: 0; align-items: stretch; color: rgb(250,238,209); }
+.opening-memory-title { font-size: 23px; -unity-font-style: bold; white-space: normal; margin-top: 8px; flex-shrink: 0; }
+.opening-memory-copy { font-size: 16px; white-space: normal; margin-top: 8px; margin-bottom: 10px; flex-shrink: 0; }
+.opening-memory-status { color: rgb(255,201,80); font-size: 15px; -unity-font-style: bold; flex-shrink: 0; }
+.opening-memory-grid { flex-grow: 1; flex-shrink: 1; min-height: 80px; flex-direction: row; flex-wrap: wrap; justify-content: center; align-content: center; margin-top: 8px; margin-bottom: 8px; }
+.opening-memory-card { width: 44%; height: 43%; min-width: 0; min-height: 0; margin: 2%; background-color: rgb(37,68,97); border-color: rgb(163,165,155); border-width: 2px; border-radius: 8px; color: rgb(255,220,145); font-size: 30px; -unity-background-scale-mode: scale-to-fit; }
+.opening-memory-card:disabled { opacity: 1; }
+.opening-memory-card.matched { border-color: rgb(163,165,155); background-color: rgb(18,39,67); }
+.opening-memory-card.cinematic { width: 14%; height: 16%; margin: 1%; border-width: 1px; font-size: 10px; }
+.opening-memory-panel .page-primary-button, .opening-memory-panel .page-secondary-button { height: 44px; min-height: 44px; flex-shrink: 0; margin-top: 6px; }
+
+/* Material hierarchy: paper panels, mint secondary controls, coral primary actions. */
+.lobby-atmosphere { background-color: rgba(18,39,67,0.04); }
+.shell-screen .shell-topbar, .shell-screen .shell-navigation { background-color: rgba(18,39,67,0.95); }
+.shell-screen .shell-brand-mark, .hud-mark { border-radius: 50%; rotate: 0deg; background-color: rgb(105,175,195); color: rgb(242,241,233); border-width: 0; }
+.shell-screen .shell-brand-mark { width: 50px; height: 50px; }
+.shell-screen.portrait .shell-brand-mark { width: 38px; height: 38px; }
+.shell-screen .shell-nav-button { border-radius: 40px; border-width: 0; background-color: rgb(29,58,91); color: rgb(242,241,233); }
+.shell-screen .shell-nav-button.selected { border-width: 0; background-color: rgb(29,98,123); color: rgb(255,231,175); }
+.shell-screen.portrait .shell-nav-button.selected { border-width: 0; }
+.shell-screen .shell-nav-button:hover { background-color: rgb(42,87,116); color: rgb(255,231,175); }
+.shell-screen .page-kicker { color: rgb(247,209,142); }
+.shell-screen .home-hero-copy { border-width: 0; border-radius: 36px; background-color: rgba(18,39,67,0.94); }
+.shell-screen.portrait .home-hero-copy { border-width: 0; background-color: rgba(18,39,67,0.97); }
+.shell-screen .home-progress-line { border-radius: 22px; padding: 10px 14px; background-color: rgb(16,45,70); border-width: 0; }
+.shell-screen .home-secondary-card { border-width: 0; border-radius: 28px; background-color: rgba(18,39,67,0.96); }
+.home-stage-light { display: none; }
+.page-primary-button, .campaign-start-button, .story-next-button, .result-button.primary, .duel-dialogue-continue {
+    background-image: none; background-color: rgb(18,103,135); color: rgb(255,249,239);
+    border-width: 0; border-radius: 40px; -unity-background-image-tint-color: white;
+}
+.page-primary-button:hover, .campaign-start-button:hover, .story-next-button:hover, .result-button.primary:hover, .duel-dialogue-continue:hover {
+    background-color: rgb(27,130,158); color: rgb(255,249,239);
+}
+.page-primary-button:disabled, .campaign-start-button:disabled, .story-next-button:disabled {
+    background-color: rgb(56,67,79); color: rgb(172,182,192);
+}
+.page-secondary-button, .utility-button, .settings-button, .difficulty-button, .result-button.secondary, .hud-menu-button, .tutorial-continue, .orientation-choice {
+    border-radius: 32px; background-color: rgb(31,66,100); color: rgb(243,242,235); border-color: rgb(127,163,186);
+}
+.page-secondary-button:hover, .utility-button:hover, .settings-button:hover, .difficulty-button:hover, .hud-menu-button:hover {
+    background-color: rgb(48,96,128); color: rgb(243,242,235);
+}
+.orientation-choice.selected { background-color: rgb(29,98,123); color: rgb(255,231,175); border-color: rgb(241,208,148); }
+.shell-screen .shell-guide-row .guide-button, .shell-screen .shell-theme-grid .theme-button { border-radius: 24px; }
+.shell-screen .shell-guide-row .guide-button.selected, .shell-screen .shell-theme-grid .theme-button.selected {
+    border-color: rgb(18,103,135); background-color: rgb(33,89,118); color: rgb(255,231,175);
+}
+.shell-screen .team-profile-copy { border-radius: 24px; background-color: rgba(18,39,67,0.97); }
+.shell-screen .team-guide-ability { color: rgb(247,209,142); }
+.campaign-node { border-radius: 50%; }
+.campaign-world-button, .story-replay-world, .story-replay-scene { border-radius: 28px; }
+.modal-overlay { background-color: rgba(6,13,29,0.75); }
+.hud-top { background-image: none; border-radius: 28px; border-width: 0; }
+.hud-score, .hud-value, .hud-title, .hud-brand, .hud-kicker, .hud-mode { color: rgb(242,241,233); }
+.duel-health-card { border-radius: 28px; background-color: rgba(15,33,57,0.97); }
+.power-button { border-radius: 30px; background-color: rgb(18,39,67); color: rgb(242,241,233); border-color: rgb(163,165,155); }
+.power-guide-face, .duel-dialogue-face, .voice-subtitle-face, .skill-proc-face { border-radius: 50%; overflow: hidden; }
+.duel-dialogue-card, .voice-subtitle-box, .skill-proc-toast { border-radius: 28px; background-color: rgb(18,39,67); }
+.duel-dialogue-line, .voice-subtitle-line, .skill-proc-effect { color: rgb(242,241,233); }
+.duel-dialogue-name, .voice-subtitle-speaker, .skill-proc-name { color: rgb(247,209,142); }
+.story-overlay .story-dialogue-card { background-image: none; border-radius: 28px; background-color: rgba(18,39,67,0.98); }
+.story-overlay .story-speaker { color: rgb(247,209,142); }
+.story-overlay .story-line { color: rgb(242,241,233); }
+.story-overlay.portrait .story-dialogue-card { border-top-left-radius: 28px; border-top-right-radius: 28px; }
+.story-overlay .story-header { background-color: rgba(18,39,67,0.93); border-radius: 24px; }
+.story-overlay .story-chapter, .story-overlay .story-progress { color: rgb(242,241,233); }
+.opening-memory-overlay { background-color: rgb(12,26,48); }
+.opening-memory-overlay.impact { background-color: rgb(170,88,92); }
+.opening-memory-title, .opening-memory-copy { color: rgb(242,241,233); }
+.opening-memory-status { color: rgb(247,209,142); }
+.opening-memory-card { border-radius: 20px; background-color: rgb(29,72,107); color: rgb(242,241,233); }
+
+/* Skill announcements: one legible capsule and one semantic animated emblem. */
+.skill-cut-in-overlay { background-color: rgba(8,15,33,0.88); }
+.cut-in-speed-line, .skill-cut-in-accent { display: none; }
+.skill-cut-in-overlay .skill-cut-in-band, .skill-cut-in-overlay.active .skill-cut-in-band {
+    left: 12%; right: 12%; top: 45%; height: auto; min-height: 220px;
+    padding: 26px 32px; border-width: 2px; border-color: rgb(105,175,195);
+    border-radius: 42px; background-color: rgb(18,39,67);
+}
+.skill-cut-in-overlay .skill-cut-in-band { opacity: 0; scale: 0.96 0.96; transition-property: opacity, scale; transition-duration: 240ms; }
+.skill-cut-in-overlay.active .skill-cut-in-band { opacity: 1; scale: 1 1; }
+.skill-cut-in-overlay.hostile .skill-cut-in-band { background-color: rgb(22,36,66); border-color: rgb(226,161,148); }
+.skill-cut-in-overlay .skill-cut-in-face-frame {
+    width: 170px; height: 170px; border-radius: 50%; margin-right: 28px;
+    background-color: rgb(33,70,101); border-width: 3px; border-color: rgb(171,193,201); flex-shrink: 0;
+}
+.skill-cut-in-overlay .skill-cut-in-name { font-size: 34px; color: rgb(242,241,233); letter-spacing: 0.5px; }
+.skill-cut-in-overlay .skill-cut-in-kicker { font-size: 15px; color: rgb(247,209,142); letter-spacing: 1px; white-space: normal; }
+.skill-cut-in-overlay .skill-cut-in-quote { font-size: 21px; color: rgb(221,228,240); white-space: normal; }
+.skill-cut-in-effect { font-size: 21px; color: rgb(157,234,233); -unity-font-style: bold; white-space: normal; margin-top: 12px; }
+.skill-cut-in-overlay.portrait .skill-cut-in-band, .skill-cut-in-overlay.portrait.active .skill-cut-in-band {
+    left: 4%; right: 4%; top: 43%; height: auto; min-height: 280px; padding: 22px;
+    flex-direction: column; align-items: stretch; border-radius: 32px;
+}
+.skill-cut-in-overlay.portrait .skill-cut-in-face-frame { width: 96px; height: 96px; align-self: center; margin-right: 0; margin-bottom: 14px; }
+.skill-cut-in-overlay.portrait .skill-cut-in-copy { align-items: stretch; }
+.skill-cut-in-overlay.portrait .skill-cut-in-name { font-size: 26px; -unity-text-align: middle-center; }
+.skill-cut-in-overlay.portrait .skill-cut-in-kicker { font-size: 13px; -unity-text-align: middle-center; }
+.skill-cut-in-overlay.portrait .skill-cut-in-quote { font-size: 18px; -unity-text-align: middle-center; }
+.skill-cut-in-overlay.portrait .skill-cut-in-effect { font-size: 18px; -unity-text-align: middle-center; }
+
+/* Explicit ink on paper: legacy label colors must not survive the material swap. */
+.shell-screen Label, .modal-overlay Label { color: rgb(242,241,233); }
+.shell-screen .team-guide-name, .shell-screen .collection-active-title, .shell-screen .audio-mixer-title,
+.shell-screen .unity-base-field__label, .shell-screen .story-route-number, .shell-screen .story-route-unit { color: rgb(242,241,233); }
+.shell-screen .page-heading { border-radius: 24px; border-width: 0; }
+.modal-overlay .result-continue-status { color: rgb(242,241,233); }
+.modal-overlay Button { background-image: none; background-color: rgb(31,66,100); color: rgb(243,242,235); border-color: rgb(127,163,186); border-radius: 28px; }
+.modal-overlay .result-button.primary, .modal-overlay .campaign-start-button,
+.modal-overlay .page-primary-button { background-color: rgb(18,103,135); color: rgb(255,249,239); }
+.hud-top .hud-value, .hud-top .hud-kicker, .hud-top .hud-mode { color: rgb(242,241,233); }
+.hud-top .hud-value.accent { color: rgb(247,209,142); }
+
+
+/* V4 skill cut-in: full action pose and integrated subtitle, not a floating glyph. */
+.skill-cut-in-overlay { background-color: rgba(5,12,29,.91); }
+.skill-cut-in-overlay .skill-cinematic-actor { position: absolute; left: 1%; top: 0; bottom: 0; width: 53%; -unity-background-scale-mode: scale-to-fit; background-position: center bottom; }
+.skill-cut-in-overlay .skill-cut-in-face-frame { display: none; }
+.skill-cut-in-overlay .skill-cut-in-band, .skill-cut-in-overlay.active .skill-cut-in-band {
+    left: 51%; right: 5%; top: 36%; bottom: auto; height: auto; min-height: 230px; padding: 28px 32px;
+    border-radius: 6px 36px 6px 36px; border-width: 1px; border-left-width: 4px; border-color: rgb(143,192,210);
+    background-color: rgba(16,42,72,.97); flex-direction: row; align-items: center;
+}
+.skill-cut-in-overlay.hostile .skill-cut-in-band { background-color: rgba(38,31,66,.97); border-color: rgb(232,177,132); }
+.skill-cut-in-overlay .skill-cut-in-band { opacity: 0; translate: 100px 0; scale: 1 1; transition-property: opacity, translate; transition-duration: 350ms; }
+.skill-cut-in-overlay.active .skill-cut-in-band { opacity: 1; translate: 0 0; }
+.skill-cut-in-overlay.active.leaving .skill-cut-in-band { opacity: 0; translate: 35px 0; transition-duration: 220ms; }
+.skill-cut-in-overlay .skill-cut-in-name { font-size: 40px; color: rgb(255,236,187); -unity-font-style: bold; white-space: normal; }
+.skill-cut-in-overlay .skill-cut-in-kicker { font-size: 17px; color: rgb(153,223,242); margin-bottom: 10px; }
+.skill-cut-in-overlay .skill-cut-in-quote { font-size: 23px; color: rgb(244,246,250); margin-top: 14px; }
+.skill-cut-in-overlay .skill-cut-in-effect { font-size: 23px; color: rgb(170,239,220); margin-top: 18px; padding-top: 12px; border-top-width: 1px; border-top-color: rgb(92,135,158); }
+.skill-cut-in-overlay.portrait .skill-cinematic-actor { left: 6%; top: 1%; bottom: auto; width: 88%; height: 68%; }
+.skill-cut-in-overlay.portrait .skill-cut-in-band, .skill-cut-in-overlay.portrait.active .skill-cut-in-band {
+    left: 4%; right: 4%; top: auto; bottom: 7%; height: auto; min-height: 240px;
+    padding: 22px; flex-direction: column; align-items: stretch; border-radius: 6px 28px 6px 28px;
+}
+.skill-cut-in-overlay.portrait .skill-cut-in-face-frame { display: none; }
+.skill-cut-in-overlay.portrait .skill-cut-in-name { font-size: 28px; }
+.skill-cut-in-overlay.portrait .skill-cut-in-kicker { font-size: 13px; }
+.skill-cut-in-overlay.portrait .skill-cut-in-quote, .skill-cut-in-overlay.portrait .skill-cut-in-effect { font-size: 18px; }
+
+.shell-screen.lobby-world-0 .lobby-background { background-image: url("../Art/StoryBackgrounds/story-bg-forest-v1.png"); }
+.shell-screen.lobby-world-1 .lobby-background { background-image: url("../Art/StoryBackgrounds/story-bg-coral-v1.png"); }
+.shell-screen.lobby-world-2 .lobby-background { background-image: url("../Art/StoryBackgrounds/story-bg-night-v1.png"); }
+.shell-screen.lobby-world-3 .lobby-background { background-image: url("../Art/StoryBackgrounds/story-bg-garden-v1.png"); }
+.shell-screen.lobby-world-4 .lobby-background { background-image: url("../Art/StoryBackgrounds/story-bg-sweets-v1.png"); }
+.shell-screen.lobby-world-5 .lobby-background { background-image: url("../Art/StoryBackgrounds/story-bg-archive-zero-v1.png"); }
+/* V4 composition: the character owns the stage; controls sit at the edges. */
+.shell-screen .lobby-atmosphere { background-color: rgba(8,22,45,0.32); }
+.shell-screen .shell-topbar { height: 74px; padding: 8px 28px; background-color: rgba(10,27,49,.90); border-bottom-color: rgb(183,178,155); }
+.shell-screen .shell-title { font-size: 23px; letter-spacing: 2px; }
+.shell-screen .shell-subtitle { font-size: 11px; color: rgb(168,207,225); }
+.shell-screen .shell-brand-mark { background-color: rgb(26,93,125); border-width: 2px; border-color: rgb(212,194,151); color: rgb(255,233,175); }
+.shell-screen .shell-navigation { height: 144px; padding: 0 18%; background-color: rgba(9,24,44,.95); border-top-width: 2px; border-top-color: rgb(183,178,155); overflow: visible; }
+.shell-screen .shell-nav-button, .shell-screen .shell-nav-button.selected, .shell-screen .shell-nav-button:hover {
+    height: 138px; min-height: 0; margin: 0 12px; padding: 0 0 6px; background-color: transparent;
+    border-radius: 0; border-width: 0; font-size: 18px; -unity-font-style: bold; -unity-text-align: lower-center;
+    color: rgb(200,218,233); letter-spacing: 0.6px;
+}
+.shell-screen .shell-nav-button.selected { color: rgb(255,226,160); border-bottom-width: 3px; border-bottom-color: rgb(255,207,105); }
+.navigation-art { position: absolute; left: 0; right: 0; top: -8px; height: 108px; -unity-background-scale-mode: scale-to-fit; }
+.shell-nav-button .navigation-art { opacity: .73; transition-property: opacity, scale; transition-duration: 140ms; }
+.shell-nav-button.selected .navigation-art, .shell-nav-button:hover .navigation-art { opacity: 1; scale: 1.06 1.06; }
+.shell-screen .home-page { padding: 0 4% 8px; }
+.shell-screen .home-guide-image { left: 0; right: auto; top: -3%; bottom: 0; width: 62%; height: 103%; background-position: center bottom; }
+.shell-screen .home-hero-copy { position: absolute; left: auto; right: 2%; top: 9%; bottom: auto; width: 37%; padding: 20px 24px; background-color: transparent; border-width: 0; align-items: center; }
+.shell-screen .home-headline { -unity-text-outline-width: 1px; -unity-text-outline-color: rgb(6,20,39); }
+.shell-screen .home-hero-copy .page-kicker { font-size: 14px; -unity-text-align: middle-center; color: rgb(245,211,151); }
+.shell-screen .home-headline { font-size: 39px; line-height: 42px; margin-top: 12px; -unity-text-align: middle-center; }
+.shell-screen .home-hero-copy .page-description { font-size: 17px; margin-top: 10px; -unity-text-align: middle-center; }
+.shell-screen .home-progress-line { padding: 4px 0; margin-top: 14px; margin-bottom: 8px; background-color: transparent; border-width: 0; }
+.shell-screen .home-progress { font-size: 14px; -unity-text-align: middle-center; }
+.shell-screen #home-story-button { width: 290px; height: 290px; min-height: 290px; margin: 0; padding: 42px 32px; background-image: url("../../Art/UI/MementoV2/Resources/MementoQuestV4.png"); -unity-background-scale-mode: scale-to-fit; background-color: transparent; border-width: 0; border-radius: 0; color: rgb(255,246,214); font-size: 23px; letter-spacing: 1px; -unity-text-align: middle-center; }
+.shell-screen #home-story-button:hover { background-color: transparent; -unity-background-image-tint-color: rgb(208,251,255); }
+.shell-screen .home-secondary-card { min-height: 88px; max-height: 102px; padding: 8px 16px; border-width: 1px; border-color: rgb(139,165,183); border-radius: 8px 26px 8px 26px; background-color: rgba(12,32,55,.94); }
+.shell-screen .home-training-copy { width: 43%; }
+.shell-screen .home-training-copy .compact-copy { display: none; }
+.shell-screen .shell-difficulty-row .difficulty-button { border-radius: 8px 22px 8px 22px; border-color: rgb(194,188,158); background-color: rgb(22,67,102); color: rgb(242,238,220); }
+.shell-screen .page-heading { background-color: rgba(13,36,62,.94); border-radius: 6px 24px 6px 24px; border-bottom-width: 2px; border-bottom-color: rgb(164,178,176); }
+.shell-screen .page-header-card, .shell-screen .story-route-card, .shell-screen .team-profile-card, .shell-screen .team-roster-card, .shell-screen .collection-active-card, .shell-screen .audio-mixer-card { background-color: rgba(14,36,62,.95); border-radius: 8px 28px 8px 28px; }
+.shell-screen .team-profile-copy { background-color: transparent; }
+.modal-overlay .campaign-panel, .modal-overlay .result-panel, .modal-overlay .achievements-panel, .modal-overlay .credits-panel { border-radius: 8px 32px 8px 32px; }
+.hud-top { background-color: rgba(12,31,54,.94); border-width: 1px; border-color: rgb(142,170,184); border-radius: 8px 24px 8px 24px; }
+
+/* Portrait: stage above, compact quest at bottom right, no white copy card. */
+.shell-screen.portrait .shell-topbar { height: 66px; padding: 8px 14px; }
+.shell-screen.portrait .shell-title { font-size: 17px; }
+.shell-screen.portrait .shell-subtitle { font-size: 8px; }
+.shell-screen.portrait .shell-navigation { height: 100px; padding: 0 5px; }
+.shell-screen.portrait .shell-nav-button, .shell-screen.portrait .shell-nav-button.selected { height: 96px; min-height: 0; margin: 0 2px; font-size: 11px; padding: 0 0 7px; border-radius: 0; border-width: 0; }
+.shell-screen.portrait .shell-nav-button.selected { border-bottom-width: 3px; }
+.shell-screen.portrait .navigation-art { top: 0; height: 70px; }
+.shell-screen.portrait .home-page { padding: 0 10px 8px; }
+.shell-screen.portrait .home-guide-image { left: -4%; top: 0; bottom: auto; width: 108%; height: 83%; background-position: center bottom; }
+.shell-screen.portrait .home-hero-copy { left: 0; right: 0; top: auto; bottom: 0; width: auto; min-height: 146px; height: 168px; padding: 16px 162px 12px 16px; align-items: flex-start; border-radius: 6px 24px 6px 24px; background-color: rgba(10,29,53,.93); border-width: 1px; }
+.shell-screen.portrait .home-hero-copy .page-kicker { font-size: 10px; -unity-text-align: middle-left; }
+.shell-screen.portrait .home-headline { font-size: 23px; line-height: 25px; -unity-text-align: middle-left; margin-top: 7px; }
+.shell-screen.portrait .home-hero-copy .page-description { display: none; }
+.shell-screen.portrait .home-progress-line { margin-top: 8px; margin-bottom: 0; padding: 0; }
+.shell-screen.portrait .home-progress { font-size: 11px; -unity-text-align: middle-left; }
+.shell-screen.portrait #home-story-button { position: absolute; width: 164px; height: 164px; min-height: 164px; right: 0; top: 2px; padding: 32px 24px; font-size: 18px; }
+.shell-screen.portrait .home-secondary-card { min-height: 78px; max-height: 78px; border-radius: 6px 22px 6px 22px; padding: 6px 10px; }
+.shell-screen.portrait .home-training-copy { width: 28%; }
+.shell-screen.portrait .home-training-copy .page-section-title { font-size: 11px; }
+.shell-screen.portrait .shell-difficulty-row .difficulty-button { height: 56px; font-size: 12px; padding: 3px; }
+.shell-screen.small-landscape .shell-navigation { height: 158px; padding: 0 14%; }
+.shell-screen.small-landscape .shell-nav-button { height: 152px; min-height: 0; font-size: 27px; }
+.shell-screen.small-landscape .navigation-art { height: 113px; }
+.shell-screen.small-landscape .home-hero-copy { top: 1%; width: 42%; padding: 12px; }
+.shell-screen.small-landscape .home-headline { font-size: 34px; line-height: 37px; }
+.shell-screen.small-landscape .home-hero-copy .page-description { display: none; }
+.shell-screen.small-landscape #home-story-button { height: 230px; min-height: 230px; font-size: 27px; }
+
+/* Supplies: independent modal, soft currency, never consumes progression stars. */
+.shop-entry { width: 116px; height: 48px; flex-shrink: 0; margin-left: auto; margin-right: 24px; border-radius: 24px; border-width: 1px; border-color: rgb(247,209,142); background-color: rgb(24,65,94); color: rgb(255,237,194); -unity-font-style: bold; font-size: 17px; }
+.shell-screen.portrait .shop-entry { width: 84px; height: 42px; margin-right: 12px; font-size: 13px; }
+.supplies-hud-button { width: 108px; height: 54px; flex-shrink: 0; margin-left: 8px; border-radius: 24px; border-width: 1px; border-color: rgb(247,209,142); background-color: rgb(24,65,94); color: rgb(255,237,194); -unity-font-style: bold; font-size: 13px; }
+.gameplay-hud .power-cluster { width: 402px; }
+.gameplay-hud.compact .power-cluster { width: 338px; }
+.gameplay-hud.portrait .power-cluster, .gameplay-hud.portrait.compact .power-cluster { width: 100%; height: 54px; }
+.gameplay-hud.portrait .power-cluster .power-button, .gameplay-hud.portrait.compact .power-cluster .power-button { width: auto; min-width: 0; flex-grow: 1; flex-shrink: 1; height: 52px; font-size: 13px; }
+.gameplay-hud.portrait .supplies-hud-button { height: 52px; width: 104px; }
+.gameplay-hud.portrait .hud-bottom { height: 66px; }
+.gameplay-hud.portrait.duel-active .hud-bottom { height: 198px; }
+.skill-skip-hint { position: absolute; bottom: -42px; left: 0; right: 0; color: rgb(207,230,241); font-size: 16px; -unity-text-align: middle-center; }
+.supplies-overlay { position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-color: rgba(4,12,27,.92); align-items: center; justify-content: center; padding: 24px; }
+.supplies-panel { width: 900px; max-width: 96%; max-height: 94%; padding: 28px; border-radius: 28px; border-width: 2px; border-color: rgb(132,185,202); background-color: rgb(17,38,64); }
+.supplies-heading { flex-direction: row; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.supplies-title { flex-shrink: 1; white-space: normal; font-size: 30px; -unity-font-style: bold; color: rgb(250,241,219); }
+.supplies-balance { font-size: 22px; color: rgb(247,209,142); margin-bottom: 12px; white-space: normal; }
+.supplies-copy { font-size: 19px; color: rgb(223,232,240); white-space: normal; margin-bottom: 14px; }
+.supplies-scroll { min-height: 0; flex-shrink: 1; margin-top: 4px; }
+.supply-item { position: relative; border-radius: 20px; border-width: 1px; border-color: rgb(98,146,172); background-color: rgb(25,54,82); padding: 20px; margin-bottom: 16px; }
+.supply-item-title { color: rgb(252,233,192); font-size: 23px; -unity-font-style: bold; margin-left: 74px; min-height: 60px; white-space: normal; }
+.supply-symbol { position: absolute; left: 20px; top: 20px; width: 60px; height: 60px; flex-direction: row; flex-wrap: wrap; }
+.supply-symbol-tile { width: 15px; height: 15px; margin: 2px; border-radius: 4px; background-color: rgb(46,79,113); }
+.supply-symbol-tile.lit { background-color: rgb(121,223,218); border-width: 1px; border-color: rgb(249,219,151); }
+.supply-action, .supply-line { height: 52px; min-width: 130px; padding-left: 16px; padding-right: 16px; border-radius: 26px; border-width: 1px; border-color: rgb(245,210,146); background-color: rgb(34,91,116); color: rgb(255,242,208); font-size: 18px; -unity-font-style: bold; }
+.supply-action:disabled, .supply-line:disabled { opacity: .45; }
+.supply-line-choices { flex-direction: row; flex-wrap: wrap; }
+.supply-line { margin-right: 8px; margin-bottom: 8px; }
+.supplies-feedback { white-space: normal; color: rgb(161,235,215); font-size: 18px; margin-top: 10px; }
+.supplies-overlay.portrait { padding: 12px; }
+.supplies-overlay.portrait .supplies-panel { width: 100%; max-width: 100%; padding: 18px; }
+.supplies-overlay.portrait .supplies-title { font-size: 24px; }
+.supplies-overlay.portrait .supplies-copy { font-size: 18px; }

@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "project": "card-match",
+  "jobId": "job-94dddfed70c7",
+  "createdDate": "2026-09-08",
+  "artistRole": "generic-ai-artist",
+  "backend": "Codex built-in imagegen",
+  "workflow": "imagegen skill; one generation per asset, one targeted button revision; non-destructive versioned artifact_copy",
+  "authorization": "User explicitly requested generated game UI graphics. No private reference images were sent; button revision referenced only the newly generated button image.",
+  "status": "Art-direction candidate visually reviewed in tool output; consuming UI and phone-scale QA pending coordinator.",
+  "referenceInputs": [],
+  "materialPolicy": "All three assets are intentionally opaque RGB PNGs. No background matting, chromakey, thresholding, checkerboard replacement, resizing or cropping was performed. This job does not establish a reusable Rei/character transparency method.",
+  "assets": [
+    {
+      "file": "lobby-background-v1.png",
+      "width": 1672,
+      "height": 941,
+      "bitDepth": 8,
+      "colorType": 2,
+      "sha256": "6c7f430d22291ba70e6c850ac9c7757e2ea13ddcdd0ff0c049ea79325f05cacd",
+      "source": "C:/Users/evilh/.codex/generated_images/01a07e05-b76e-7773-a67b-bc63f945d8bf/exec-0a4f9675-cddf-4569-a72f-17e66c6f57af.png",
+      "prompt": "Use case: stylized-concept\nAsset type: ORIGINAL production 2D game menu BACKGROUND ILLUSTRATION, one complete raster image, not a screenshot or UI mockup.\nCreate a 16:9 3840x2160 painterly anime fantasy environment for Memento Match, a warm adventurous card-memory duel game. An inviting memory-arena atrium where six themed worlds meet, seen at human eye level looking across a quiet circular jade-stone floor toward an open vaulted arch and a distant warm glowing tournament plaza. The atrium's elegant architecture suggests the silhouette of paired playing cards; very subtle matching inlaid gold lines on the floor express the game's pairing idea.\nThe established palette is dark petrol teal, verdant jade, restrained antique gold, warm ivory stone, tiny muted coral and celestial blue accents. Botanical climbing leaves and a few subtle suspended astrolabe rings live near the outer edges, integrating forest and astral worlds without clutter. Soft golden afternoon light from the distant arch, dimensional atmospheric depth, small suspended dust motes, lush hand-painted anime background finish. No people or characters.\nComposition: full-bleed landscape, deliberate central portrait-safe crop. Keep both the left third and the middle 45 percent of width and lower middle region calm, low-detail and mid-dark jade so actual menu text and characters can be overlaid later. Readable spacious depth, richly authored architecture around edges, no focal object blocking the center. The distant central opening can glow softly but must not wash out all contrast. No frames around the image.\nConstraints: background art only, absolutely NO text, letters, numbers, logos, buttons, panels, icons, user interface, watermark, checkerboard, card faces or separate sprite sheets. This must be an actual usable standalone environment bitmap, not a screenshot of an imagined app. Artistic decisions: paired arch forms communicate matching; peripheral botanics and orrery details unite zones; restrained center protects UI readability; warm distant light invites the next duel. The right third is an unobtrusive stage to later overlay a full-body character: keep its background without strong foreground props.",
+      "decisions": [
+        "Paired arch and floor loops echo matching cards.",
+        "Peripheral vegetation and astrolabe details connect the themed worlds.",
+        "Open floor provides a character stage; warm distant light invites progression."
+      ],
+      "review": [
+        "No characters, text, UI or checkerboard.",
+        "Dark content panels required over bright central arch; actual requested3840x2160 was not produced, use measured1672x941.",
+        "Central crop retains arch and floor for portrait."
+      ]
+    },
+    {
+      "file": "panel-frame-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "bitDepth": 8,
+      "colorType": 2,
+      "sha256": "1a1fb79549efa43e95970d39caf450d9be90169df394525cc8ebeb4d15074308",
+      "source": "C:/Users/evilh/.codex/generated_images/01a07e05-b76e-7773-a67b-bc63f945d8bf/exec-af64da89-e56f-4c3c-a0ac-e4775fe664a8.png",
+      "prompt": "Use case: stylized-concept\nAsset type: ORIGINAL standalone production video-game UI panel texture, ONE SQUARE PNG, 1024x1024, ready for nine-slice use.\nCreate a frontal orthographic fantasy game PANEL MATERIAL filling the entire image edge-to-edge: a quiet almost-black deep jade enamel central field with a very fine subtle brushed/lacquer texture, surrounded by a slim crafted antique-gold inset metal frame. The frame is part of the texture, reaches the canvas boundaries on all four sides, and is crisp and geometrically square. Use straight continuous frame segments along the edges so they can stretch. Confine all ornament to the outermost 8 percent of each corner: tiny engraved paired-card diamond and stylized leaf details, tasteful and clearly handcrafted, not baroque. Center is completely empty dark petrol-jade with minimal lighting gradient to keep white game text highly readable.\nPalette near-black jade #071e1b, dark petrol #092125, subdued antique brass #af8450 with restrained warm edge highlights #edca80. Consistent anime fantasy card-memory game finish, delicately painted materials, crisp edges, physical rim but no perspective.\nConstraints: exactly one panel, full opaque image, edge-to-edge, no transparent outside space, no outer background or shadow margin, no checkerboard; NO letters, words, numbers, symbols in the center, icons, buttons, characters, gemstones, medallions or mockup. The interior must remain quiet over at least 80 percent of image width and height. No heavy ornamental ribbons at center of edges. A flat utilitarian texture that becomes a polished game UI material when stretched.",
+      "decisions": [
+        "Deep jade center supports warm-white text.",
+        "Gold leaves and paired-card corners express card artefacts rather than dashboard boxes.",
+        "Straight quiet edges support nine-slice stretching."
+      ],
+      "review": [
+        "No baked label or outer margin.",
+        "Corner motifs extend approximately140sourcepixels. Suggested original slices150px; scale if importer downsizes.",
+        "Use large important panels sparingly; do not repeat gold frames on every minor row."
+      ]
+    },
+    {
+      "file": "action-button-v1.png",
+      "width": 2172,
+      "height": 724,
+      "bitDepth": 8,
+      "colorType": 2,
+      "sha256": "9ed576771b3190117b2b68870ea67cf32d91eb365ca3c0d045a0a7e882d06c9e",
+      "source": "C:/Users/evilh/.codex/generated_images/01a07e05-b76e-7773-a67b-bc63f945d8bf/exec-43076842-b94e-4ab6-83a5-06f7df0180a1.png",
+      "prompt": "Use case: stylized-concept\nAsset type: ORIGINAL standalone production video-game MAIN ACTION BUTTON texture, ONE 3:1 wide raster PNG, 1536x512. This is the texture itself, NOT a UI screenshot or mockup.\nCreate one straight-on orthographic richly finished fantasy game button that FILLS THE ENTIRE CANVAS edge-to-edge. A broad dark jade enamel face, softly raised with a restrained antique-gold outer metal bevel. The center 72 percent of width must be completely empty calm deep jade for a white text label rendered separately. Thin inner golden rule, subtle warm gold glow confined to the outer rim. At the far left and far right within their outermost 80 pixels, symmetrical embossed overlapping-card diamonds with a tiny engraved leaf curl, restrained craft rather than baroque clutter.\nPalette: deep jade #15483a merging into dark petrol #0b2d29 at the bottom; warm antique-gold #b88943 rim, small bright amber highlights. Visibly tactile game art, a refined lacquer and brushed brass collectible-card artefact, handcrafted painted anime fantasy finish. The material should feel touchable and important without being a generic glossy app button.\nConstraints: one full-bleed rectangle, opaque with square external corners, frame flush with all four canvas edges, no outside margins or drop-shadow background, no transparent background or checkerboard. Absolutely NO text, glyphs, letters, numbers, logo, icons in the center, characters, interface mockups, extra buttons or separated states. Stretch-safe quiet center, edge decorations compact. Designed for nine-slice scaling with endcaps preserved.",
+      "revisionPrompt": "Use case: precise-object-edit\nImage 1 is the edit target: the newly generated Memento Match action-button material.\nChange ONLY the button's proportions and oversized ornament: convert it into a VERY WIDE, LOW VIDEO-GAME BUTTON, canvas exactly THREE times wider than its height, 3:1 aspect ratio. Preserve the jade enamel and antique-gold material identity. Keep the gold edge thin. Replace both large diamond-card ornaments by TINY paired-card engravings that occupy no more than 5 percent of total width at either end. The middle 85 percent of width must be an empty dark jade strip for a large white label added in code. This is a horizontal action-button texture, NOT a rectangular content panel.\nStrict composition: one full-bleed low horizontal button from pixel edge to pixel edge, no outside margin. Frontal orthographic, no perspective. Outer rectangle square corners. A narrow gold bevel and thin inner contour only. Opaque material, no transparency needed. NO TEXT OR ICONS in center, no letters or symbols. Keep restrained rich hand-painted fantasy game polish, emphasize usable quiet central label region over decoration. Output exactly a 3:1 wide standalone PNG, e.g.1536 wide by512 high.",
+      "revisionSource": "C:/Users/evilh/.codex/generated_images/01a07e05-b76e-7773-a67b-bc63f945d8bf/exec-4401f538-a853-4e09-8482-7eb5a9ffdaad.png",
+      "decisions": [
+        "Enamel/brass material reinforces touchable collectible-card identity.",
+        "Small lateral paired-card motifs leave label region quiet.",
+        "Bright gold emphasis reserved for dominant action and selected state."
+      ],
+      "review": [
+        "First generated candidate rejected:2:1aspect and overlarge side ornaments.",
+        "Final3:1 exact, no label, genuine RGBopaque fullbleed.",
+        "Suggested original slices180px left/right,80px top/bottom; verify at intended button height before accepting.",
+        "Text must be rendered separately by UI with appropriate insets, not baked."
+      ]
+    }
+  ],
+  "integrationNotes": [
+    "Never treat RGBopaque UI materials as transparent character sprites.",
+    "Actual dimensions come from generated PNG IHDR, not requested prompt dimensions.",
+    "All original generations retained in Codex generated_images; only chosen outputs copied into versioned project folder.",
+    "No existing artwork, scene, code, importers or user saves changed by this artist job."
+  ]
+}

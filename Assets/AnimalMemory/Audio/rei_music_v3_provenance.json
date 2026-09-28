@@ -1,0 +1,154 @@
+{
+  "status": "integrated_pending_listening_and_loop_QA",
+  "audioJob": "job-c5ac3cfb59a9",
+  "codeJob": "job-b37933784a36",
+  "source": "Local ComfyUI StableAudio3_SFX.json Music reprompt template; translated to API graph, template preserved",
+  "generationPromptId": "f1121817-363c-475d-95cd-4526f3f98856",
+  "masterPromptId": "b28ed978-1395-4639-b28b-4f9462b40a05",
+  "masterSHA256": "2f3a0361d4ceedf53e795da50acf66e7cf0bb36304687e4524fffa63e08ae6be",
+  "masterGainDb": -6,
+  "importRate": 48000,
+  "seconds": 96.03773,
+  "channels": 2,
+  "peak": 0.6739502,
+  "clippedSamples": 0,
+  "design": "Clockwork percussion/celesta for Rei's calculation; strings/piano contrast with alliance; bass/taiko for final-boss intensity. This is intended direction, not audition-verified output.",
+  "test": {
+    "passed": 79,
+    "failed": 0,
+    "job": "3496caf1728349d3b19c2f552aff5e70"
+  },
+  "graph": {
+    "1": {
+      "class_type": "CheckpointLoaderSimple",
+      "inputs": {
+        "ckpt_name": "stable_audio_3_medium.safetensors"
+      }
+    },
+    "2": {
+      "class_type": "CLIPLoader",
+      "inputs": {
+        "clip_name": "t5gemma_b_b_ul2.safetensors",
+        "type": "stable_audio",
+        "device": "default"
+      }
+    },
+    "3": {
+      "class_type": "CLIPLoader",
+      "inputs": {
+        "clip_name": "qwen3.5_2b_bf16.safetensors",
+        "type": "stable_diffusion",
+        "device": "default"
+      }
+    },
+    "4": {
+      "class_type": "TextGenerate",
+      "inputs": {
+        "clip": [
+          "3",
+          0
+        ],
+        "prompt": "You are an expert musician and musicologist and prompt engineer. Transform the user's input into a detailed, vivid music prompt for a full instrumental track.\n\n1. Start with the genre or style and optional adjectives (e.g., upbeat, dreamy, aggressive).\n2. List the main instruments that define the track.\n3. Add supporting elements or layers such as pads, harmonics, effects, or field recordings.\n4. Include rhythm or percussion elements like drums, hi-hats, congas, brushes, or polyrhythms.\n5. Integrate mood and energy naturally in the sentence (e.g., \"creating suspenseful tension\" or \"bright and uplifting\").\n6. Specify the BPM.\n7. Specify the track length as an integer in seconds. Use ranges: energetic/dance 120-180s, pop/rock 180-210s, cinematic/ambient 240-300s.\n8. Combine all elements into one natural, fluid sentence. Avoid semicolons.\n\nTemplate:\nGenre/Style with main instruments, supporting instruments/layers, and rhythm/percussion creating mood/energy. BPM: X. Length: Y seconds\n\nExamples:\n- Jazz ballad with smooth saxophone lead, piano chords, upright bass, brushed drums, and soft strings that swing gently for a warm and cozy evening. BPM: 85. Length: 180 seconds\n- EDM festival track with pulsing synth leads, plucked arpeggios, layered pads, side-chained bass, punchy kick and snare, and hi-hat rolls creating bright, energetic, and uplifting dance energy. BPM: 128. Length: 150 seconds\n- Lo-fi hip-hop chill track with mellow electric piano, soft vinyl crackle, subtle synth pads, low-pass filtered drums, percussion loops, and soft plucked bass for a relaxed, dreamy vibe. BPM: 75. Length: 150 seconds\n- Heavy metal anthem with distorted electric guitars, bass guitar, double bass drums, and cymbal crashes with fast palm-muted riffs creating intense, aggressive energy. BPM: 160. Length: 180 seconds\n- Melancholic piano piece with soft piano lead, string pads, subtle atmospheric synths, and minimal brush percussion evoking a reflective rainy-day feeling. BPM: 60. Length: 240 seconds\n- Suspenseful electronic thriller with pulsing bass synth, arpeggiated lead synth, cinematic pads, glitchy percussion, and high string stabs creating dark and tense energy. BPM: 100. Length: 200 seconds\n- Dreamy ambient soundscape with layered pads, soft bell textures, gentle drones, and wind and water field recordings for ethereal and spacious meditation. BPM: 40. Length: 300 seconds\n- Fingerpicking acoustic guitar solo with harmonics, subtle reverb, occasional shaker and soft stomp percussion, and soft pad layers for warm intimate storytelling. BPM: 70. Length: 120 seconds\n- Synthwave 80s retro track with arpeggiated synth leads, analog pads, electric bass, punchy electronic drums, gated reverb snares, and atmospheric FX for nostalgic and vibrant energy. BPM: 110. Length: 180 seconds\n- Tribal percussion ensemble with congas, djembes, bongos, shakers, and frame drums layered with deep synthetic sub-bass in complex polyrhythms. BPM: 100. Length: 140 seconds\n- 1920s swing jazz with brass section, upright bass, piano, brushed drums, banjo, clarinet, and soft strings that swing lively for energetic dance vibes. BPM: 110. Length: 180 seconds\n- Futuristic electronic sci-fi track with pulsing bass synth, evolving lead synths, layered pads, glitch percussion, robotic FX, and sub-bass for tense cinematic energy. BPM: 125. Length: 200 seconds\n- Ambient underwater soundscape with flowing water textures, soft piano motifs, synth drones, distant bells, and underwater reverb for spacious meditative immersion. BPM: 45. Length: 300 seconds\n- Horror cinematic track with dissonant strings, eerie piano stabs, cinematic percussion including taiko and low toms, and synth FX producing suspenseful creepy tension. BPM: 90. Length: 240 seconds\n- Reggae track with offbeat guitar, warm basslines, snare, kick, congas, and horn stabs giving laid-back groovy energy. BPM: 85. Length: 150 seconds\n- Blues track with soulful electric guitar solos, walking bass, piano, and shuffle drums creating expressive and emotive storytelling. BPM: 90. Length: 180 seconds\n- Latin salsa with congas, timbales, horns, piano montunos, bass, and layered percussion for vibrant danceable energy. BPM: 120. Length: 210 seconds\n- Afrobeat track with electric guitar stabs, horns, layered percussion, congas, shakers, bass groove, and synth pads for vibrant rhythmic energy. BPM: 105. Length: 200 seconds\n- Indie rock track with electric guitar riffs, bass, live drum kit, layered synths, and subtle strings for energetic yet emotional feel. BPM: 110. Length: 180 seconds\n- Funk groove with slap bass, electric guitar chords, brass stabs, drums, congas, and rhythmic keyboards creating high-energy danceable rhythm. BPM: 105. Length: 180 seconds\n- Drum and bass track with fast breakbeat drums, deep sub-bass, sharp synth leads, pads, and atmospheric FX for high-energy club motion. BPM: 175. Length: 150 seconds\n- Dark ambient track with drones, distant bells, low rumbles, soft wind textures, and synth pads producing eerie immersive tension. BPM: 50. Length: 300 seconds\n- Tropical house track with marimba, steel drums, soft synths, smooth bass, layered percussion, and light piano riffs for sunny chill dance vibes. BPM: 110. Length: 180 seconds\n- Progressive rock track with electric guitar leads, organ, bass, drum kit, synth layers, and occasional strings for epic layered energy. BPM: 100. Length: 220 seconds\n- Music box melody with delicate metallic tones and soft resonance, lullaby style, with gentle ambient reverb. BPM: 60. Length: 20 seconds\n- Soft piano arpeggio with warm felted tone and slow attack, lullaby style, with intimate room ambience. BPM: 60. Length: 30 seconds\n- Harp gentle plucked pattern with airy resonance, lullaby style, with dreamy reverb tail. BPM: 65. Length: 25 seconds\n- Acoustic guitar fingerstyle pattern with warm nylon strings and soft dynamics, lullaby style, with subtle room resonance. BPM: 60. Length: 30 seconds\n- Ambient synth pad with smooth evolving texture and soft harmonics, lullaby style, with wide stereo ambience. BPM: 50. Length: 40 seconds\n- Early rock piano with walking left-hand bass line, shuffle rhythms, and blues scale improvisations in energetic 1950s boogie-woogie style. BPM: 160. Length: 180 seconds\n- Trip Hop track with jazzy sampled vibraphone, mid-tempo breakbeat drums, harp, Latin ethnic percussion, and sweeping cinematic strings creating airy, relaxing, soulful lounge vibes. BPM: 90. Length: 180 seconds\n- Country outlaw cinematic instrumental with blues pedal steel guitar, rustic mandolin, fiddle call-and-response, tape-driven rattly drum kit, autoharp, and soaring accordion solo for raw, emotional southern blues expression. BPM: 85. Length: 200 seconds\n- Neo Classical track with sweeping string section, elegant horns, and delicate piano creating soothing, hypnotic, modern, soft, and classic mood. BPM: 70. Length: 180 seconds\n- Art Rock desert track with desolate piano chords, western-themed rhythm guitars, unique lead guitars, rattly vintage drum kit, and supporting bass creating lonely, expansive, beautiful, and strange atmospheres. BPM: 95. Length: 180 seconds\n- Cinematic Sci-Fi score with dramatic horn section, building marcato strings, gliding bassoon, thunderous cymbals, subdued timpani, and subtle synth drones producing awe-inspiring, uplifting, epic intergalactic energy. BPM: 100. Length: 220 seconds\n- West Coast Hip Hop instrumental with cascading harp melodies, smooth Rhodes piano chops, vintage boom bap drums, and walking double bass producing raw, street, and soulful block-party vibes. BPM: 92. Length: 180 seconds\n- Synthwave futuristic track with pulsating synth bass, exciting chords, soaring leads, and reverberating drum machine patterns creating gritty, pounding, and cool energy. BPM: 110. Length: 180 seconds\n- Breakbeat track with complex percussion, intricate breakbeats, gritty synths, lush pads, and 808 bassline producing fresh, modern, futuristic, and rave-ready energy. BPM: 140. Length: 160 seconds\n- Lounge Jazz 1960s smooth track with laid-back drums, piano chords, double bass, soft electric piano, subtle flute, and unique percussion creating beautiful, atmospheric, eclectic, retro, and chill vibes. BPM: 85. Length: 180 seconds\n- Latin Jazz 1950s blissful track with laid-back Latin drums, euphoric piano chords, double bass, orchestral accompaniment, acoustic guitar, and vibraphone producing nostalgic, beautiful, atmospheric, cinematic, and chill mood. BPM: 95. Length: 180 seconds\n- Acid Jazz 1970s summertime track with smooth electric piano, trippy synth leads, laid-back vintage drum kit, fuzzy electric bass, and uplifting violin producing retro, psychedelic, jazzy, relaxing energy. BPM: 100. Length: 180 seconds\n- Progressive Soul 1970s track with feel-good piano, psychedelic organ, groovy vintage drum kit with percussion, fuzzy electric bass, and synth strings producing retro, raw, soulful, joyous atmosphere. BPM: 90. Length: 180 seconds\n- Discotheque 1970s French-inspired track with sultry piano, psychedelic guitars, groovy drum kit, fuzzy electric bass, and melancholic organ producing retro, raw, laid-back, and relaxing mood. BPM: 105. Length: 180 seconds\n- Soul Jazz 1970s track with expressive saxophone, smooth piano, groovy drum kit, rhythmic upright bass, sweeping strings, and minimal vibraphone producing retro, raw, laid-back, and epic energy. BPM: 95. Length: 180 seconds\n- Vintage R&B 1970s live studio track with subtle brass, smooth piano, sweeping strings, and minimal drums producing retro, beautiful, uplifting, nostalgic mood. BPM: 85. Length: 180 seconds\n- 50s Pop track with Latin influence, string section, bold brass, vibraphone, acoustic guitar, flute, ethnic percussion, and brushed drums creating sexy, epic, vintage, retro, melancholic, jazzy, dramatic energy. BPM: 100. Length: 180 seconds\n- A piece of calm, quiet, mellow, serene music perfect for a peaceful film score, featuring soft modulating piano, ambient sfx and foley, beautiful vibraphone, and subtle synthesizer drones. The mood is cinematic, thoughtful, serene and nostalgic. BPM: 55. Length: 300 seconds\n\nInput: Original instrumental anime strategy-game final-boss battle for Rei, an elegant clockwork archive champion: precise ticking percussion and celesta represent perfect calculation, tense staccato strings and piano answer a warmer rising alliance melody, controlled electronic bass and taiko accents add determination without masking spoken dialogue. 120 BPM, 96 seconds, clear immediate rhythmic entrance, repeatable ending returning to opening harmony, no vocals, no choir, no spoken words, no imitation of existing music.\nTarget audio length: 96 seconds. Preserve this explicit duration, the no-vocals requirement, and the tactical game context.\nOutput:",
+        "max_length": 512,
+        "sampling_mode": "off",
+        "thinking": false,
+        "use_default_template": true
+      }
+    },
+    "5": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "text": [
+          "4",
+          0
+        ]
+      }
+    },
+    "6": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "text": ""
+      }
+    },
+    "7": {
+      "class_type": "EmptyLatentAudio",
+      "inputs": {
+        "seconds": 96,
+        "batch_size": 1
+      }
+    },
+    "8": {
+      "class_type": "KSampler",
+      "inputs": {
+        "model": [
+          "1",
+          0
+        ],
+        "positive": [
+          "5",
+          0
+        ],
+        "negative": [
+          "6",
+          0
+        ],
+        "latent_image": [
+          "7",
+          0
+        ],
+        "seed": 520908,
+        "steps": 8,
+        "cfg": 1,
+        "sampler_name": "lcm",
+        "scheduler": "simple",
+        "denoise": 1
+      }
+    },
+    "9": {
+      "class_type": "VAEDecodeAudio",
+      "inputs": {
+        "samples": [
+          "8",
+          0
+        ],
+        "vae": [
+          "1",
+          2
+        ]
+      }
+    },
+    "10": {
+      "class_type": "SaveAudio",
+      "inputs": {
+        "audio": [
+          "11",
+          0
+        ],
+        "filename_prefix": "audio/memento_rei_music_v3/duel_rei_master"
+      }
+    },
+    "11": {
+      "class_type": "AudioAdjustVolume",
+      "inputs": {
+        "audio": [
+          "9",
+          0
+        ],
+        "volume": -6
+      }
+    }
+  },
+  "limitations": [
+    "No listening verification of style, dialogue masking, or musical loop seam",
+    "No claim of commercial license clearance"
+  ],
+  "buildCreated": false
+}

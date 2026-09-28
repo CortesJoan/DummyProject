@@ -1,0 +1,37 @@
+{
+  "status": "candidate_not_approved_not_runtime",
+  "identity": "Original synthetic voice, no real-person or other guardian reference",
+  "direction": "Intended Rei: clear authoritative anime champion; projected conversational volume, precise consonants, restrained emotion, no ASMR. Model has no explicit voice-design prompt input; identity/timbre require audition and are not guaranteed by seed.",
+  "prompt": {
+    "1": {
+      "class_type": "FishS2TTS",
+      "inputs": {
+        "model_path": "s2-pro",
+        "text": "私はレイ。アーカイブ・ゼロのチャンピオンよ。ここでは言葉ではなく、選んだ一手が答えになる。仲間を信じるなら、最後までその覚悟を見せて。",
+        "language": "ja",
+        "device": "cuda",
+        "precision": "bfloat16",
+        "attention": "sage_attention",
+        "max_new_tokens": 0,
+        "chunk_length": 240,
+        "temperature": 0.55,
+        "top_p": 0.75,
+        "repetition_penalty": 1.2,
+        "seed": 520137,
+        "keep_model_loaded": true,
+        "offload_to_cpu": false,
+        "compile_model": false
+      }
+    },
+    "2": {
+      "class_type": "SaveAudio",
+      "inputs": {
+        "audio": [
+          "1",
+          0
+        ],
+        "filename_prefix": "audio/memento_story_v3/rei_reference_candidate"
+      }
+    }
+  }
+}

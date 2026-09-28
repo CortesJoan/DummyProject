@@ -1,0 +1,75 @@
+{
+  "status": "integrated_pending_listening_QA",
+  "sourceVoice": "rei_reference_candidate_v3.flac",
+  "sourceVoiceSHA256": "800972af7eb912b6f9ccad0a84e075e266647e40613df682ac011ec33c228c3b",
+  "seed": 520137,
+  "method": "FishS2VoiceCloneTTS, original synthetic reference with exact transcript; no other guardian voice or real-person reference.",
+  "lines": [
+    {
+      "id": "rei_menu",
+      "es": "El Archivo Cero registra cada decisión.",
+      "ja": "アーカイブ・ゼロは、すべての決断を記録する。",
+      "guide": "rei"
+    },
+    {
+      "id": "rei_locked",
+      "es": "Reúne a las cinco guardianas antes del examen final.",
+      "ja": "最終試験の前に、五人の守護者を仲間にしなさい。",
+      "guide": "rei"
+    },
+    {
+      "id": "rei_skill",
+      "es": "Técnica registrada. Ejecutando siguiente protocolo.",
+      "ja": "技を記録。次のプロトコルを実行する。",
+      "guide": "rei"
+    },
+    {
+      "id": "rei_victory",
+      "es": "La alianza aún no actúa como una sola. Corrige y vuelve.",
+      "ja": "その同盟は、まだ一つになれていない。立て直して、戻ってきなさい。",
+      "guide": "rei"
+    },
+    {
+      "id": "rei_defeat",
+      "es": "Examen aprobado. Vuestro deseo pertenece a las seis.",
+      "ja": "試験は合格よ。その願いは、六人全員のもの。",
+      "guide": "rei"
+    },
+    {
+      "id": "rei_turn_1",
+      "es": "Registraré esta posibilidad.",
+      "ja": "この可能性を記録する。",
+      "guide": "rei"
+    },
+    {
+      "id": "rei_turn_2",
+      "es": "El Archivo recuerda el patrón.",
+      "ja": "アーカイブは、このパターンを覚えている。",
+      "guide": "rei"
+    },
+    {
+      "id": "rei_turn_3",
+      "es": "Quedan menos variables.",
+      "ja": "変数は絞られたわ。",
+      "guide": "rei"
+    },
+    {
+      "id": "rei_damage_1",
+      "es": "Impacto confirmado.",
+      "ja": "被弾を確認。",
+      "guide": "rei"
+    },
+    {
+      "id": "rei_damage_2",
+      "es": "Buena coordinación.",
+      "ja": "見事な連携ね。",
+      "guide": "rei"
+    },
+    {
+      "id": "rei_damage_3",
+      "es": "La alianza supera la previsión.",
+      "ja": "その連携は、予測を超えている。",
+      "guide": "rei"
+    }
+  ]
+}

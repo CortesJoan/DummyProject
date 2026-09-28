@@ -1,0 +1,503 @@
+fileFormatVersion: 2
+guid: cad54897f1f382447a786273b96fb79f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5013591210119209057
+    second: memento-duel-opponents-sheet-4k-v1_0
+  - first:
+      213: 3950213780590710802
+    second: memento-duel-opponents-sheet-4k-v1_1
+  - first:
+      213: -3923740693422661713
+    second: memento-duel-opponents-sheet-4k-v1_2
+  - first:
+      213: 4433478569073078257
+    second: memento-duel-opponents-sheet-4k-v1_3
+  - first:
+      213: -189586658611634654
+    second: memento-duel-opponents-sheet-4k-v1_4
+  - first:
+      213: 2169707809833459066
+    second: memento-duel-opponents-sheet-4k-v1_5
+  - first:
+      213: -3818313562577803575
+    second: memento-duel-opponents-sheet-4k-v1_6
+  - first:
+      213: 2809798511015580355
+    second: memento-duel-opponents-sheet-4k-v1_7
+  - first:
+      213: 968958886799103820
+    second: memento-duel-opponents-sheet-4k-v1_8
+  - first:
+      213: 5801636809552168555
+    second: memento-duel-opponents-sheet-4k-v1_9
+  - first:
+      213: -6885431496223074170
+    second: memento-duel-opponents-sheet-4k-v1_10
+  - first:
+      213: 8556540432963510013
+    second: memento-duel-opponents-sheet-4k-v1_11
+  - first:
+      213: 5628345728136514250
+    second: memento-duel-opponents-sheet-4k-v1_12
+  - first:
+      213: -1469525787264704146
+    second: memento-duel-opponents-sheet-4k-v1_13
+  - first:
+      213: -5507282349322057702
+    second: memento-duel-opponents-sheet-4k-v1_14
+  - first:
+      213: -6137912805072068934
+    second: memento-duel-opponents-sheet-4k-v1_15
+  - first:
+      213: -8283545093010682841
+    second: memento-duel-opponents-sheet-4k-v1_16
+  - first:
+      213: -5548013811486192467
+    second: memento-duel-opponents-sheet-4k-v1_17
+  - first:
+      213: 3543346412286911879
+    second: memento-duel-opponents-sheet-4k-v1_18
+  - first:
+      213: 5876815904830345628
+    second: memento-duel-opponents-sheet-4k-v1_19
+  - first:
+      213: 2826313308271714764
+    second: memento-duel-opponents-sheet-4k-v1_20
+  - first:
+      213: 7859933746478650365
+    second: memento-duel-opponents-sheet-4k-v1_21
+  - first:
+      213: -4974431117895456123
+    second: memento-duel-opponents-sheet-4k-v1_22
+  - first:
+      213: -6311599653539123548
+    second: memento-duel-opponents-sheet-4k-v1_23
+  - first:
+      213: 5376872172804696483
+    second: memento-duel-opponents-sheet-4k-v1_24
+  - first:
+      213: -1391540801336094438
+    second: memento-duel-opponents-sheet-4k-v1_25
+  - first:
+      213: 1022244256699857192
+    second: memento-duel-opponents-sheet-4k-v1_26
+  - first:
+      213: -660997080404065052
+    second: memento-duel-opponents-sheet-4k-v1_27
+  - first:
+      213: -3625903494714040003
+    second: memento-duel-opponents-sheet-4k-v1_28
+  - first:
+      213: -6738506662542793386
+    second: memento-duel-opponents-sheet-4k-v1_29
+  - first:
+      213: -4899058799103434395
+    second: memento-duel-opponents-sheet-4k-v1_30
+  - first:
+      213: -2575687019312075496
+    second: memento-duel-opponents-sheet-4k-v1_31
+  - first:
+      213: -1328043803519614328
+    second: memento-duel-opponents-sheet-4k-v1_32
+  - first:
+      213: 2425751480728494507
+    second: memento-duel-opponents-sheet-4k-v1_33
+  - first:
+      213: -1167119653301270192
+    second: memento-duel-opponents-sheet-4k-v1_34
+  - first:
+      213: 3975100934859733664
+    second: memento-duel-opponents-sheet-4k-v1_35
+  - first:
+      213: 5998550540390237418
+    second: memento-duel-opponents-sheet-4k-v1_36
+  - first:
+      213: -1385084859575598358
+    second: memento-duel-opponents-sheet-4k-v1_37
+  - first:
+      213: 265382215578425281
+    second: mika_neutral
+  - first:
+      213: 6620704231321862011
+    second: mika_thinking
+  - first:
+      213: -270287749444854780
+    second: mika_ability
+  - first:
+      213: 7167091607575828037
+    second: mika_defeated
+  - first:
+      213: -8199689540822953847
+    second: yoru_neutral
+  - first:
+      213: -531284237835956959
+    second: yoru_thinking
+  - first:
+      213: -8547950199264141468
+    second: yoru_ability
+  - first:
+      213: 169399457117690975
+    second: yoru_defeated
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 2
+    compressionQuality: 100
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 100
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mika_neutral
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1080
+        width: 960
+        height: 1080
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c7124118b3dea300800000000000000
+      internalID: 265382215578425281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_thinking
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1080
+        width: 960
+        height: 1080
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7f7dde9b6771eb50800000000000000
+      internalID: 6620704231321862011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_ability
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1080
+        width: 960
+        height: 1080
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40c133359bebf3cf0800000000000000
+      internalID: -270287749444854780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_defeated
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 1080
+        width: 960
+        height: 1080
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5469d3e18df967360800000000000000
+      internalID: 7167091607575828037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoru_neutral
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 960
+        height: 1080
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98013c27ec9d43e80800000000000000
+      internalID: -8199689540822953847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoru_thinking
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 960
+        height: 1080
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12d0601fccf70a8f0800000000000000
+      internalID: -531284237835956959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoru_ability
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 960
+        height: 1080
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46f912f25949f5980800000000000000
+      internalID: -8547950199264141468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoru_defeated
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 0
+        width: 960
+        height: 1080
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5cd4a2a8e3d95200800000000000000
+      internalID: 169399457117690975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      memento-duel-opponents-sheet-4k-v1_0: -5013591210119209057
+      memento-duel-opponents-sheet-4k-v1_1: 3950213780590710802
+      memento-duel-opponents-sheet-4k-v1_10: -6885431496223074170
+      memento-duel-opponents-sheet-4k-v1_11: 8556540432963510013
+      memento-duel-opponents-sheet-4k-v1_12: 5628345728136514250
+      memento-duel-opponents-sheet-4k-v1_13: -1469525787264704146
+      memento-duel-opponents-sheet-4k-v1_14: -5507282349322057702
+      memento-duel-opponents-sheet-4k-v1_15: -6137912805072068934
+      memento-duel-opponents-sheet-4k-v1_16: -8283545093010682841
+      memento-duel-opponents-sheet-4k-v1_17: -5548013811486192467
+      memento-duel-opponents-sheet-4k-v1_18: 3543346412286911879
+      memento-duel-opponents-sheet-4k-v1_19: 5876815904830345628
+      memento-duel-opponents-sheet-4k-v1_2: -3923740693422661713
+      memento-duel-opponents-sheet-4k-v1_20: 2826313308271714764
+      memento-duel-opponents-sheet-4k-v1_21: 7859933746478650365
+      memento-duel-opponents-sheet-4k-v1_22: -4974431117895456123
+      memento-duel-opponents-sheet-4k-v1_23: -6311599653539123548
+      memento-duel-opponents-sheet-4k-v1_24: 5376872172804696483
+      memento-duel-opponents-sheet-4k-v1_25: -1391540801336094438
+      memento-duel-opponents-sheet-4k-v1_26: 1022244256699857192
+      memento-duel-opponents-sheet-4k-v1_27: -660997080404065052
+      memento-duel-opponents-sheet-4k-v1_28: -3625903494714040003
+      memento-duel-opponents-sheet-4k-v1_29: -6738506662542793386
+      memento-duel-opponents-sheet-4k-v1_3: 4433478569073078257
+      memento-duel-opponents-sheet-4k-v1_30: -4899058799103434395
+      memento-duel-opponents-sheet-4k-v1_31: -2575687019312075496
+      memento-duel-opponents-sheet-4k-v1_32: -1328043803519614328
+      memento-duel-opponents-sheet-4k-v1_33: 2425751480728494507
+      memento-duel-opponents-sheet-4k-v1_34: -1167119653301270192
+      memento-duel-opponents-sheet-4k-v1_35: 3975100934859733664
+      memento-duel-opponents-sheet-4k-v1_36: 5998550540390237418
+      memento-duel-opponents-sheet-4k-v1_37: -1385084859575598358
+      memento-duel-opponents-sheet-4k-v1_4: -189586658611634654
+      memento-duel-opponents-sheet-4k-v1_5: 2169707809833459066
+      memento-duel-opponents-sheet-4k-v1_6: -3818313562577803575
+      memento-duel-opponents-sheet-4k-v1_7: 2809798511015580355
+      memento-duel-opponents-sheet-4k-v1_8: 968958886799103820
+      memento-duel-opponents-sheet-4k-v1_9: 5801636809552168555
+      mika_ability: -270287749444854780
+      mika_defeated: 7167091607575828037
+      mika_neutral: 265382215578425281
+      mika_thinking: 6620704231321862011
+      yoru_ability: -8547950199264141468
+      yoru_defeated: 169399457117690975
+      yoru_neutral: -8199689540822953847
+      yoru_thinking: -531284237835956959
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

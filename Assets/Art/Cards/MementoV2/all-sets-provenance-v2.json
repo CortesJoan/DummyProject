@@ -1,0 +1,54 @@
+{
+  "date": "2026-09-08",
+  "generator": "built-in image_gen",
+  "styleReference": "sweets-atlas-green-v2.png",
+  "assets": [
+    {
+      "file": "coral-atlas-magenta-v2.png",
+      "sha256": "c73733da8a8917eddc5809eea9b0bcb82bf0cc0ee00b4043bf1243d314f765d8",
+      "prompt": "Use case: stylized-concept. Asset type: production memory-game card icon atlas. Reference image: STYLE AND GRID REFERENCE ONLY, do not reuse its sweets subjects. Create a marine-explorer collection in exactly5 columns and3 rows, 15 different single isolated icons. Same friendly chunky rounded cartoon forms, thick dark coloured outlines, simple two-tone shading and crisp readable silhouettes as reference; no pixel art, no painterly detail. Palette turquoise, navy, coral-orange, pearl-cream, brass. All objects upright. Exact order TOP ROW left to right: nautilus spiral shell with tiny tentacles; open oyster holding one pearl; branching coral; upright corked message bottle with scroll inside; round antique brass diving helmet with front glass. MIDDLE ROW: upright seahorse curled tail down; navigation compass with red needle pointing UP; upright anchor with ring at TOP and flukes at BOTTOM; friendly lantern jellyfish dome TOP tentacles DOWN; antique sunken key with round bow and tooth. BOTTOM ROW: turquoise sea turtle seen from above; five-arm coral-orange starfish; closed fan-shaped scallop shell clearly unlike open pearl oyster; curling crescent-shaped sea wave; open treasure chest with coins. Each centered in its equal square cell, strong distinct shape readable at60px. Each object wholly inside cell with at least15%margin on ALL sides and generous perfectly clear continuous horizontal/vertical gutters. Whole canvas landscape5:3, preferably2000x1200. Technical background PURE UNIFORM CHROMA MAGENTA RGB(255,0,255), including holes. No magenta in the subjects, no background shadows, no glow, no labels, letters, words, frames, UI, duplicate icons or decorative objects.",
+      "runtime": "AnimalMemory/ArtV2/coral-atlas-magenta-v2",
+      "key": "magenta",
+      "faces": 15
+    },
+    {
+      "file": "constellation-atlas-green-v2.png",
+      "sha256": "5d208342f4b913fbace9db8b8e5c1e5c7c0d3193ccf7e2b773df7a81723ae18c",
+      "prompt": "Use case: stylized-concept. Asset: production CELESTIAL memory-card atlas. Reference is STYLE/GRID ONLY; replace all sweets. Exactly5 columns by3rows,15 DISTINCT isolated friendly cartoon icons. Chunky rounded shapes, thick navy/violet outlines, simple two-tone shading matching reference. Palette navy, purple, blue, ivory, gold, coral-red. No green objects. Exact TOP ROW: spiral galaxy with solid purple curved arms and gold core; ivory crescent moon; compact cluster of THREE small gold stars on a SOLID dark-blue cloud-shaped badge; comet with ROUND icy blue head and broad solid tapering blue tail, distinctly NOT a star; purple ringed planet with gold ring. MIDDLE ROW: Orion constellation diagram, seven chunky gold nodes connected by thick gold lines with distinctive three-node straight belt across center and four outer corners, on a dark navy HOURGLASS-SHAPED badge; ornate four-point celestial compass with blue-red needle and gold diamond outline (not circular); upright little rocket red nose TOP flame BOTTOM; aurora as THREE thick solid wavy cyan/purple vertical ribbons over navy hill, no soft glow; shooting star with GOLD FIVE-POINT head and TWO short coral/gold streaks trailing behind, clearly unlike round comet. BOTTOM ROW: Ursa Major big-dipper constellation, seven chunky gold nodes connected by thick gold lines in a ladle shape, on a navy LADLE-SHAPED badge distinct from Orion; SINGLE large five-point gold star with no trail; eclipse as dark violet circle covering gold sun with visible broad gold crescent edge; lunar tide with ivory small full moon ABOVE two horizontal blue wave bands, horizontal silhouette; small domed observatory blue dome and telescope aimed up-right. Each wholly within equal square cell with15%margin all around, clear continuous gutters horizontally/vertically. Landscape5:3. All objects upright, no duplicates, exactly15. Background PURE UNIFORM CHROMA GREEN RGB0,255,0 including all holes. NO green reflections, no gradients outside shapes, no glows, shadows, dust, scattered stars, text, labels, letters, UI or frames. Strong silhouette legibility at60px, no fine detail. Solid effects silhouettes so background extraction stays clean.",
+      "runtime": "AnimalMemory/ArtV2/constellation-atlas-green-v2",
+      "key": "green",
+      "faces": 15
+    },
+    {
+      "file": "garden-atlas-magenta-v2.png",
+      "sha256": "1a4845adb08dd40121dfdf2dde5e0bea83957176ec79b7c966d992f9b38a148a",
+      "prompt": "Use case: stylized-concept. Asset: production memory-card game GARDEN atlas. Reference is STYLE/GRID ONLY, no sweets subjects. Exactly5 columns by3 rows,15 isolated distinct friendly chunky cartoon icons, thick dark coloured outline, simple two-tone shading, rounded forms. Green leaves, cream/yellow/peach flowers, terracotta pots. Exact TOP ROW left to right: single peach rose on short leafy stem; upright cream lotus blossom with a LARGE blue dewdrop suspended just above petals, NO pond; green curling flowering vine with three small peach buds; upright clear corked seed bottle containing brown seeds; terracotta flowerpot with one simple green shoot. MIDDLE ROW: young sprout emerging from a small soil mound with two leaves, NO pot; yellow sunflower with brown center; blue watering can spout left; red mushroom white spots; open garden pruning shears green handles. BOTTOM ROW: friendly leaf-shaped green beetle viewed from above; white daisy yellow center on short green stem; one large split monstera leaf; POND lily, flat green lily pad on oval blue water with small pale pink blossom, silhouette horizontal and clearly unlike lotus-dewdrop; small glass greenhouse with peaked roof and green door. All15 upright, centered in equal square cells, exact order, no duplicates. Each wholly inside its cell at least15%margin ALL sides, clear continuous horizontal/vertical gutters. Landscape5:3. Pure uniform chroma MAGENTA background RGB255,0,255 including holes. No saturated magenta anywhere on subjects; no shadows or glows on background; no labels/text/UI/frames. Match reference readability at60px; no fine filigree or painterly detail.",
+      "runtime": "AnimalMemory/ArtV2/garden-atlas-magenta-v2",
+      "key": "magenta",
+      "faces": 15
+    },
+    {
+      "file": "clockwork-atlas-green-v2.png",
+      "sha256": "9d346fd896747a872b89d4dc04a000a20657c4d57f88c6e56eab772dea464c4a",
+      "prompt": "Use case: stylized-concept. Asset: production memory-card game CLOCKWORK atlas. Reference is STYLE AND GRID ONLY, replace all sweets with15 different clockwork subjects. Exactly5 columns by3 rows. Friendly chunky rounded cartoon icons, thick dark navy/brown outlines, simple two-tone shading, highly legible silhouettes. Palette antique brass/gold, navy, ivory, brown, blue glass. All upright. EXACT TOP ROW: a flat coiled mainspring metal spiral; long upright pendulum rod with brass round bob at bottom; THREE intermeshing gears as one compact gear-train icon; upright oil bottle with long narrow nozzle; round pocket watch with hanging loop at TOP and clockface. MIDDLE ROW: butterfly-shaped winding key, TWO broad symmetric wings and short square shaft; brass compass with RED NORTH needle and four-point compass rose, visually unlike clockface; anchor escapement mechanism, small brass gear below dark navy forked anchor and upright axle; standalone alarm bell with brass dome TOP and dark clapper BOTTOM; long antique clock key with SINGLE ROUND bow and long toothed shaft, NOT butterfly windingkey. BOTTOM ROW: cute brass mechanical turtle with segmented shell and rivets; a SINGLE six-tooth star wheel gear with center hole, unlike triple gear train; upright hourglass blue glass, sand at bottom; semicircular moon dial with dark blue semicircle and ivory crescent plus small gold marks, not another circlewatch; tall standalone ornate clocktower with peaked roof and clock near TOP. At least15%margin around each subject, entirely contained in equal square cells, perfectly clear continuous gutters. Landscape5:3. Background uniform PURE RGB(0,255,0) chroma GREEN including holes. Green absent from every object. No glow, groundshadow, text, Roman numerals, letters, labels, UI, frames or extra icons. Hands and dots allowed on clockfaces instead of numbers. Preserve reference simple rounded videogame style, no photorealism.",
+      "runtime": "AnimalMemory/ArtV2/clockwork-atlas-green-v2",
+      "key": "green",
+      "faces": 15
+    }
+  ],
+  "decisions": [
+    "Distinct silhouettes before extra detail",
+    "Solid celestial effects instead of baked soft glow",
+    "Magenta key for green/teal garden and marine subjects",
+    "Five-column first safe gutters, then per-column row gutters to avoid clipping staggered generated illustrations",
+    "Fixed square canvases per set, no rotations, stable semantic IDs",
+    "Source textures preserved; runtime alpha extracted without brightness threshold"
+  ],
+  "validation": [
+    "All four new sets rendered through actual Unity provider on jade, reviewed upright and complete",
+    "23/23 focused tests passed; all five sets assert15 distinct textures with stable identities and consistent square dimensions, no procedural fallback",
+    "SFX nonanimal set selection uses setId, not changed by new sprite names"
+  ],
+  "remaining": "Full real-game campaign/layout validation still required; generated constellation diagrams are stylized, not scientific charts.",
+  "animals": "Original animal pack unchanged."
+}

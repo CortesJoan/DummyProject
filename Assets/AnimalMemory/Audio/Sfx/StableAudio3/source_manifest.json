@@ -1,0 +1,744 @@
+{
+  "schema": "memento-match-sfx-source-manifest/1",
+  "created_at": "2026-08-30T18:30:41.7589498+02:00",
+  "auditory_qa": "not_performed",
+  "auditory_qa_note": "No subjective listening claims were made. Files require human listening and in-game mix review before shipping.",
+  "generation_summary": {
+    "rerolled": 0,
+    "requested": 12,
+    "completed": 12,
+    "failed": 0
+  },
+  "workflow": {
+    "validated_prompt_ok": true,
+    "comfyui_endpoint": "http://127.0.0.1:8188",
+    "stable_audio_text_encoder": "t5gemma_b_b_ul2.safetensors",
+    "source_sha256": "c18a4ad92bf9a699aa9578e100e58175bb3ffa80d94317669c004654188ba02b",
+    "known_fix": "CustomCombo absent; JsonExtractString node 49 key hardcoded to SFX",
+    "reprompt_text_encoder": "qwen3.5_2b_bf16.safetensors",
+    "comfy_cli_version": "1.18.0",
+    "checkpoint": "stable_audio_3_medium.safetensors",
+    "source_path": "C:\\ComfyUI_windows_portable\\ComfyUI\\user\\default\\workflows\\StableAudio3_SFX.json"
+  },
+  "processing": {
+    "sample_rate_hz": 48000,
+    "overwrite_policy": "MP3 originals retained; WAV names created without replacing raw files",
+    "wav_codec": "pcm_s16le",
+    "fade_in_ms": 8,
+    "channels_policy": "mono except sfx_skill_cut_in_v01 stereo",
+    "ffmpeg_version": "ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+    "silence_trim": "start >=10 ms below -55 dB with 5 ms retained; end >=80 ms below -55 dB with 50 ms retained",
+    "fade_out_ms": 15,
+    "loudness_filter": "ffmpeg loudnorm linear=true, LRA 11, target per effect, TP -1 dBTP"
+  },
+  "effects": [
+    {
+      "id": "sfx_animal_aki_fox_cub_chirp_v01",
+      "kind": "animal",
+      "prompt": "a tiny fox cub making one playful chirp and a soft curious yip, close perspective, isolated clean animal vocalization, no music, no human voice, no background ambience",
+      "requested_duration_seconds": 2,
+      "generation": {
+        "scheduler": "simple",
+        "steps": 8,
+        "denoise": 1,
+        "prompt_id": "b2bbf606-57a4-42c2-bcec-b98ca40c6f52",
+        "sampler": "lcm",
+        "category": "SFX",
+        "error": null,
+        "status": "completed",
+        "seed": 1948031,
+        "cfg": 1,
+        "output_url": "http://127.0.0.1:8188/view?filename=sfx_animal_aki_fox_cub_chirp_v01_00001.mp3&subfolder=audio%5Cmemento_match%5Craw&type=output",
+        "reprompt": true,
+        "seed_control": "fixed",
+        "attempts": 1,
+        "workflow_copy": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\_work\\sfx_animal_aki_fox_cub_chirp_v01.workflow.json",
+        "elapsed_seconds": 8.051614
+      },
+      "raw_mp3": {
+        "sha256": "8926f02f1047049bd9d8bcd82a6874e43dafac149df96a73adaba751a1590d37",
+        "path": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\raw\\sfx_animal_aki_fox_cub_chirp_v01_00001.mp3",
+        "technical": {
+          "bits_per_sample": 0,
+          "codec": "mp3",
+          "duration_seconds": 2.043356,
+          "format": "mp3",
+          "channels": 2,
+          "sample_rate_hz": 44100
+        },
+        "bytes": 79495
+      },
+      "processed_wav": {
+        "path": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\wav\\sfx_animal_aki_fox_cub_chirp_v01.wav",
+        "target_true_peak_dbtp": -1,
+        "target_lufs": -18,
+        "sha256": "f68da41d56c53b46ff8d95f24febdd48588f386f1a62643c4e4ffa71e9b4e685",
+        "technical": {
+          "bits_per_sample": 16,
+          "codec": "pcm_s16le",
+          "duration_seconds": 0.270396,
+          "format": "wav",
+          "channels": 1,
+          "sample_rate_hz": 48000
+        },
+        "bytes": 26036,
+        "objective_measurement": {
+          "integrated_lufs": null,
+          "true_peak_dbtp": -1.09,
+          "measurement_note": "clip shorter than an EBU integrated loudness block; true peak remains valid",
+          "lra_lu": 0.0
+        },
+        "processing_log": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\provenance\\processing\\sfx_animal_aki_fox_cub_chirp_v01.ffmpeg.log"
+      }
+    },
+    {
+      "id": "sfx_animal_aki_squirrel_chitter_v01",
+      "kind": "animal",
+      "prompt": "a small red squirrel making two quick cheerful chitters, close perspective, isolated clean animal vocalization, no music, no human voice, no background ambience",
+      "requested_duration_seconds": 2,
+      "generation": {
+        "scheduler": "simple",
+        "steps": 8,
+        "denoise": 1,
+        "prompt_id": "4ab6d3af-748b-4381-8c46-ac1f7c4d73d1",
+        "sampler": "lcm",
+        "category": "SFX",
+        "error": null,
+        "status": "completed",
+        "seed": 1948032,
+        "cfg": 1,
+        "output_url": "http://127.0.0.1:8188/view?filename=sfx_animal_aki_squirrel_chitter_v01_00001.mp3&subfolder=audio%5Cmemento_match%5Craw&type=output",
+        "reprompt": true,
+        "seed_control": "fixed",
+        "attempts": 1,
+        "workflow_copy": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\_work\\sfx_animal_aki_squirrel_chitter_v01.workflow.json",
+        "elapsed_seconds": 3.707488
+      },
+      "raw_mp3": {
+        "sha256": "4cb5ea93b0710cf77f0ff6f64746893395ce47a541866431bb4855d16c40e43e",
+        "path": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\raw\\sfx_animal_aki_squirrel_chitter_v01_00001.mp3",
+        "technical": {
+          "bits_per_sample": 0,
+          "codec": "mp3",
+          "duration_seconds": 2.043356,
+          "format": "mp3",
+          "channels": 2,
+          "sample_rate_hz": 44100
+        },
+        "bytes": 83358
+      },
+      "processed_wav": {
+        "path": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\wav\\sfx_animal_aki_squirrel_chitter_v01.wav",
+        "target_true_peak_dbtp": -1,
+        "target_lufs": -18,
+        "sha256": "f687b9c57240b69e287ff7d4a66b26ca01867a876cd4913d1548c00d6a06739b",
+        "technical": {
+          "bits_per_sample": 16,
+          "codec": "pcm_s16le",
+          "duration_seconds": 0.293083,
+          "format": "wav",
+          "channels": 1,
+          "sample_rate_hz": 48000
+        },
+        "bytes": 28214,
+        "objective_measurement": {
+          "integrated_lufs": null,
+          "true_peak_dbtp": -1.02,
+          "measurement_note": "clip shorter than an EBU integrated loudness block; true peak remains valid",
+          "lra_lu": 0.0
+        },
+        "processing_log": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\provenance\\processing\\sfx_animal_aki_squirrel_chitter_v01.ffmpeg.log"
+      }
+    },
+    {
+      "id": "sfx_animal_mika_puppy_yip_v01",
+      "kind": "animal",
+      "prompt": "a very small puppy giving one bright happy yip followed by a tiny tail-wag snuffle, close perspective, isolated clean animal vocalization, no music, no human voice, no background ambience",
+      "requested_duration_seconds": 2,
+      "generation": {
+        "scheduler": "simple",
+        "steps": 8,
+        "denoise": 1,
+        "prompt_id": "599706cf-7db6-466b-a6ca-2ab222bf4b0e",
+        "sampler": "lcm",
+        "category": "SFX",
+        "error": null,
+        "status": "completed",
+        "seed": 1948033,
+        "cfg": 1,
+        "output_url": "http://127.0.0.1:8188/view?filename=sfx_animal_mika_puppy_yip_v01_00001.mp3&subfolder=audio%5Cmemento_match%5Craw&type=output",
+        "reprompt": true,
+        "seed_control": "fixed",
+        "attempts": 1,
+        "workflow_copy": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\_work\\sfx_animal_mika_puppy_yip_v01.workflow.json",
+        "elapsed_seconds": 3.818569
+      },
+      "raw_mp3": {
+        "sha256": "46a42843044130db391d07029a652836f5ca369d41051e668a2af2bf52651a89",
+        "path": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\raw\\sfx_animal_mika_puppy_yip_v01_00001.mp3",
+        "technical": {
+          "bits_per_sample": 0,
+          "codec": "mp3",
+          "duration_seconds": 2.043356,
+          "format": "mp3",
+          "channels": 2,
+          "sample_rate_hz": 44100
+        },
+        "bytes": 86192
+      },
+      "processed_wav": {
+        "path": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\wav\\sfx_animal_mika_puppy_yip_v01.wav",
+        "target_true_peak_dbtp": -1,
+        "target_lufs": -18,
+        "sha256": "73ee66459a5b097b42d16ba3ff71a90720ba8a60bcbca7eb31247cae551f42ba",
+        "technical": {
+          "bits_per_sample": 16,
+          "codec": "pcm_s16le",
+          "duration_seconds": 0.225021,
+          "format": "wav",
+          "channels": 1,
+          "sample_rate_hz": 48000
+        },
+        "bytes": 21680,
+        "objective_measurement": {
+          "integrated_lufs": null,
+          "true_peak_dbtp": -1.01,
+          "measurement_note": "clip shorter than an EBU integrated loudness block; true peak remains valid",
+          "lra_lu": 0.0
+        },
+        "processing_log": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\provenance\\processing\\sfx_animal_mika_puppy_yip_v01.ffmpeg.log"
+      }
+    },
+    {
+      "id": "sfx_animal_mika_kitten_mew_v01",
+      "kind": "animal",
+      "prompt": "a young kitten making one short gentle playful mew, close perspective, isolated clean animal vocalization, no purring bed, no music, no human voice, no background ambience",
+      "requested_duration_seconds": 2,
+      "generation": {
+        "scheduler": "simple",
+        "steps": 8,
+        "denoise": 1,
+        "prompt_id": "3ea07bae-3977-47dd-a73f-741c8cf144b6",
+        "sampler": "lcm",
+        "category": "SFX",
+        "error": null,
+        "status": "completed",
+        "seed": 1948034,
+        "cfg": 1,
+        "output_url": "http://127.0.0.1:8188/view?filename=sfx_animal_mika_kitten_mew_v01_00001.mp3&subfolder=audio%5Cmemento_match%5Craw&type=output",
+        "reprompt": true,
+        "seed_control": "fixed",
+        "attempts": 1,
+        "workflow_copy": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\_work\\sfx_animal_mika_kitten_mew_v01.workflow.json",
+        "elapsed_seconds": 4.882528
+      },
+      "raw_mp3": {
+        "sha256": "a54b480a03a98b7d679172c565f1b1eb478c17cdd0206ec4cd5e1f59beb596f9",
+        "path": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\raw\\sfx_animal_mika_kitten_mew_v01_00001.mp3",
+        "technical": {
+          "bits_per_sample": 0,
+          "codec": "mp3",
+          "duration_seconds": 2.043356,
+          "format": "mp3",
+          "channels": 2,
+          "sample_rate_hz": 44100
+        },
+        "bytes": 94955
+      },
+      "processed_wav": {
+        "path": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\wav\\sfx_animal_mika_kitten_mew_v01.wav",
+        "target_true_peak_dbtp": -1,
+        "target_lufs": -18,
+        "sha256": "447d28ccb2253a6d18f11846e08654604b1b17f536dcdfcd792996635ca4eb68",
+        "technical": {
+          "bits_per_sample": 16,
+          "codec": "pcm_s16le",
+          "duration_seconds": 1.295271,
+          "format": "wav",
+          "channels": 1,
+          "sample_rate_hz": 48000
+        },
+        "bytes": 124424,
+        "objective_measurement": {
+          "integrated_lufs": -21.17,
+          "true_peak_dbtp": -13.39,
+          "measurement_note": "objective ffmpeg loudnorm measurement",
+          "lra_lu": 0.0
+        },
+        "processing_log": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\provenance\\processing\\sfx_animal_mika_kitten_mew_v01.ffmpeg.log"
+      }
+    },
+    {
+      "id": "sfx_animal_yoru_owl_chick_hoot_v01",
+      "kind": "animal",
+      "prompt": "a small owl chick giving two soft round moonlit hoots, close perspective, isolated clean animal vocalization, no wind, no forest ambience, no music, no human voice",
+      "requested_duration_seconds": 2,
+      "generation": {
+        "scheduler": "simple",
+        "steps": 8,
+        "denoise": 1,
+        "prompt_id": "63f955a4-42f0-4b78-be08-85b7574939ed",
+        "sampler": "lcm",
+        "category": "SFX",
+        "error": null,
+        "status": "completed",
+        "seed": 1948035,
+        "cfg": 1,
+        "output_url": "http://127.0.0.1:8188/view?filename=sfx_animal_yoru_owl_chick_hoot_v01_00001.mp3&subfolder=audio%5Cmemento_match%5Craw&type=output",
+        "reprompt": true,
+        "seed_control": "fixed",
+        "attempts": 1,
+        "workflow_copy": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\_work\\sfx_animal_yoru_owl_chick_hoot_v01.workflow.json",
+        "elapsed_seconds": 3.921058
+      },
+      "raw_mp3": {
+        "sha256": "10e71b5deb026feb90aa4097a67996eeb97bb7aa2739a454461c31d46a22bd86",
+        "path": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\raw\\sfx_animal_yoru_owl_chick_hoot_v01_00001.mp3",
+        "technical": {
+          "bits_per_sample": 0,
+          "codec": "mp3",
+          "duration_seconds": 2.043356,
+          "format": "mp3",
+          "channels": 2,
+          "sample_rate_hz": 44100
+        },
+        "bytes": 87331
+      },
+      "processed_wav": {
+        "path": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\wav\\sfx_animal_yoru_owl_chick_hoot_v01.wav",
+        "target_true_peak_dbtp": -1,
+        "target_lufs": -18,
+        "sha256": "f3e02539b906bfb70997aff2028f2dc114479a6bc7f32157f827fe9b6d4114f6",
+        "technical": {
+          "bits_per_sample": 16,
+          "codec": "pcm_s16le",
+          "duration_seconds": 0.345813,
+          "format": "wav",
+          "channels": 1,
+          "sample_rate_hz": 48000
+        },
+        "bytes": 33276,
+        "objective_measurement": {
+          "integrated_lufs": null,
+          "true_peak_dbtp": -1.03,
+          "measurement_note": "clip shorter than an EBU integrated loudness block; true peak remains valid",
+          "lra_lu": 0.0
+        },
+        "processing_log": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\provenance\\processing\\sfx_animal_yoru_owl_chick_hoot_v01.ffmpeg.log"
+      }
+    },
+    {
+      "id": "sfx_animal_yoru_wolf_pup_howl_v01",
+      "kind": "animal",
+      "prompt": "a young wolf pup attempting one brief cute rising howl, natural and gentle, close perspective, isolated clean animal vocalization, no pack, no wind, no music, no human voice",
+      "requested_duration_seconds": 3,
+      "generation": {
+        "scheduler": "simple",
+        "steps": 8,
+        "denoise": 1,
+        "prompt_id": "39699b75-beca-4d7d-8351-422fbbbc3502",
+        "sampler": "lcm",
+        "category": "SFX",
+        "error": null,
+        "status": "completed",
+        "seed": 1948036,
+        "cfg": 1,
+        "output_url": "http://127.0.0.1:8188/view?filename=sfx_animal_yoru_wolf_pup_howl_v01_00001.mp3&subfolder=audio%5Cmemento_match%5Craw&type=output",
+        "reprompt": true,
+        "seed_control": "fixed",
+        "attempts": 1,
+        "workflow_copy": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\_work\\sfx_animal_yoru_wolf_pup_howl_v01.workflow.json",
+        "elapsed_seconds": 5.816776
+      },
+      "raw_mp3": {
+        "sha256": "848b2afd1a6a6f250b981829228234873ab7be15512dc35ed0c020fd20a03b55",
+        "path": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\raw\\sfx_animal_yoru_wolf_pup_howl_v01_00001.mp3",
+        "technical": {
+          "bits_per_sample": 0,
+          "codec": "mp3",
+          "duration_seconds": 2.972154,
+          "format": "mp3",
+          "channels": 2,
+          "sample_rate_hz": 44100
+        },
+        "bytes": 107431
+      },
+      "processed_wav": {
+        "path": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\wav\\sfx_animal_yoru_wolf_pup_howl_v01.wav",
+        "target_true_peak_dbtp": -1,
+        "target_lufs": -18,
+        "sha256": "375c363625c46ee18dee8e78384f8f0e065c99ca719469ebc3a73eecac0938bb",
+        "technical": {
+          "bits_per_sample": 16,
+          "codec": "pcm_s16le",
+          "duration_seconds": 1.430563,
+          "format": "wav",
+          "channels": 1,
+          "sample_rate_hz": 48000
+        },
+        "bytes": 137412,
+        "objective_measurement": {
+          "integrated_lufs": -21.02,
+          "true_peak_dbtp": -8.43,
+          "measurement_note": "objective ffmpeg loudnorm measurement",
+          "lra_lu": 0.0
+        },
+        "processing_log": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\provenance\\processing\\sfx_animal_yoru_wolf_pup_howl_v01.ffmpeg.log"
+      }
+    },
+    {
+      "id": "sfx_card_flip_v01",
+      "kind": "gameplay",
+      "prompt": "one small thick lacquered card flipping quickly through the air and landing with a soft paper tap, close dry perspective, clean isolated one-shot",
+      "requested_duration_seconds": 1,
+      "generation": {
+        "scheduler": "simple",
+        "steps": 8,
+        "denoise": 1,
+        "prompt_id": "eee69c3b-9249-428f-917f-e73bc1e2f135",
+        "sampler": "lcm",
+        "category": "SFX",
+        "error": null,
+        "status": "completed",
+        "seed": 2948101,
+        "cfg": 1,
+        "output_url": "http://127.0.0.1:8188/view?filename=sfx_card_flip_v01_00001.mp3&subfolder=audio%5Cmemento_match%5Craw&type=output",
+        "reprompt": true,
+        "seed_control": "fixed",
+        "attempts": 1,
+        "workflow_copy": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\_work\\sfx_card_flip_v01.workflow.json",
+        "elapsed_seconds": 6.589008
+      },
+      "raw_mp3": {
+        "sha256": "ad468b8ec4f9eeaef50397fb8011a8790d76f448ff013c149fbfefbe305b8c53",
+        "path": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\raw\\sfx_card_flip_v01_00001.mp3",
+        "technical": {
+          "bits_per_sample": 0,
+          "codec": "mp3",
+          "duration_seconds": 1.021678,
+          "format": "mp3",
+          "channels": 2,
+          "sample_rate_hz": 44100
+        },
+        "bytes": 56810
+      },
+      "processed_wav": {
+        "path": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\wav\\sfx_card_flip_v01.wav",
+        "target_true_peak_dbtp": -1,
+        "target_lufs": -18,
+        "sha256": "9dd5e815b6eea8c3c5e0e1d8840d5d5028cc324a6366a6c56662c47ee1791322",
+        "technical": {
+          "bits_per_sample": 16,
+          "codec": "pcm_s16le",
+          "duration_seconds": 0.298146,
+          "format": "wav",
+          "channels": 1,
+          "sample_rate_hz": 48000
+        },
+        "bytes": 28700,
+        "objective_measurement": {
+          "integrated_lufs": null,
+          "true_peak_dbtp": -1.01,
+          "measurement_note": "clip shorter than an EBU integrated loudness block; true peak remains valid",
+          "lra_lu": 0.0
+        },
+        "processing_log": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\provenance\\processing\\sfx_card_flip_v01.ffmpeg.log"
+      }
+    },
+    {
+      "id": "sfx_match_success_v01",
+      "kind": "gameplay",
+      "prompt": "two polished cards snap together, followed by a bright compact magical sparkle bloom, rewarding cute game feedback, clean isolated one-shot, no music",
+      "requested_duration_seconds": 2,
+      "generation": {
+        "scheduler": "simple",
+        "steps": 8,
+        "denoise": 1,
+        "prompt_id": "593a8604-0f3d-4ecd-ad22-ceb5a10480ca",
+        "sampler": "lcm",
+        "category": "SFX",
+        "error": null,
+        "status": "completed",
+        "seed": 2948102,
+        "cfg": 1,
+        "output_url": "http://127.0.0.1:8188/view?filename=sfx_match_success_v01_00001.mp3&subfolder=audio%5Cmemento_match%5Craw&type=output",
+        "reprompt": true,
+        "seed_control": "fixed",
+        "attempts": 1,
+        "workflow_copy": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\_work\\sfx_match_success_v01.workflow.json",
+        "elapsed_seconds": 3.518348
+      },
+      "raw_mp3": {
+        "sha256": "b3e30e5428991ad1333769c9f4d8e3e895a08278ed9681420d5da3a8399f05a1",
+        "path": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\raw\\sfx_match_success_v01_00001.mp3",
+        "technical": {
+          "bits_per_sample": 0,
+          "codec": "mp3",
+          "duration_seconds": 2.043356,
+          "format": "mp3",
+          "channels": 2,
+          "sample_rate_hz": 44100
+        },
+        "bytes": 83430
+      },
+      "processed_wav": {
+        "path": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\wav\\sfx_match_success_v01.wav",
+        "target_true_peak_dbtp": -1,
+        "target_lufs": -16,
+        "sha256": "bf60b880391e2db93a9183b58ad9f759e8a5d2c30d506e51773f47eb113eb2e7",
+        "technical": {
+          "bits_per_sample": 16,
+          "codec": "pcm_s16le",
+          "duration_seconds": 0.362813,
+          "format": "wav",
+          "channels": 1,
+          "sample_rate_hz": 48000
+        },
+        "bytes": 34908,
+        "objective_measurement": {
+          "integrated_lufs": null,
+          "true_peak_dbtp": -1.02,
+          "measurement_note": "clip shorter than an EBU integrated loudness block; true peak remains valid",
+          "lra_lu": 0.0
+        },
+        "processing_log": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\provenance\\processing\\sfx_match_success_v01.ffmpeg.log"
+      }
+    },
+    {
+      "id": "sfx_match_fail_soft_v01",
+      "kind": "gameplay",
+      "prompt": "two cards settle with muted papery taps and a soft rounded wooden knock, gentle non-punishing mismatch feedback, clean isolated one-shot, no music",
+      "requested_duration_seconds": 2,
+      "generation": {
+        "scheduler": "simple",
+        "steps": 8,
+        "denoise": 1,
+        "prompt_id": "286bf0dd-1c6e-4428-9250-c8320c962637",
+        "sampler": "lcm",
+        "category": "SFX",
+        "error": null,
+        "status": "completed",
+        "seed": 2948103,
+        "cfg": 1,
+        "output_url": "http://127.0.0.1:8188/view?filename=sfx_match_fail_soft_v01_00001.mp3&subfolder=audio%5Cmemento_match%5Craw&type=output",
+        "reprompt": true,
+        "seed_control": "fixed",
+        "attempts": 1,
+        "workflow_copy": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\_work\\sfx_match_fail_soft_v01.workflow.json",
+        "elapsed_seconds": 4.191612
+      },
+      "raw_mp3": {
+        "sha256": "1d4808fc4162ef7b238a8f57e49aa9d4eef6c820d85bf6077f4f11fcd3ecfdd0",
+        "path": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\raw\\sfx_match_fail_soft_v01_00001.mp3",
+        "technical": {
+          "bits_per_sample": 0,
+          "codec": "mp3",
+          "duration_seconds": 2.043356,
+          "format": "mp3",
+          "channels": 2,
+          "sample_rate_hz": 44100
+        },
+        "bytes": 88967
+      },
+      "processed_wav": {
+        "path": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\wav\\sfx_match_fail_soft_v01.wav",
+        "target_true_peak_dbtp": -1,
+        "target_lufs": -18,
+        "sha256": "965939ac19e6eb4fbbf5d8b6474c39fb5f48b445a0079f9e8e9df76db4325d24",
+        "technical": {
+          "bits_per_sample": 16,
+          "codec": "pcm_s16le",
+          "duration_seconds": 0.232042,
+          "format": "wav",
+          "channels": 1,
+          "sample_rate_hz": 48000
+        },
+        "bytes": 22354,
+        "objective_measurement": {
+          "integrated_lufs": null,
+          "true_peak_dbtp": -9.92,
+          "measurement_note": "clip shorter than an EBU integrated loudness block; true peak remains valid",
+          "lra_lu": 0.0
+        },
+        "processing_log": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\provenance\\processing\\sfx_match_fail_soft_v01.ffmpeg.log"
+      }
+    },
+    {
+      "id": "sfx_combo_rise_v01",
+      "kind": "gameplay",
+      "prompt": "a short rising sequence of three crystalline pings ending in a warm sparkle, energetic cute combo feedback, clean isolated game sound, no music",
+      "requested_duration_seconds": 2,
+      "generation": {
+        "scheduler": "simple",
+        "steps": 8,
+        "denoise": 1,
+        "prompt_id": "e639031a-6008-49f3-870e-8690c3e7f17d",
+        "sampler": "lcm",
+        "category": "SFX",
+        "error": null,
+        "status": "completed",
+        "seed": 2948104,
+        "cfg": 1,
+        "output_url": "http://127.0.0.1:8188/view?filename=sfx_combo_rise_v01_00001.mp3&subfolder=audio%5Cmemento_match%5Craw&type=output",
+        "reprompt": true,
+        "seed_control": "fixed",
+        "attempts": 1,
+        "workflow_copy": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\_work\\sfx_combo_rise_v01.workflow.json",
+        "elapsed_seconds": 3.139476
+      },
+      "raw_mp3": {
+        "sha256": "5652d6afbbb379db7deef5d604eb2a25fcd8aac109bca3c98b7cac647b0832cb",
+        "path": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\raw\\sfx_combo_rise_v01_00001.mp3",
+        "technical": {
+          "bits_per_sample": 0,
+          "codec": "mp3",
+          "duration_seconds": 2.043356,
+          "format": "mp3",
+          "channels": 2,
+          "sample_rate_hz": 44100
+        },
+        "bytes": 98047
+      },
+      "processed_wav": {
+        "path": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\wav\\sfx_combo_rise_v01.wav",
+        "target_true_peak_dbtp": -1,
+        "target_lufs": -16,
+        "sha256": "90f290702bfd706a45a4f0a34c5323d38982af3fc4dbc616d0c0c188514021d6",
+        "technical": {
+          "bits_per_sample": 16,
+          "codec": "pcm_s16le",
+          "duration_seconds": 1.609417,
+          "format": "wav",
+          "channels": 1,
+          "sample_rate_hz": 48000
+        },
+        "bytes": 154582,
+        "objective_measurement": {
+          "integrated_lufs": -22.28,
+          "true_peak_dbtp": -1.33,
+          "measurement_note": "objective ffmpeg loudnorm measurement",
+          "lra_lu": 0.0
+        },
+        "processing_log": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\provenance\\processing\\sfx_combo_rise_v01.ffmpeg.log"
+      }
+    },
+    {
+      "id": "sfx_duel_health_hit_v01",
+      "kind": "gameplay",
+      "prompt": "a compact magical impact on a glass-and-brass health gauge, bright crackle with a soft controlled bass thump, punchy but cute, no explosion, no voice, no music",
+      "requested_duration_seconds": 2,
+      "generation": {
+        "scheduler": "simple",
+        "steps": 8,
+        "denoise": 1,
+        "prompt_id": "70365481-918b-4f40-98c9-4fed046fe755",
+        "sampler": "lcm",
+        "category": "SFX",
+        "error": null,
+        "status": "completed",
+        "seed": 2948105,
+        "cfg": 1,
+        "output_url": "http://127.0.0.1:8188/view?filename=sfx_duel_health_hit_v01_00001.mp3&subfolder=audio%5Cmemento_match%5Craw&type=output",
+        "reprompt": true,
+        "seed_control": "fixed",
+        "attempts": 1,
+        "workflow_copy": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\_work\\sfx_duel_health_hit_v01.workflow.json",
+        "elapsed_seconds": 3.780334
+      },
+      "raw_mp3": {
+        "sha256": "5a8bba6e6ccdd7398b9f056f0c1d0c3866a0b57d9a1db4364121b9699d0a03f2",
+        "path": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\raw\\sfx_duel_health_hit_v01_00001.mp3",
+        "technical": {
+          "bits_per_sample": 0,
+          "codec": "mp3",
+          "duration_seconds": 2.043356,
+          "format": "mp3",
+          "channels": 2,
+          "sample_rate_hz": 44100
+        },
+        "bytes": 92120
+      },
+      "processed_wav": {
+        "path": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\wav\\sfx_duel_health_hit_v01.wav",
+        "target_true_peak_dbtp": -1,
+        "target_lufs": -16,
+        "sha256": "e46d4c6227a6e0e63ccf70296d1e77803d8531028c682a647e45be3e8805fd4c",
+        "technical": {
+          "bits_per_sample": 16,
+          "codec": "pcm_s16le",
+          "duration_seconds": 1.161896,
+          "format": "wav",
+          "channels": 1,
+          "sample_rate_hz": 48000
+        },
+        "bytes": 111620,
+        "objective_measurement": {
+          "integrated_lufs": -22.85,
+          "true_peak_dbtp": -1.02,
+          "measurement_note": "objective ffmpeg loudnorm measurement",
+          "lra_lu": 0.0
+        },
+        "processing_log": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\provenance\\processing\\sfx_duel_health_hit_v01.ffmpeg.log"
+      }
+    },
+    {
+      "id": "sfx_skill_cut_in_v01",
+      "kind": "gameplay",
+      "prompt": "a full-screen anime skill activation sweep, fast airy energy rise, sparkling lateral pass, and one clean emblem impact, premium game UI, no voice, no music",
+      "requested_duration_seconds": 3,
+      "generation": {
+        "scheduler": "simple",
+        "steps": 8,
+        "denoise": 1,
+        "prompt_id": "97ce2da7-8164-4e7e-b248-74169882d443",
+        "sampler": "lcm",
+        "category": "SFX",
+        "error": null,
+        "status": "completed",
+        "seed": 2948106,
+        "cfg": 1,
+        "output_url": "http://127.0.0.1:8188/view?filename=sfx_skill_cut_in_v01_00001.mp3&subfolder=audio%5Cmemento_match%5Craw&type=output",
+        "reprompt": true,
+        "seed_control": "fixed",
+        "attempts": 1,
+        "workflow_copy": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\_work\\sfx_skill_cut_in_v01.workflow.json",
+        "elapsed_seconds": 3.863275
+      },
+      "raw_mp3": {
+        "sha256": "49bc4ab61bb46880dbc00e5bd1eb49777b3279237ba28283346399965bd21581",
+        "path": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\raw\\sfx_skill_cut_in_v01_00001.mp3",
+        "technical": {
+          "bits_per_sample": 0,
+          "codec": "mp3",
+          "duration_seconds": 2.972154,
+          "format": "mp3",
+          "channels": 2,
+          "sample_rate_hz": 44100
+        },
+        "bytes": 119454
+      },
+      "processed_wav": {
+        "path": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\wav\\sfx_skill_cut_in_v01.wav",
+        "target_true_peak_dbtp": -1,
+        "target_lufs": -16,
+        "sha256": "40d4370abcbf6a17f6199e0ca9e297bbcfe4681656554e21dc1b2ddd0525dd17",
+        "technical": {
+          "bits_per_sample": 16,
+          "codec": "pcm_s16le",
+          "duration_seconds": 1.048354,
+          "format": "wav",
+          "channels": 2,
+          "sample_rate_hz": 48000
+        },
+        "bytes": 201362,
+        "objective_measurement": {
+          "integrated_lufs": -16.04,
+          "true_peak_dbtp": -6.75,
+          "measurement_note": "objective ffmpeg loudnorm measurement",
+          "lra_lu": 0.0
+        },
+        "processing_log": "C:\\ComfyUI_windows_portable\\ComfyUI\\output\\audio\\memento_match\\provenance\\processing\\sfx_skill_cut_in_v01.ffmpeg.log"
+      }
+    }
+  ]
+}

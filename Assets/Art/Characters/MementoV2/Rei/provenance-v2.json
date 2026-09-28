@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "project": "card-match",
+  "jobId": "job-ef8972722d39",
+  "createdDate": "2026-09-08",
+  "artistRole": "generic-ai-artist",
+  "backend": "Codex built-in imagegen",
+  "status": "candidate_rejected_alpha_missing",
+  "authorization": "User requested regeneration of existing game designs and reusable safe transparency processing; parent explicitly assigned single reference-based Rei sample.",
+  "original": {
+    "path": "Assets/AnimalMemory/Resources/AnimalMemory/Duel/UltimateMaster/rei_neutral.png",
+    "sha256": "e87725fb8640532f2edc87d35491ef2e97fd3b0ca8bc2421588232207d240e9c",
+    "unchanged": true
+  },
+  "candidate": {
+    "source": "C:/Users/evilh/.codex/generated_images/01a07e05-b76e-7773-a67b-bc63f945d8bf/exec-cf0bbf99-0036-4d2a-bc7a-f39067bf58ca.png",
+    "sha256": "8f352ca4f2e4ac66cb3d2a2d92ec2952bdcf213663b68168b96fc743070ecd00",
+    "width": 1024,
+    "height": 1536,
+    "bitDepth": 8,
+    "colorType": 2,
+    "alphaChannel": false,
+    "visuallyObserved": "Baked grey-white checkerboard outside figure remains visible. Not a valid transparent sprite.",
+    "accepted": false,
+    "importedAsRuntimeSprite": false
+  },
+  "prompt": "Use case: identity-preserve\nAsset type: one production FULL-BODY NEUTRAL CHARACTER SPRITE for an anime fantasy memory-duel game, vertical PNG with genuine transparent alpha background.\nImage 1 is the original Rei character, the edit target and identity reference. Preserve REI: same face and violet eyes, compact youthful moe proportions, short ivory-white bob with faint lavender/cyan undersides, navy asymmetrical beret with gold crescent and white flower, ivory high-neck blouse/dress, navy long split-tailed coat with fine antique-brass edges, modest layered ivory ruffles, dark stockings, navy ankle boots, and a brass clockwork/astrolabe staff with a violet-blue core. Preserve her recognizability, original costume silhouette and fully clothed non-sexual presentation. Do not age her up, change body type or replace her with a different character.\nImprove her production drawing rather than adding decoration: coherent five-finger hands, clean confident line art, consistent brass materials, simple readable cloth-fold groups and symmetrical functional boot construction. Calm intelligent little smile, composed upright stance, staff held securely in left-image hand, other hand open with a restrained welcoming gesture. Neater accessory hierarchy: the staff is the major focal prop and the violet collar jewel the secondary one; tiny trim details should remain subordinate and no new charms, wings, crowns or accessories may be added. Keep visual weight balanced and the entire hair tuft, staff, ribbons and both boots inside the frame with breathing room. Polish cel-shaded anime game finish with soft painterly fabric shading, rich but controlled colors.\nCritical background extraction requirement: the grey-and-white checker pattern visible behind the reference IS AN UNWANTED BAKED BACKGROUND, NOT part of her design. Remove it completely everywhere outside her silhouette and in holes between arms, staff, split coat, legs, loose ribbons and hair strands. Output a REAL transparent PNG alpha channel: background pixels must have alpha zero; do NOT illustrate a checkerboard, white rectangle, colored background, floor, cast ground shadow or environment. The image should contain ONLY Rei and her staff on actual transparency.\nPreserve ALL legitimate white/ivory regions as fully opaque character material: hair, facial highlights, skin, blouse, ruffles, white flower, cuffs, coat lining and boot trim. Do NOT remove white colors by threshold. Preserve smooth antialiased fine line edges without bright fringe. No text, watermark, character name, UI, borders, duplicate poses or extra characters.\nReturn exactly ONE improved neutral sprite, not a contact sheet or concept board.",
+  "artDecisions": [
+    "Retain face/violet eyes/short ivory hair and navy-brass outfit for recognition.",
+    "Simplify material and detail hierarchy: staff first, collar jewel second; avoid new accessories.",
+    "Neutral composed pose communicates final-master authority without changing established moe proportions.",
+    "White hair, cuffs, blouse, lining and ruffles must remain opaque."
+  ],
+  "nextAction": "Await parent decision on controlled solid-background source for local matting. Do not treat missing alpha as solved. Never use a global white threshold.",
+  "processing": "No image postprocessing performed; no original or runtime sprite replaced."
+}
