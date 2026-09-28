@@ -23,8 +23,23 @@
       "source": "embedded",
       "dependencies": {}
     },
+    "com.ehkp.minigames.core": {
+      "version": "file:J:/Unity Projects/MinigamesSolidCleanCODE/Assets/Minigames/Core",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {
+        "com.elmortem.serializereferenceeditor": "1.3.10",
+        "com.unity.ugui": "2.0.0"
+      }
+    },
     "com.ehkp.visual-novel-presentation": {
       "version": "file:J:/UnityPackages/Packages/com.ehkp.visual-novel-presentation",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
+    "com.elmortem.serializereferenceeditor": {
+      "version": "file:J:/Unity Projects/MinigamesSolidCleanCODE/Assets/SREditor/Package",
       "depth": 0,
       "source": "local",
       "dependencies": {}

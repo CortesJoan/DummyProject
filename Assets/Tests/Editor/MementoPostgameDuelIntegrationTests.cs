@@ -7,6 +7,9 @@ using UnityEngine;
 /// <summary>Isolated runtime boundaries: never initializes a live manager or writes SaveSystem.</summary>
 public sealed class MementoPostgameDuelIntegrationTests
 {
+    private bool previousReleaseFlag;
+    [SetUp] public void PreserveReleaseFlag() => previousReleaseFlag = MementoPostgameRelease.Enabled;
+    [TearDown] public void RestoreReleaseFlag() => MementoPostgameRelease.Enabled = previousReleaseFlag;
     [TestCase(6)] [TestCase(7)] [TestCase(8)] [TestCase(9)] [TestCase(10)]
     public void NewOpponent_UsesOwnProfile_AndStillResolvesExhaustedBoards(int id)
     {
@@ -78,6 +81,7 @@ public sealed class MementoPostgameDuelIntegrationTests
     [Test]
     public void ClosedRelease_RejectsAllEncounterStarts_WithoutMutatingProfileOrRequestingPresentation()
     {
+        MementoPostgameRelease.Enabled = false;
         var host = new GameObject("Inactive postgame entry regression");
         host.SetActive(false);
         try
@@ -108,6 +112,7 @@ public sealed class MementoPostgameDuelIntegrationTests
     [Test]
     public void ReleaseSwitch_ClosesAndReopensTheDoorExactly()
     {
+        MementoPostgameRelease.Enabled = false;
         var host = new GameObject("Inactive postgame release cycle");
         host.SetActive(false);
         try
@@ -120,7 +125,7 @@ public sealed class MementoPostgameDuelIntegrationTests
             data.SetData("PostgameCompletedMask", 0);
             manager.LoadData(data);
 
-            // El valor de entrega mantiene la puerta cerrada...
+            // El escenario de prueba cierra la puerta sin asumir el valor de desarrollo...
             Assert.That(MementoPostgameRelease.Enabled, Is.False);
             Assert.That(manager.IsPostgameAvailable, Is.False);
             Assert.That(manager.IsTrueEndingUnlocked, Is.False);
@@ -151,7 +156,7 @@ public sealed class MementoPostgameDuelIntegrationTests
         }
         finally
         {
-            MementoPostgameRelease.Enabled = false;
+            MementoPostgameRelease.Enabled = previousReleaseFlag;
             Object.DestroyImmediate(host);
         }
     }

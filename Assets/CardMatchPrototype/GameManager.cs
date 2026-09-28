@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using AnimalMemory.Progression;
+using Minigames.Core;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -60,6 +61,9 @@ public class GameManager : MonoBehaviour, ISavable
     private readonly MementoPostgameProgression postgame = new MementoPostgameProgression();
     private readonly MementoSupplyWallet supplies = new MementoSupplyWallet();
     public MementoSupplyWallet Supplies => supplies;
+
+    private MementoMemorySession memorySession;
+    public MinigameStatus MemorySessionStatus => memorySession?.Status ?? MinigameStatus.None;
 
     private bool useToolkitMenu;
     private int gameRequestVersion;
@@ -495,6 +499,7 @@ public class GameManager : MonoBehaviour, ISavable
     {
         if (!CanContinueDefeat || !cardMatchUI.TryContinueDefeat()) return false;
         challengeState.Begin(lastChallengeGuideId);
+        BeginMemorySession(null);
         LastResultTitle = "";
         LastResultSummary = "";
         IsResultOverlayOpen = false;
@@ -550,6 +555,7 @@ public class GameManager : MonoBehaviour, ISavable
     {
         AudioManager.RestoreDefaultMusic();
         gameRequestVersion++;
+        memorySession?.Dispose();
         RewardedContinue?.CancelPending();
         cardMatchUI?.CancelCurrentGame();
         guideRunState.Reset(progression.SelectedGuideId);
@@ -641,6 +647,9 @@ public class GameManager : MonoBehaviour, ISavable
             return;
         }
 
+        memorySession?.Dispose();
+        memorySession = null;
+        cardMatchUI.CancelCurrentGame();
         RewardedContinue?.BeginRun();
         activeDifficultyId = difficultyHandler.GetCurrentDifficultyLevel();
         runMismatches = 0;
@@ -751,11 +760,11 @@ public class GameManager : MonoBehaviour, ISavable
                     : 4;
         }
 
-        cardMatchUI.SetupGame(
+        BeginMemorySession(() => cardMatchUI.SetupGame(
             rows,
             columns,
             difficulty.backgroundColor,
-            difficulty.timeToSeeCards);
+            difficulty.timeToSeeCards));
         MementoMatchSfx.PlayBoardDeal();
     }
 
@@ -772,7 +781,27 @@ public class GameManager : MonoBehaviour, ISavable
         lastPowerReady = powerReady;
     }
 
+    private void BeginMemorySession(Action startBoard)
+    {
+        memorySession?.Dispose();
+        memorySession = new MementoMemorySession();
+        memorySession.Completed += HandleMemoryResult;
+        memorySession.Start(startBoard);
+    }
+
+    private void HandleMemoryResult(MinigameResult result)
+    {
+        if (result == MinigameResult.Win) ApplyMemoryVictory();
+        else if (result == MinigameResult.Lose) ApplyMemoryDefeat();
+    }
+
     private void OnWinGame()
+    {
+        if (memorySession != null) memorySession.TryComplete(MinigameResult.Win);
+        else ApplyMemoryVictory();
+    }
+
+    private void ApplyMemoryVictory()
     {
         if (IsResultOverlayOpen)
             return;
@@ -860,6 +889,12 @@ public class GameManager : MonoBehaviour, ISavable
     }
 
     private void FinishChallengeDefeat()
+    {
+        if (memorySession != null) memorySession.TryComplete(MinigameResult.Lose);
+        else ApplyMemoryDefeat();
+    }
+
+    private void ApplyMemoryDefeat()
     {
         if (IsResultOverlayOpen)
             return;
@@ -956,6 +991,7 @@ public class GameManager : MonoBehaviour, ISavable
 
     private void OnDestroy()
     {
+        memorySession?.Dispose();
         progression.Changed -= OnProgressionChanged;
         guideRunState.PowerPresentationRequested -= OnGuidePowerPresentationRequested;
         if (cardMatchUI != null)

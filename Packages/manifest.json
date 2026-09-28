@@ -1,8 +1,11 @@
 {
   "testables": [
-    "com.studio.vn-engine"
+    "com.studio.vn-engine",
+    "com.ehkp.minigames.core"
   ],
   "dependencies": {
+    "com.ehkp.minigames.core": "file:J:/Unity Projects/MinigamesSolidCleanCODE/Assets/Minigames/Core",
+    "com.elmortem.serializereferenceeditor": "file:J:/Unity Projects/MinigamesSolidCleanCODE/Assets/SREditor/Package",
     "com.studio.vn-engine": "file:J:/UnityPackages/Packages/com.studio.vn-engine",
     "com.ehkp.visual-novel-presentation": "file:J:/UnityPackages/Packages/com.ehkp.visual-novel-presentation",
     "com.coplaydev.unity-mcp": "https://github.com/CoplayDev/unity-mcp.git?path=/MCPForUnity#main",

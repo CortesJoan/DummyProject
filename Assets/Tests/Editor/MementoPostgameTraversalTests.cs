@@ -21,10 +21,12 @@ public sealed class MementoPostgameTraversalTests
         BindingFlags.Static | BindingFlags.NonPublic;
 
     private string saveOverridePath;
+    private bool previousReleaseFlag;
 
     [SetUp]
     public void SetUp()
     {
+        previousReleaseFlag = MementoPostgameRelease.Enabled;
         MementoPostgameRelease.Enabled = true;
         saveOverridePath = Path.Combine(Path.GetTempPath(),
             "memento-postgame-traversal-" + System.Guid.NewGuid().ToString("N") + ".dat");
@@ -35,7 +37,7 @@ public sealed class MementoPostgameTraversalTests
     [TearDown]
     public void TearDown()
     {
-        MementoPostgameRelease.Enabled = false;
+        MementoPostgameRelease.Enabled = previousReleaseFlag;
         typeof(SaveSystem).GetField("TestOnlySavePathOverride", StaticFlags)
             .SetValue(null, null);
         try { if (File.Exists(saveOverridePath)) File.Delete(saveOverridePath); }

@@ -4,6 +4,16 @@ using UnityEngine;
 
 public sealed class MementoPostgameSaveTests
 {
+    private bool previousReleaseFlag;
+    [SetUp]
+    public void ConfigureClosedReleaseScenario()
+    {
+        previousReleaseFlag = MementoPostgameRelease.Enabled;
+        MementoPostgameRelease.Enabled = false;
+    }
+    [TearDown]
+    public void RestoreReleaseFlag() => MementoPostgameRelease.Enabled = previousReleaseFlag;
+
     [TestCase(0, 0)] [TestCase(15, 15)] [TestCase(63, 63)] [TestCase(5, 1)]
     public void Save_RoundTripsPostgameWithoutChangingBaseEnding(int mask, int sanitized)
     {
